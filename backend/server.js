@@ -1,12 +1,12 @@
-// import express from 'express'
-// import dotenv from 'dotenv'
-// import connectDB from './config/db.js'
-const express = require('express')
+import express from 'express'
+import dotenv from 'dotenv'
+import connectDB from './config/db.js'
+// import retos from './data/retos.js'
 
 
-// dotenv.config()
+dotenv.config()
 
-// connectDB()
+connectDB()
 
 const app = express()
 
@@ -15,13 +15,15 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/api/retos', (req, res) => {
-    res.json(retos)
-})
+// app.get('/api/retos', (req, res) => {
+//     res.json(retos)
+// })
 
-app.get('/api/retos/:id', (req, res) => {
-    const reto = retos.find(r => r._id === req.params.id)
-    res.json(reto)
-})
+// app.get('/api/retos/:id', (req, res) => {
+//     const reto = retos.find(r => r._id === req.params.id)
+//     res.json(reto)
+// })
 
-app.listen(5000, console.log('Server running on port 5000'))
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT , console.log(`Server running in ${process.env.NODE_ENV} port ${PORT}`))
