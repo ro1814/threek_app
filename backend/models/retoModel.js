@@ -35,7 +35,7 @@ const retoSchema = mongoose.Schema({
         required: true
     },
     videoURL: {
-        type: URL,
+        type: String,
     },
     socialMedia:{
         twitter: String,
