@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux'
-import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap'
+import { Row, Col, Image, ListGroup, Button} from 'react-bootstrap'
 import { listRetosDetails } from '../actions/retoActions'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
-const RetoScreen = ({ match }) => {
+
+const RetoScreen = ({ history, match }) => {
   const dispatch = useDispatch()
 
   const retoDetails = useSelector(state => state.retoDetails)
@@ -14,6 +15,10 @@ const RetoScreen = ({ match }) => {
   useEffect(() => {
     dispatch(listRetosDetails(match.params.id))
   }, [dispatch, match]);
+
+  const checkoutHandler = () => {
+    history.push('/login?redirect=sponsor')
+  }
 
   return (
     <>
@@ -31,9 +36,9 @@ const RetoScreen = ({ match }) => {
              <ListGroup.Item>
                <h4>Título del reto: "{reto.titulo}"</h4>
                <h5>Objetivo de recaudación: €{reto.objetivoRec}</h5>
-               <Link className="btn btn-light my-3" to="/PORDEFINIR">
+               <Button type='button' className='btn-block' onClick={checkoutHandler}>
                  Sponsorizar
-               </Link>
+               </Button>
                <p>Finaliza en: Faltan 3 días 4 horas </p>
                <p>Inicio: {reto.fechaInicio}, Fecha Fin</p>
              </ListGroup.Item>
