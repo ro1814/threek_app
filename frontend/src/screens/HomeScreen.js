@@ -1,28 +1,34 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col } from 'react-bootstrap'
-import axios from 'axios'
-// import Reto from '../components/Reto'
+import Reto from '../components/Reto'
+import Message from '../components/Message'
+import Loader from '../components/Loader'
+import { listRetos } from '../actions/retoActions'
 
 
 const HomeScreen = () => {
-    const [retos, setRetos] = useState([])
+   const dispatch = useDispatch()
+
+   const retoList = useSelector( state => state.retoList)
+   const { loading, error, retos} = retoList
 
     useEffect( () => {
-        const fetchRetos = async () =>{
-            const { data } = await axios.get('/api/retos')
+        dispatch(listRetos())
 
-            setRetos(data)
-        }
-
-        fetchRetos()
-
-    }, [])
+    }, [dispatch])
 
     return (
         <>
-            <h1>Últimos retos</h1>
-                <Row>
-                </Row>  
+            <h1>Descubre retos</h1>
+            {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : <Row>
+            {retos.map((reto) => (
+              <Col key={reto._id} sm={12} md={6} lg={4} xl={3}>
+                <Reto reto={reto} />
+              </Col>
+            ))}
+          </Row>}
+             
         </>
     )
 }
