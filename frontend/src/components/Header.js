@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
 import {
   Navbar,
@@ -7,16 +8,35 @@ import {
   Form,
   FormControl,
   Button,
-} from "react-bootstrap";
+  NavDropdown,
+} from "react-bootstrap"
+import { logout } from '../actions/userActions'
 
 const Header = () => {
+    const dispatch = useDispatch()
+
+    const userLogin = useSelector( state => state.userLogin)
+    const { userInfo } = userLogin
+
+    const logoutHandler = () => {
+      dispatch(logout())
+    }
+
   return (
     <header>
       <Navbar bg="light" expand="lg">
         <Container>
-          <LinkContainer to='/login'>
-        <Nav.Link><i className="fas fa-user"></i></Nav.Link>
-        </LinkContainer>
+          {userInfo ? (
+              <NavDropdown title={userInfo.nombre} id='username'>
+                <LinkContainer to='/profile'>
+                  <NavDropdown.Item>Perfil</NavDropdown.Item>
+                </LinkContainer>
+                <NavDropdown.Item onClick={logoutHandler}>Cerrar sesión</NavDropdown.Item>
+              </NavDropdown>
+          ) : <LinkContainer to='/login'>
+          <Nav.Link><i className="fas fa-user"></i></Nav.Link>
+          </LinkContainer>}
+          
           <LinkContainer to='/'>
             <Navbar.Brand>ThreekApp</Navbar.Brand>
           </LinkContainer>
