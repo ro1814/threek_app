@@ -28,7 +28,9 @@ const userSchema = mongoose.Schema(
         type: String,
         required: true
     },
-    segApellido: {type: String},
+    segApellido: {
+      type: String
+    },
     genero: {
         type: String,
         required: true
@@ -42,12 +44,22 @@ const userSchema = mongoose.Schema(
         type: String,
         required: true
     },
-    direccion: {
-        address: { type: String, required: true },
-        city: { type: String, required: true },
-        postalCode: { type: String, required: true },
-        country: { type: String, required: true },
-    }
+    direccion: { 
+        type: String,
+        required: true 
+    },
+    city: { 
+        type: String, 
+        required: true 
+    },
+    postalCode: { 
+      type: String, 
+      required: true 
+      },
+    country: {
+       type: String, 
+       required: true 
+      },
   },
   {
     timestamp: true,
