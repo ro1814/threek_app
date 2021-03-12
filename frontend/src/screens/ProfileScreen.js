@@ -1,57 +1,76 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
-import FormContainer from "../components/FormContainer";
-import { register } from "../actions/userActions";
+import { getUserDetails, updateUserProfile } from "../actions/userActions";
 
-const RegisterScreen = ({ location, history }) => {
-  const [nombre, setNombre] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const [avatar, setAvatar] = useState("");
-  const [primApellido, setPrimApellido] = useState("");
-  const [segApellido, setSegApellido] = useState("");
-  const [genero, setGenero] = useState("");
-  const [fecNac, setFecNac] = useState("");
-  const [dni, setDni] = useState("");
-  const [direccion, setDireccion] = useState("");
-  // const [address, setAddress] = useState("");
-  const [city, setCity] = useState("");
-  const [postalCode, setPostalCode] = useState("");
-  const [country, setCountry] = useState("");
+const ProfileScreen = ({ location, history }) => {
+  const [nombre, setNombre] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [avatar, setAvatar] = useState('');
+  const [primApellido, setPrimApellido] = useState('');
+  const [segApellido, setSegApellido] = useState('');
+  const [genero, setGenero] = useState('');
+  const [fecNac, setFecNac] = useState('');
+  const [dni, setDni] = useState('');
+  const [direccion, setDireccion] = useState('');
+  const [city, setCity] = useState('');
+  const [postalCode, setPostalCode] = useState('');
+  const [country, setCountry] = useState('');
   const [message, setMessage] = useState(null);
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
-  const userRegister = useSelector((state) => state.userRegister);
-  const { loading, error, userInfo } = userRegister;
+  const userDetails = useSelector((state) => state.userDetails)
+  const { loading, error, user } = userDetails
 
-  const redirect = location.search ? location.search.split("=")[1] : "/";
+  const userLogin = useSelector((state) => state.userLogin)
+  const { userInfo } = userLogin
+
+  const userUpdateProfile = useSelector((state) => state.userUpdateProfile)
+  const { success } = userUpdateProfile
 
   useEffect(() => {
-    if (userInfo) {
-      history.push(redirect);
+    if (!userInfo) {
+      history.push('/login')
+    } else {
+        if (!user || !user.nombre) {
+            dispatch(getUserDetails('profile'))
+        } else {
+            setAvatar(user.avatar)
+            setNombre(user.nombre)
+            setPrimApellido(user.primApellido)
+            setSegApellido(user.segApellido)
+            setGenero(user.genero)
+            setFecNac(user.fecNac)
+            setDni(user.dni)
+            setDireccion(user.direccion)
+            setCity(user.city)
+            setPostalCode(user.postalCode)
+            setCountry(user.country)
+            setEmail(user.email)
+        }
     }
-  }, [history, userInfo, redirect]);
+  }, [dispatch, history, userInfo, user])
 
   const submitHandler = (e) => {
     e.preventDefault()
     if(password !== confirmPassword) {
         setMessage('Las contraseñas no coinciden')
     } else {
-    dispatch(register(nombre, email, password, avatar, primApellido, segApellido, genero, fecNac, dni, direccion, city, postalCode, country ))
+    dispatch(updateUserProfile({ id: user._id, nombre, email, password, avatar, primApellido, segApellido, genero, fecNac, dni, direccion, city, postalCode, country }))
   }
 }
 
-  return (
-    <FormContainer>
-      <h1>Registrar</h1>
+  return <Row>
+      <Col md={3}>
+      <h2>Mi Perfil</h2>
       {message && <Message variant="danger">{message}</Message>}
       {error && <Message variant="danger">{error}</Message>}
+      {success && <Message variant="success">Perfil actualizado!</Message>}
       {loading && <Loader />}
       <Form onSubmit={submitHandler}>
 
@@ -196,20 +215,14 @@ const RegisterScreen = ({ location, history }) => {
         </Form.Group>
 
         <Button type="submit" variant="primary">
-          Registrarse
+          Actualizar perfil
         </Button>
       </Form>
-
-      <Row className="py-3">
-        <Col>
-          Ya estas registrado/a?{" "}
-          <Link to={redirect ? `/login?redirect=${redirect}` : "/login"}>
-            Iniciar sesión
-          </Link>
-        </Col>
-      </Row>
-    </FormContainer>
-  );
+      </Col>
+      <Col md={9}>
+          <h2>Mis retos</h2>
+      </Col>
+  </Row>
 };
 
-export default RegisterScreen;
+export default ProfileScreen

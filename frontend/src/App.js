@@ -7,6 +7,7 @@ import HomeScreen from './screens/HomeScreen';
 import RetoScreen from './screens/RetoScreen'
 import LoginScreen from './screens/LoginScreen'
 import RegisterScreen from './screens/RegisterScreen'
+import ProfileScreen from './screens/ProfileScreen'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route path='/reto/:id' component={RetoScreen}/>
             <Route path='/login' component={LoginScreen}/>
             <Route path='/register' component={RegisterScreen}/>
+            <Route path='/profile' component={ProfileScreen}/>
           </Container>
           
       </main>
