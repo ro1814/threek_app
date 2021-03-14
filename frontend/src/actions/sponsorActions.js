@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { SPONSOR_ADD_ITEM } from '../constants/sponsorConstants'
+import { SPONSOR_ADD_ITEM, VISITING_SAVE_SPONSOR } from '../constants/sponsorConstants'
 
 export const addToSponsor = (id) => async( dispatch, getState ) => {
     const { data } = await axios.get(`/api/retos/${id}`)
@@ -15,4 +15,13 @@ export const addToSponsor = (id) => async( dispatch, getState ) => {
     })
 
     localStorage.setItem('sponsorItems', JSON.stringify(getState().sponsor.sponsorItems))
+}
+
+export const saveVisitingSponsor = (data) => (dispatch) => {
+    dispatch({
+        type: VISITING_SAVE_SPONSOR,
+        payload: data,
+    })
+
+    localStorage.setItem('infoDonVisitante', JSON.stringify(data))
 }

@@ -18,10 +18,13 @@ const reducer = combineReducers({
 
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null
 
+const visitingSponsorFromStorage = localStorage.getItem('infoDonVisitante') ? JSON.parse(localStorage.getItem('infoDonVisitante')) : {}
+
 const sponsorItemsFromStorage = localStorage.getItem('sponsorItems') ? JSON.parse(localStorage.getItem('sponsorItems')) : []
 
 const initialState =  {
-    sponsor: { sponsorItems: sponsorItemsFromStorage},
+
+    sponsor: { sponsorItems: sponsorItemsFromStorage, infoDonVisitante: visitingSponsorFromStorage},
     userLogin: { userInfo: userInfoFromStorage}
  }
 

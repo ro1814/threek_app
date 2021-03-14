@@ -1,6 +1,6 @@
-import { SPONSOR_ADD_ITEM } from '../constants/sponsorConstants'
+import { SPONSOR_ADD_ITEM, VISITING_SAVE_SPONSOR } from '../constants/sponsorConstants'
 
-export const sponsorReducer = (state = { sponsorItems: [] }, action) => {
+export const sponsorReducer = (state = { sponsorItems: [], infoDonVisitante: {} }, action) => {
     switch(action.type) {
         case SPONSOR_ADD_ITEM:
             const item = action.payload
@@ -16,6 +16,12 @@ export const sponsorReducer = (state = { sponsorItems: [] }, action) => {
                     ...state,
                     sponsorItems: [...state.sponsorItems, item]
                 }
+            }
+
+        case VISITING_SAVE_SPONSOR:
+            return {
+                ...state,
+                infoDonVisitante: action.payload,
             }
         default:
             return state

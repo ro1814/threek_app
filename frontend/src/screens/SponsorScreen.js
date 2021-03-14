@@ -26,7 +26,7 @@ const SponsorScreen = ({ match, history }) => {
   }, [dispatch, retoId]);
    
   const checkOutHandler = () =>{
-      history.push('/redirect=donreto')
+      history.push('/sponsorinfo')
   }
   return (
     <Row>
