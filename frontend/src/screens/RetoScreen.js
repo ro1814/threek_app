@@ -16,8 +16,8 @@ const RetoScreen = ({ history, match }) => {
     dispatch(listRetosDetails(match.params.id))
   }, [dispatch, match]);
 
-  const checkoutHandler = () => {
-    history.push('/sponsor')
+  const addToCheckOutHandler = () => {
+    history.push(`/sponsor/${match.params.id}`)
   }
 
   return (
@@ -36,7 +36,7 @@ const RetoScreen = ({ history, match }) => {
              <ListGroup.Item>
                <h4>Título del reto: "{reto.titulo}"</h4>
                <h5>Objetivo de recaudación: €{reto.objetivoRec}</h5>
-               <Button type='button' className='btn-block' onClick={checkoutHandler}>
+               <Button type='button' className='btn-block' onClick={addToCheckOutHandler}>
                  Sponsorizar
                </Button>
                <p>Finaliza en: Faltan 3 días 4 horas </p>

@@ -3,6 +3,7 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { retoListReducer, retoDetailsReducer } from './reducers/retoReducers'
 import { userLogInReducer, userRegisterReducer, userDetailsReducer, userUpdateProfileReducer } from './reducers/userReducers' 
+import { sponsorReducer } from './reducers/sponsorReducers'
 
 const reducer = combineReducers({
     retoList: retoListReducer,
@@ -11,12 +12,16 @@ const reducer = combineReducers({
     userRegister: userRegisterReducer,
     userDetails: userDetailsReducer,
     userUpdateProfile: userUpdateProfileReducer,
+    sponsor: sponsorReducer
     
 })
 
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null
 
-const initialState =  { 
+const sponsorItemsFromStorage = localStorage.getItem('sponsorItems') ? JSON.parse(localStorage.getItem('sponsorItems')) : []
+
+const initialState =  {
+    sponsor: { sponsorItems: sponsorItemsFromStorage},
     userLogin: { userInfo: userInfoFromStorage}
  }
 
