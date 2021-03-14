@@ -36,7 +36,7 @@ const userSchema = mongoose.Schema(
         required: true
     },
     fecNac: {
-        type: Date,
+        type: String,
         required: true,
         trim: true
     },

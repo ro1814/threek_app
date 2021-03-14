@@ -20,10 +20,10 @@ const sponsorSchema = mongoose.Schema(
       },
     ],
     infoDonVisitante: {
-      nombre: { type: String, required: true },
-      apellido: { type: String, required: true },
+      nombre: { type: String },
+      apellido: { type: String},
       segApellido: { type: String },
-      email: { type: String, required: true },  
+      email: { type: String},  
     },
     paymentMethod: {
       type: String,

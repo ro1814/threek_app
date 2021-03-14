@@ -19,7 +19,7 @@ const Header = () => {
     const { userInfo } = userLogin
 
     const logoutHandler = () => {
-      dispatch(logout())
+      dispatch(logout('/'))
     }
 
   return (
@@ -28,10 +28,12 @@ const Header = () => {
         <Container>
           {userInfo ? (
               <NavDropdown title={userInfo.nombre} id='username'>
-                <LinkContainer to='/profile'>
+                <LinkContainer to='/profile' className="danger">
                   <NavDropdown.Item>Perfil</NavDropdown.Item>
                 </LinkContainer>
+                <LinkContainer to='/'>
                 <NavDropdown.Item onClick={logoutHandler}>Cerrar sesión</NavDropdown.Item>
+                </LinkContainer>
               </NavDropdown>
           ) : <LinkContainer to='/login'>
           <Nav.Link><i className="fas fa-user"></i></Nav.Link>

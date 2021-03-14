@@ -17,7 +17,7 @@ const RetoScreen = ({ history, match }) => {
   }, [dispatch, match]);
 
   const checkoutHandler = () => {
-    history.push('/login?redirect=sponsor')
+    history.push('/sponsor')
   }
 
   return (
