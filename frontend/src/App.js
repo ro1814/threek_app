@@ -10,6 +10,9 @@ import RegisterScreen from './screens/RegisterScreen'
 import ProfileScreen from './screens/ProfileScreen'
 import SponsorScreen from './screens/SponsorScreen'
 import SponsorInfoScreen from './screens/SponsorInfoScreen'
+import PaymentScreen from './screens/PaymentScreen'
+import PlaceOrderScreen from './screens/PlaceOrderScreen'
+
 
 const App = () => {
   return (
@@ -24,6 +27,8 @@ const App = () => {
             <Route path='/register' component={RegisterScreen}/>
             <Route path='/profile' component={ProfileScreen}/>
             <Route path='/sponsorinfo' component={SponsorInfoScreen}/>
+            <Route path='/payment' component={PaymentScreen}/>
+            <Route path='/placeorder' component={PlaceOrderScreen}/>
           </Container>
           
       </main>

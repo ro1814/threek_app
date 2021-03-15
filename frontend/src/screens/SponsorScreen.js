@@ -10,7 +10,8 @@ import {
   Card,
 } from "react-bootstrap";
 import Message from "../components/Message";
-import { addToSponsor } from "../actions/sponsorActions";
+import { addToSponsor } from "../actions/sponsorActions"
+import CheckoutSteps from '../components/CheckoutSteps'
 
 const SponsorScreen = ({ match, history }) => {
   const retoId = match.params.id;
@@ -29,9 +30,11 @@ const SponsorScreen = ({ match, history }) => {
       history.push('/sponsorinfo')
   }
   const checkOutHandler = () =>{
-    history.push('/sponsorpayment')
+    history.push('/payment')
 }
   return (
+    <>
+    <CheckoutSteps step1/>
     <Row>
       <Col md={8}>
         <h1>Sponsoriza el reto</h1>
@@ -73,6 +76,7 @@ const SponsorScreen = ({ match, history }) => {
       </Col>
 
     </Row>
+    </>
   );
 };
 

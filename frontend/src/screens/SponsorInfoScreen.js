@@ -3,6 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../components/FormContainer";
 import { saveVisitingSponsor } from '../actions/sponsorActions'
+import CheckoutSteps from '../components/CheckoutSteps'
 
 
 const SponsorInfoScreen = ({ history, }) => {
@@ -20,13 +21,13 @@ const SponsorInfoScreen = ({ history, }) => {
         e.preventDefault()
         dispatch(saveVisitingSponsor({nombre, apellido, segApellido,
         email}))
-            history.push('/sponsorpayment')
+            history.push('/payment')
     }
 
     return <FormContainer>
         
         
-        
+        <CheckoutSteps step1 step2/>
         <h3>Información personal de Visitante</h3>
         <Form onSubmit={submitHandler}>
 

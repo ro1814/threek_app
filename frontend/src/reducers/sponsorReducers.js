@@ -1,4 +1,4 @@
-import { SPONSOR_ADD_ITEM, VISITING_SAVE_SPONSOR } from '../constants/sponsorConstants'
+import { SPONSOR_ADD_ITEM, VISITING_SAVE_SPONSOR, SPONSOR_SAVE_PAYMENT_METHOD } from '../constants/sponsorConstants'
 
 export const sponsorReducer = (state = { sponsorItems: [], infoDonVisitante: {} }, action) => {
     switch(action.type) {
@@ -22,6 +22,11 @@ export const sponsorReducer = (state = { sponsorItems: [], infoDonVisitante: {} 
             return {
                 ...state,
                 infoDonVisitante: action.payload,
+            }
+            case SPONSOR_SAVE_PAYMENT_METHOD:
+            return {
+                ...state,
+                paymentMethod: action.payload,
             }
         default:
             return state

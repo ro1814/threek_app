@@ -27,7 +27,7 @@ const retoSchema = mongoose.Schema({
         required: true
     },
     objetivoRec: {
-        type: Number,
+        type: String,
         required: true
     },
     imagen: { 

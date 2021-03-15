@@ -38,7 +38,7 @@ const sponsorSchema = mongoose.Schema(
     
     totalPrice: {
       type: Number,
-      required: true,
+      required: false,
       default: 0.0,
     },
     isPaid: {
