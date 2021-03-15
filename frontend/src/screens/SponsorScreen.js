@@ -25,9 +25,12 @@ const SponsorScreen = ({ match, history }) => {
     }
   }, [dispatch, retoId]);
    
-  const checkOutHandler = () =>{
+  const checkOutHandlerVisitor = () =>{
       history.push('/sponsorinfo')
   }
+  const checkOutHandler = () =>{
+    history.push('/sponsorpayment')
+}
   return (
     <Row>
       <Col md={8}>
@@ -62,6 +65,9 @@ const SponsorScreen = ({ match, history }) => {
           <Card>
               <ListGroup variant='flush'>
                     <Button type="button" className='btn-block' onClick={checkOutHandler}>Continuar</Button>
+              </ListGroup>
+              <ListGroup variant='flush'>
+                    <Button type="button" className='btn-block' onClick={checkOutHandlerVisitor}>Continuar como Visitante</Button>
               </ListGroup>
           </Card>
       </Col>

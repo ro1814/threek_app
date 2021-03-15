@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../components/FormContainer";
-import { Link } from "react-router-dom";
 import { saveVisitingSponsor } from '../actions/sponsorActions'
+
 
 const SponsorInfoScreen = ({ history, }) => {
     const sponsor = useSelector(state => state.sponsor)
@@ -25,8 +25,8 @@ const SponsorInfoScreen = ({ history, }) => {
 
     return <FormContainer>
         
-        <h2>Si ya ha iniciado sesión continúe <Link to='/'>Aquí</Link></h2>
-        <h2>Si aún no ha iniciado sesión. puslse <Link to='/login'>Aquí</Link></h2>
+        
+        
         <h3>Información personal de Visitante</h3>
         <Form onSubmit={submitHandler}>
 
