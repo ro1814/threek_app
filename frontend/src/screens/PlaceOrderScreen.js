@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button, Row, Col, ListGroup, Image, Card, Modal } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import Message from "../components/Message";
 import CheckoutSteps from '../components/CheckoutSteps'
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const PlaceOrderScreen = (history) => {
     const sponsor = useSelector((state) => state.sponsor)
@@ -12,19 +12,16 @@ const PlaceOrderScreen = (history) => {
 
     
 
-    const handleClose = () => {
-      
-        
-    }
+    const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     //Calculate everything here
     sponsor.itemsPrecio = sponsor.sponsorItems.reduce(
         (acc, item)=> acc + item.precio * item.qty, 0 )
 
-    const placeOrderHandler = () =>{
-
-    }
+    // const placeOrderHandler = () =>{
+        //Aquí va la lógica para hacer el update del reto en recaudado
+    // }
 
     return (
         <>
@@ -49,7 +46,7 @@ const PlaceOrderScreen = (history) => {
                                                     <Image src={item.imagen} alt={item.titulo} fluid rounded></Image>
                                                 </Col>
                                                 <Col>
-                                                <Link to = {`/retos/{item.reto}`}>
+                                                <Link to = {`/retos/${item.reto}`}>
                                                     {item.titulo}
                                                 </Link>
                                                 </Col>
@@ -71,10 +68,6 @@ const PlaceOrderScreen = (history) => {
                                  <h2>Resúmen de esponsor</h2>
                              </ListGroup.Item>
                              <ListGroup.Item>
-                                 <Row>
-                                     <Col>Reto a colaborar:</Col>
-                                     <Col>€{sponsor.cantidadPersonalizada}</Col>
-                                 </Row>
                                  <Row>
                                      <Col>Total:</Col>
                                      <Col>€{sponsor.cantidadPersonalizada}</Col>

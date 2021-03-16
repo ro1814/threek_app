@@ -49,7 +49,7 @@ const SponsorScreen = ({ match, history }) => {
               <ListGroup.Item key={item.reto}>
                 <Row>
                   <Col md={2}>
-                    <Image src={item.imagen} alt={item.nombre} fluid rounded></Image>
+                    <Image src={item.imagen} alt={item.titulo} fluid rounded></Image>
                   </Col>
                   <Col md={3}>
                       <Link to={`/reto/${item.reto}`}>Titulo: {item.titulo}</Link>

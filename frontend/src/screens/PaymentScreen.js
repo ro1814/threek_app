@@ -10,7 +10,7 @@ const PaymentScreen = ({ history }) => {
   const { infoDonVisitante } = sponsor;
   if (infoDonVisitante) {}
 
-  const [paymentMethod, setPaymentMethod] = useState("PayPal");
+  const [paymentMethod, setPaymentMethod] = useState("Tarjeta de débito/crédito");
   const [ cantidadPersonalizada, setCantidadPersonalizada ] = useState('')
 
   const dispatch = useDispatch();
@@ -60,11 +60,12 @@ const PaymentScreen = ({ history }) => {
         
         <Col>
           <Form.Check
+            checked
             type="radio"
-            label="Credit Card"
+            label="Tarjeta de débito/crédito"
             id="PayPal"
             name="paymentMethod"
-            value="CreditCard"
+            value="Tarjeta de débito/crédito"
             onChange={(e) => setPaymentMethod(e.target.value)}
           ></Form.Check>
 

@@ -6,7 +6,12 @@ const retoSchema = mongoose.Schema({
         required: true,
         ref: 'User'
     },
-    deporte: {
+    mote: {
+        type: mongoose.Schema.Types.Array,
+        required: true,
+        ref:'User'
+    },  
+        deporte: {
         type: String,
         required: true
     },
