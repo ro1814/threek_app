@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Form, Button, Col } from "react-bootstrap";
+import { Form, Button, Col, Row, FormControl } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../components/FormContainer";
-import { savePaymentMethod } from "../actions/sponsorActions";
+import { savePaymentMethod, saveCantidadPersonalizada } from "../actions/sponsorActions";
 import CheckoutSteps from "../components/CheckoutSteps";
 
 const PaymentScreen = ({ history }) => {
@@ -10,32 +10,61 @@ const PaymentScreen = ({ history }) => {
   const { infoDonVisitante } = sponsor;
   if (infoDonVisitante) {}
 
-  const [paymentMethod, setPaymentMethod] = useState("Paypal");
+  const [paymentMethod, setPaymentMethod] = useState("PayPal");
+  const [ cantidadPersonalizada, setCantidadPersonalizada ] = useState('')
 
   const dispatch = useDispatch();
 
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(savePaymentMethod(paymentMethod));
+    dispatch(saveCantidadPersonalizada(cantidadPersonalizada));
     history.push("/placeorder");
   };
 
   return (
     <FormContainer>
-      <CheckoutSteps step1 step2 step3 />
+      <CheckoutSteps step1 step3 />
       <h3>Información de pago</h3>
       <Form onSubmit={submitHandler}>
         <Form.Group>
+          <Form.Label>Elige una cantidad</Form.Label>
+          <Row>
+          <Form.Check md={4}
+          type="radio"
+          inline label="€1">
+          </Form.Check>
+          <Form.Check
+          type="radio"
+          inline label="€2">
+          </Form.Check>
+          <Form.Check
+          type="radio"
+          inline label="€5">
+          </Form.Check>
+          <Form.Check
+          type="radio"
+          inline label="€10">
+          </Form.Check>
+          </Row>
+          <Row>
+          <Form.Label>Cantidad personalizada €</Form.Label>
+          <FormControl
+          label="Cantidad que desees donar €"
+          name="cantidadPersonalizada"
+          id="cantidadPersonalizada"
+          onChange={(e) => setCantidadPersonalizada(e.target.value)}
+          />
+          </Row>
           <Form.Label as="legend"> Seleccione método de pago</Form.Label>
         
         <Col>
           <Form.Check
             type="radio"
-            label="PayPal or Credit Card"
+            label="Credit Card"
             id="PayPal"
             name="paymentMethod"
-            value="PayPal"
-            checked
+            value="CreditCard"
             onChange={(e) => setPaymentMethod(e.target.value)}
           ></Form.Check>
 

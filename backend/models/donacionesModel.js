@@ -27,7 +27,11 @@ const sponsorSchema = mongoose.Schema(
     },
     paymentMethod: {
       type: String,
-      required: true,
+      required: true
+    },
+    cantidadPersonalizada: {
+      type: String,
+      required: true
     },
     paymentResult: {
       id: { type: String },

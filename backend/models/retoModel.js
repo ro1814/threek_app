@@ -27,7 +27,11 @@ const retoSchema = mongoose.Schema({
         required: true
     },
     objetivoRec: {
-        type: String,
+        type: Number,
+        required: true
+    },
+    recaudado: {
+        type: Number,
         required: true
     },
     imagen: { 
@@ -49,4 +53,4 @@ const retoSchema = mongoose.Schema({
 
 const Reto = mongoose.model('Reto', retoSchema)
 
-export default Reto
+export default Reto 

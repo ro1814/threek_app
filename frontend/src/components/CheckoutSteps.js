@@ -8,20 +8,20 @@ const CheckoutSteps = ({ step1, step2, step3, step4 }) => {
             <Nav.Item>
                 {step1 ? (
                     <LinkContainer to='/sponsor/:id'>
-                        <Nav.Link>Importe</Nav.Link>
+                        <Nav.Link>Reto</Nav.Link>
                     </LinkContainer>
-                ) : <Nav.Link disabled> Importe
+                ) : <Nav.Link disabled> Reto
                     </Nav.Link>}
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
                 {step2 ? (
                     <LinkContainer to='/sponsorinfo'>
                         <Nav.Link>Registro</Nav.Link>
                     </LinkContainer>
                 ) : <Nav.Link disabled> Registo
                     </Nav.Link>}
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
                 {step3 ? (

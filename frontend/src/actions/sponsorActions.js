@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { SPONSOR_ADD_ITEM, VISITING_SAVE_SPONSOR, SPONSOR_SAVE_PAYMENT_METHOD } from '../constants/sponsorConstants'
+import { SPONSOR_ADD_ITEM, VISITING_SAVE_SPONSOR, SPONSOR_SAVE_PAYMENT_METHOD, SPONSOR_CANTIDAD_PERSONALIZADA } from '../constants/sponsorConstants'
 
 export const addToSponsor = (id) => async( dispatch, getState ) => {
     const { data } = await axios.get(`/api/retos/${id}`)
@@ -33,4 +33,11 @@ export const savePaymentMethod = (data) => (dispatch) => {
     })
 
     localStorage.setItem('paymentMethod', JSON.stringify(data))
+}
+
+export const saveCantidadPersonalizada = (data) => (dispatch) => {
+    dispatch({
+        type: SPONSOR_CANTIDAD_PERSONALIZADA,
+        payload: data,
+    })
 }

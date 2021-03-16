@@ -1,12 +1,22 @@
 import React, { useState } from "react";
-import { Button, Row, Col, ListGroup, Image, Card } from "react-bootstrap";
+import { Button, Row, Col, ListGroup, Image, Card, Modal } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
 import CheckoutSteps from '../components/CheckoutSteps'
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
-const PlaceOrderScreen = () => {
+const PlaceOrderScreen = (history) => {
     const sponsor = useSelector((state) => state.sponsor)
+
+    const [show, setShow] = useState(false);
+
+    
+
+    const handleClose = () => {
+      
+        
+    }
+    const handleShow = () => setShow(true);
 
     //Calculate everything here
     sponsor.itemsPrecio = sponsor.sponsorItems.reduce(
@@ -18,7 +28,7 @@ const PlaceOrderScreen = () => {
 
     return (
         <>
-             <CheckoutSteps step1 step2 step3 step4/>
+             <CheckoutSteps step1 step3 step4/>
              <Row>
                  <Col md={8}>
                      <ListGroup variant='flush'>
@@ -63,16 +73,28 @@ const PlaceOrderScreen = () => {
                              <ListGroup.Item>
                                  <Row>
                                      <Col>Reto a colaborar:</Col>
-                                     <Col>€{sponsor.itemsPrecio}</Col>
+                                     <Col>€{sponsor.cantidadPersonalizada}</Col>
                                  </Row>
                                  <Row>
                                      <Col>Total:</Col>
-                                     <Col>€{sponsor.totalPrecio}</Col>
+                                     <Col>€{sponsor.cantidadPersonalizada}</Col>
                                  </Row>
                              </ListGroup.Item>
                              <ListGroup.Item>
-                                 <Button type='button' className='btn-block' onClick={placeOrderHandler}>Hacer el esponsor</Button>
-                             </ListGroup.Item>
+                                 <Button type='button' className='btn-block' onClick={handleShow}>Hacer el esponsor</Button>
+                                 
+                                 <Modal show={show} onHide={handleClose}>
+                                    <Modal.Header closeButton>
+                                    <Modal.Title>¡Confirmación!</Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>¡Muchas gracias por donar €{sponsor.cantidadPersonalizada} a la fundación!</Modal.Body>
+                                    <Modal.Body>¡Comparte tu donación en las redes sociales!</Modal.Body>
+                                    <Modal.Footer>
+                                    <Button variant="primary" onClick={handleClose}><Link to='/' className='visitedLink'>Ir a página de inicio</Link>
+                                    </Button>
+                                    </Modal.Footer>
+                                </Modal>
+                                </ListGroup.Item>
                          </ListGroup>
                      </Card>
                  </Col>
