@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import {RETO_LIST_REQUEST, RETO_LIST_SUCCESS, RETO_LIST_FAIL, RETO_DETAILS_REQUEST, RETO_DETAILS_SUCCESS, RETO_DETAILS_FAIL} from '../constants/retoConstants'
+import {RETO_LIST_REQUEST, RETO_LIST_SUCCESS, RETO_LIST_FAIL, RETO_DETAILS_REQUEST, RETO_DETAILS_SUCCESS, RETO_DETAILS_FAIL, RETO_CREATE_REQUEST, RETO_CREATE_SUCCESS, RETO_CREATE_FAIL, RETO_UPDATE_FAIL, RETO_UPDATE_SUCCESS, RETO_UPDATE_REQUEST} from '../constants/retoConstants'
 
 export const listRetos = () => async (dispatch) => {
     try {
@@ -37,3 +37,84 @@ export const listRetosDetails = (id) => async (dispatch) => {
         })
     }
 }
+
+export const createReto = () => async (dispatch, getState) => {
+    try {
+      dispatch({
+        type: RETO_CREATE_REQUEST,
+      })
+  
+      const {
+        userLogin: { userInfo },
+      } = getState()
+  
+      const config = {
+        headers: {
+          Authorization: `Bearer ${userInfo.token}`,
+        },
+      }
+  
+      const { data } = await axios.post(`/api/retos`, {}, config)
+  
+      dispatch({
+        type: RETO_CREATE_SUCCESS,
+        payload: data,
+      })
+    } catch (error) {
+      const message =
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message
+      if (message === 'Not authorized, token failed')
+      {
+        dispatch()
+      }
+      dispatch({
+        type: RETO_CREATE_FAIL,
+        payload: message,
+      })
+    }
+  }
+  
+  export const updateProduct = (reto) => async (dispatch, getState) => {
+    try {
+      dispatch({
+        type: RETO_UPDATE_REQUEST,
+      })
+  
+      const {
+        userLogin: { userInfo },
+      } = getState()
+  
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${userInfo.token}`,
+        },
+      }
+  
+      const { data } = await axios.put(
+        `/api/retos/${reto._id}`,
+        reto,
+        config
+      )
+  
+      dispatch({
+        type: RETO_UPDATE_SUCCESS,
+        payload: data,
+      })
+      dispatch({ type: RETO_DETAILS_SUCCESS, payload: data })
+    } catch (error) {
+      const message =
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message
+      if (message === 'Not authorized, token failed') {
+        dispatch()
+      }
+      dispatch({
+        type: RETO_UPDATE_FAIL,
+        payload: message,
+      })
+    }
+  }

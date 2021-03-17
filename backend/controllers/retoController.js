@@ -61,7 +61,7 @@ const createReto = asyncHandler(async (req, res) =>{
 
 const updateReto = asyncHandler(async (req, res) => {
     
-   const  {recaudado}  = req.body
+   const  { recaudado }  = req.body
     const reto = await Reto.findById(req.params.id)
 
     if(reto){

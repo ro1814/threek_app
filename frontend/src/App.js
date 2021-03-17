@@ -12,6 +12,7 @@ import SponsorScreen from './screens/SponsorScreen'
 import SponsorInfoScreen from './screens/SponsorInfoScreen'
 import PaymentScreen from './screens/PaymentScreen'
 import PlaceOrderScreen from './screens/PlaceOrderScreen'
+import TipoScreen from './screens/createRetoScreens/TipoScreen'
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
             <Route path='/sponsorinfo' component={SponsorInfoScreen}/>
             <Route path='/payment' component={PaymentScreen}/>
             <Route path='/placeorder' component={PlaceOrderScreen}/>
+            <Route path='/crearreto' component={TipoScreen}/>
           </Container>
           
       </main>

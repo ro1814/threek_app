@@ -6,12 +6,12 @@ import { saveVisitingSponsor } from '../actions/sponsorActions'
 import CheckoutSteps from '../components/CheckoutSteps'
 
 
-const SponsorInfoScreen = ({ history, }) => {
+const SponsorInfoScreen = ({ history }) => {
     const sponsor = useSelector(state => state.sponsor)
     const { infoDonVisitante } = sponsor
 
     const [ nombre, setNombre] = useState(infoDonVisitante.nombre)
-    const [ apellido, setApellido ] =useState(infoDonVisitante.apellido)
+    const [ apellido, setApellido ] = useState(infoDonVisitante.apellido)
     const [ segApellido, setSegApellido] = useState(infoDonVisitante.segApellido)
     const [ email, setEmail ] = useState(infoDonVisitante.email)
 

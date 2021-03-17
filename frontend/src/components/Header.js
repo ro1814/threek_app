@@ -26,7 +26,7 @@ const Header = () => {
     <header>
       <Navbar bg="light" expand="lg">
         <Container>
-          {userInfo ? (
+          {/* {userInfo ? (
               <NavDropdown title={userInfo.nombre} id='username'>
                 <LinkContainer to='/profile' className="danger">
                   <NavDropdown.Item>Perfil</NavDropdown.Item>
@@ -37,7 +37,7 @@ const Header = () => {
               </NavDropdown>
           ) : <LinkContainer to='/login'>
           <Nav.Link><i className="fas fa-user"></i></Nav.Link>
-          </LinkContainer>}
+          </LinkContainer>} */}
           
           <LinkContainer to='/'>
             <Navbar.Brand>ThreekApp</Navbar.Brand>
@@ -47,6 +47,18 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
+          {userInfo ? (
+              <NavDropdown title={userInfo.nombre} id='username'>
+                <LinkContainer to='/profile' className="danger">
+                  <NavDropdown.Item>Perfil</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to='/'>
+                <NavDropdown.Item onClick={logoutHandler}>Cerrar sesión</NavDropdown.Item>
+                </LinkContainer>
+              </NavDropdown>
+          ) : <LinkContainer to='/login'>
+          <Nav.Link>Iniciar sesión</Nav.Link>
+          </LinkContainer>}
             <Nav.Link href="#Retos">Retos</Nav.Link>
             <Nav.Link href="#RankingRetadores">Ranking retadores</Nav.Link>
             <Nav.Link href="#aCausas">Causas</Nav.Link>

@@ -26,9 +26,9 @@ const SponsorScreen = ({ match, history }) => {
     }
   }, [dispatch, retoId]);
    
-  const checkOutHandlerVisitor = () =>{
-      history.push('/sponsorinfo')
-  }
+  // const checkOutHandlerVisitor = () =>{
+  //     history.push('/sponsorinfo')
+  // }
   const checkOutHandler = () =>{
     history.push('/payment')
 }
@@ -69,9 +69,9 @@ const SponsorScreen = ({ match, history }) => {
               <ListGroup variant='flush'>
                     <Button type="button" className='btn-block' onClick={checkOutHandler}>Continuar</Button>
               </ListGroup>
-              <ListGroup variant='flush'>
+              {/* <ListGroup variant='flush'>
                     <Button type="button" className='btn-block' onClick={checkOutHandlerVisitor}>Continuar como Visitante</Button>
-              </ListGroup>
+              </ListGroup> */}
           </Card>
       </Col>
 

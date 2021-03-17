@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, Row, Col, ListGroup, Button} from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 
 const CrearReto = () => {
     return<>
@@ -8,7 +9,7 @@ const CrearReto = () => {
         <Card>
         <ListGroup variant="flush">
         
-        <Button type='submit' variant='primary'>Crear reto</Button>
+        <LinkContainer to='/crearreto'><Button type='submit' variant='primary'>Crear reto</Button></LinkContainer>
         
         </ListGroup>
         </Card>

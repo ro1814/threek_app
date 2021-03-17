@@ -1,4 +1,4 @@
-import { RETO_LIST_REQUEST, RETO_LIST_SUCCESS, RETO_LIST_FAIL, RETO_DETAILS_REQUEST, RETO_DETAILS_SUCCESS, RETO_DETAILS_FAIL } from '../constants/retoConstants'
+import { RETO_LIST_REQUEST, RETO_LIST_SUCCESS, RETO_LIST_FAIL, RETO_DETAILS_REQUEST, RETO_DETAILS_SUCCESS, RETO_DETAILS_FAIL, RETO_CREATE_REQUEST, RETO_CREATE_SUCCESS, RETO_CREATE_FAIL, RETO_CREATE_RESET, RETO_UPDATE_REQUEST, RETO_UPDATE_SUCCESS, RETO_UPDATE_FAIL, RETO_UPDATE_RESET } from '../constants/retoConstants'
 
 export const retoListReducer = ( state = { retos: [] }, action) => {
     switch( action.type ) {
@@ -25,4 +25,34 @@ export const retoDetailsReducer = ( state = { reto: {} } , action) => {
             return state
     }
 }
+
+export const retoCreateReducer = (state = {}, action) => {
+    switch (action.type) {
+      case RETO_CREATE_REQUEST:
+        return { loading: true }
+      case RETO_CREATE_SUCCESS:
+        return { loading: false, success: true, reto: action.payload }
+      case RETO_CREATE_FAIL:
+        return { loading: false, error: action.payload }
+      case RETO_CREATE_RESET:
+        return {}
+      default:
+        return state
+    }
+  }
+  
+  export const retoUpdateReducer = (state = { reto: {} }, action) => {
+    switch (action.type) {
+      case RETO_UPDATE_REQUEST:
+        return { loading: true }
+      case RETO_UPDATE_SUCCESS:
+        return { loading: false, success: true, reto: action.payload }
+      case RETO_UPDATE_FAIL:
+        return { loading: false, error: action.payload }
+      case RETO_UPDATE_RESET:
+        return { reto: {} }
+      default:
+        return state
+    }
+  }
 

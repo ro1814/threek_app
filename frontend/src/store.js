@@ -1,7 +1,8 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import { retoListReducer, retoDetailsReducer } from './reducers/retoReducers'
+import { retoListReducer, retoDetailsReducer, retoCreateReducer,
+    retoUpdateReducer, } from './reducers/retoReducers'
 import { userLogInReducer, userRegisterReducer, userDetailsReducer, userUpdateProfileReducer } from './reducers/userReducers' 
 import { sponsorReducer } from './reducers/sponsorReducers'
 
@@ -12,11 +13,13 @@ const reducer = combineReducers({
     userRegister: userRegisterReducer,
     userDetails: userDetailsReducer,
     userUpdateProfile: userUpdateProfileReducer,
-    sponsor: sponsorReducer
-    
+    sponsor: sponsorReducer,
+    retoCreate: retoCreateReducer,
+    retoUpdate: retoUpdateReducer,   
 })
 
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null
+
 
 const visitingSponsorFromStorage = localStorage.getItem('infoDonVisitante') ? JSON.parse(localStorage.getItem('infoDonVisitante')) : {}
 

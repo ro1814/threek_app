@@ -40,4 +40,5 @@ export const saveCantidadPersonalizada = (data) => (dispatch) => {
         type: SPONSOR_CANTIDAD_PERSONALIZADA,
         payload: data,
     })
+    localStorage.setItem('cantidadPersonalizada', JSON.stringify(data))
 }
