@@ -3,7 +3,7 @@ import { Button, Row, Col, ListGroup, Image, Card, Modal } from "react-bootstrap
 import { useSelector } from "react-redux";
 import Message from "../components/Message";
 import CheckoutSteps from '../components/CheckoutSteps'
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 const PlaceOrderScreen = (history) => {
     const sponsor = useSelector((state) => state.sponsor)

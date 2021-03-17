@@ -1,10 +1,10 @@
 import express from 'express'
 const router = express.Router()
-import { getRetoById, getRetos } from '../controllers/retoController.js'
+import { getRetoById, getRetos, createReto, updateReto } from '../controllers/retoController.js'
 
 
-router.route('/').get(getRetos)
-router.route('/:id').get(getRetoById)
+router.route('/').get(getRetos).post(createReto)
+router.route('/:id').get(getRetoById).put(updateReto)
 
 
 export default router

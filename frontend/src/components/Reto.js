@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 const Reto = ({ reto }) => {
 
-    const userLogin = useSelector( state => state.userLogin)
-    const { userInfo } = userLogin
+    // const userLogin = useSelector( state => state.userLogin)
+    // const { userInfo } = userLogin
 
     return (
         <Card className='my-3 p-3 rounded'>

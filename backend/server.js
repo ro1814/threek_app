@@ -6,6 +6,7 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 
 import retoRoutes from './routes/retoRoutes.js'
 import userRoutes from './routes/userRoutes.js'
+import bodyParser from 'body-parser'
 
 
 dotenv.config()
@@ -16,6 +17,9 @@ const app = express()
 
 //Allows us to accept json data in the body
 app.use(express.json())
+app.use(bodyParser.json());
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.get('/', (req, res) => {

@@ -8,7 +8,7 @@ import {
   Image,
   Button,
   Card,
-} from "react-bootstrap";
+} from "react-bootstrap"
 import Message from "../components/Message";
 import { addToSponsor } from "../actions/sponsorActions"
 import CheckoutSteps from '../components/CheckoutSteps'

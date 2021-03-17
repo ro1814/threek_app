@@ -1,33 +1,39 @@
 const retos = [
-    {
+    {   
+        creador: 'Ejemplo',
         deporte: 'Running',
         causa: 'investigación',
         titulo : 'Correr para ayduar',
         desc: 'Quiero correr de Madrid a Toledo. Todo el dinero que se recaude será destinado a la investigación para vencer la ELA',
         fechaInicio: '01-01-2021',
         objetivoRec: 150,
+        recaudado: 0,
         imagen: '/images/runningMadrid.webp',
         videoURL: 'https://youtu.be/AMX602ZyaXI',
         socialMedia: '@ejemplo',
     },
-    {
+    {   
+        creador: 'Ejemplo',
         deporte: 'Running',
         causa: 'investigación',
         titulo : 'Correr para ayduar',
         desc: 'Quiero correr de Madrid a Toledo. Todo el dinero que se recaude será destinado a la investigación para vencer la ELA',
         fechaInicio: '01-01-2021',
         objetivoRec: 150,
+        recaudado: 0,
         imagen: '/images/runningMadrid.webp',
         videoURL: 'https://youtu.be/AMX602ZyaXI',
         socialMedia: '@ejemplo',
     },
-    {
+    {   
+        creador: 'Ejemplo',
         deporte: 'Running',
         causa: 'investigación',
         titulo : 'Correr para ayduar',
         desc: 'Quiero correr de Madrid a Toledo. Todo el dinero que se recaude será destinado a la investigación para vencer la ELA',
         fechaInicio: '01-01-2021',
         objetivoRec: 150,
+        recaudado: 0,
         imagen: '/images/runningMadrid.webp',
         videoURL: 'https://youtu.be/AMX602ZyaXI',
         socialMedia: '@ejemplo',

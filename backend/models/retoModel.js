@@ -1,61 +1,59 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
-const retoSchema = mongoose.Schema({
+const retoSchema = mongoose.Schema(
+  {
     user: {
-        type: mongoose.Schema.Types.ObjectId,
-        required: true,
-        ref: 'User'
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User'
     },
-    mote: {
-        type: mongoose.Schema.Types.Array,
-        required: true,
-        ref:'User'
-    },  
-        deporte: {
-        type: String,
-        required: true
+    creador: {
+      type: String,
+      required: true,
+    },
+    deporte: {
+      type: String,
+      required: true,
     },
     causa: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     },
     titulo: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     },
     desc: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     },
     fechaInicio: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     },
     objetivoRec: {
-        type: Number,
-        required: true
+      type: Number,
+      required: true,
     },
     recaudado: {
-        type: Number,
-        required: true
+      type: Number,
     },
-    imagen: { 
-        type: String,
-        required: true
+    imagen: {
+      type: String,
+      required: true,
     },
     videoURL: {
-        type: String,
+      type: String,
     },
-    socialMedia:{
-        twitter: String,
-        facebook: String,
-        instagram: String,
+    socialMedia: {
+      type: String,
 
-    }
-}, {
-    timestamp: true
-})
+    },
+  },
+  {
+    timestamp: true,
+  }
+);
 
-const Reto = mongoose.model('Reto', retoSchema)
+const Reto = mongoose.model('Reto', retoSchema);
 
-export default Reto 
+export default Reto
