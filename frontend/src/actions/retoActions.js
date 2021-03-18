@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import {RETO_LIST_REQUEST, RETO_LIST_SUCCESS, RETO_LIST_FAIL, RETO_DETAILS_REQUEST, RETO_DETAILS_SUCCESS, RETO_DETAILS_FAIL, RETO_CREATE_REQUEST, RETO_CREATE_SUCCESS, RETO_CREATE_FAIL, RETO_UPDATE_FAIL, RETO_UPDATE_SUCCESS, RETO_UPDATE_REQUEST} from '../constants/retoConstants'
+import {RETO_LIST_REQUEST, RETO_LIST_SUCCESS, RETO_LIST_FAIL, RETO_DETAILS_REQUEST, RETO_DETAILS_SUCCESS, RETO_DETAILS_FAIL, RETO_CREATE_REQUEST, RETO_CREATE_SUCCESS, RETO_CREATE_FAIL, RETO_UPDATE_FAIL, RETO_UPDATE_SUCCESS, RETO_UPDATE_REQUEST, RETO_SAVE_CAUSA, RETO_SAVE_DEPORTE, RETO_SAVE_CREAR_RETO, RETO_SAVE_IMAGENES} from '../constants/retoConstants'  
 
 export const listRetos = () => async (dispatch) => {
     try {
@@ -118,3 +118,12 @@ export const createReto = () => async (dispatch, getState) => {
       })
     }
   }
+
+  export const saveDeporteReto = (data) => (dispatch) => {
+    dispatch({
+        type: RETO_SAVE_DEPORTE,
+        payload: data
+    })
+
+    localStorage.setItem('selecDeporte', JSON.stringify(data))
+} 

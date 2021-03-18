@@ -18,7 +18,7 @@ export const sponsorReducer = (state = { sponsorItems: [], infoDonVisitante: {} 
                 }
             }
 
-        case VISITING_SAVE_SPONSOR:
+        case VISITING_SAVE_SPONSOR: 
             return {
                 ...state,
                 infoDonVisitante: action.payload,
@@ -36,4 +36,4 @@ export const sponsorReducer = (state = { sponsorItems: [], infoDonVisitante: {} 
         default:
             return state
     }
-}
+} 

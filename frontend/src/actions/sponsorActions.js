@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios' 
 import { SPONSOR_ADD_ITEM, VISITING_SAVE_SPONSOR, SPONSOR_SAVE_PAYMENT_METHOD, SPONSOR_CANTIDAD_PERSONALIZADA } from '../constants/sponsorConstants'
 
 export const addToSponsor = (id) => async( dispatch, getState ) => {
@@ -41,4 +41,4 @@ export const saveCantidadPersonalizada = (data) => (dispatch) => {
         payload: data,
     })
     localStorage.setItem('cantidadPersonalizada', JSON.stringify(data))
-}
+}   

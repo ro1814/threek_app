@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose"
 
 const retoSchema = mongoose.Schema(
   {
@@ -10,9 +10,12 @@ const retoSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    deporte: {
-      type: String,
-      required: true,
+    selecDeporte: { 
+      ciclismo: {type: String},
+      running: {type: String},
+      natacion: {type: String},
+      senderismo: {type: String},
+      escalada: {type: String}
     },
     causa: {
       type: String,

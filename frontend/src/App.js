@@ -13,6 +13,7 @@ import SponsorInfoScreen from './screens/SponsorInfoScreen'
 import PaymentScreen from './screens/PaymentScreen'
 import PlaceOrderScreen from './screens/PlaceOrderScreen'
 import TipoScreen from './screens/createRetoScreens/TipoScreen'
+import CausaScreen from './screens/createRetoScreens/CausaScreen'
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
             <Route path='/payment' component={PaymentScreen}/>
             <Route path='/placeorder' component={PlaceOrderScreen}/>
             <Route path='/crearreto' component={TipoScreen}/>
+            <Route path='/crearretocausa' component={CausaScreen}/>
           </Container>
           
       </main>
