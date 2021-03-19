@@ -41,4 +41,4 @@ export const saveCantidadPersonalizada = (data) => (dispatch) => {
         payload: data,
     })
     localStorage.setItem('cantidadPersonalizada', JSON.stringify(data))
-}   
+}  

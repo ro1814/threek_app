@@ -69,7 +69,7 @@ const TipoScreen = ({ history }) => {
             label="Senderismo"
             id="senderismo"
             name="senderismo"
-            value="sendeirsmo"
+            value="senderismo"
             onChange={(e) => setSenderismo(e.target.value)}
           ></Form.Check>
 
@@ -84,7 +84,7 @@ const TipoScreen = ({ history }) => {
           ></Form.Check>
         </Form.Group>
 
-        <Button type="submit" variant="primary">
+        <Button block type="submit" variant="primary">
           Continue
         </Button>
       </Form>

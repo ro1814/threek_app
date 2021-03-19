@@ -9,7 +9,7 @@ const CrearReto = () => {
         <Card>
         <ListGroup variant="flush">
         
-        <LinkContainer to='/crearreto'><Button type='submit' variant='primary'>Crear reto</Button></LinkContainer>
+        <LinkContainer to='/crearnuevoreto'><Button type='submit' variant='primary'>Crear reto</Button></LinkContainer>
         
         </ListGroup>
         </Card>

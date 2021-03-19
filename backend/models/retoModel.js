@@ -17,9 +17,10 @@ const retoSchema = mongoose.Schema(
       senderismo: {type: String},
       escalada: {type: String}
     },
-    causa: {
-      type: String,
-      required: true,
+    selecCausa: {
+      investigacion: { type: String},
+      calVida: { type: String },
+      monitorizacion: { type: String }
     },
     titulo: {
       type: String,

@@ -18,6 +18,9 @@ main {
   .visitedLink{
     color: white;
   }
+  .parInv{
+    font-size: 13px;
+  }
   
   .rating span {
     margin: 0.1rem;
