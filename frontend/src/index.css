@@ -1,4 +1,161 @@
-main {
+/*! PROPIEDADES GLOBALES APP */
+:root {
+  /*! Paleta de colores app Threek */
+
+  /** Paleta de colores primarios: */
+
+  /* Primario 10 */
+  --colorPrimario10: #e4eecd;
+
+  /* Primario 20 */
+  --colorPrimario20: #cadaa7;
+
+  /* Primario 40 */
+  --colorPrimario40: #98b187;
+
+  /* Primario 50 */
+  --colorPrimario50: #658867;
+
+  /* Primario 60 */
+  --colorPrimario60: #335f46;
+
+  /* Primario 80 */
+  --colorPrimario80: #224e39;
+
+  /* Primario 90 */
+  --colorPrimario90: #003626;
+
+  /** Paleta de colores acento: */
+
+  /* Acento 10 */
+  --colorAcento10: #ffdedc;
+
+  /* Acento 20 */
+  --colorAcento20: #ffc8c4;
+
+  /* Acento 40 */
+  --colorAcento40: #ffa59f;
+
+  /* Acento 50 */
+  --colorAcento50: #fe827a;
+
+  /* Acento 60 */
+  --colorAcento60: #fe5f55;
+
+  /* Acento 80 */
+  --colorAcento80: #fe4a49;
+
+  /* Acento 90 */
+  --colorAcento90: #e54443;
+
+  /** Paleta de colores neutros: */
+
+  /* Neutro 00 */
+  --colorNeutro00: #ffffff;
+
+  /* Neutro 05 */
+  --colorNeutro05: #f9f9f9;
+
+  /* Neutro 10 */
+  --colorNeutro10: #e8e7e8;
+
+  /* Neutro 20 */
+  --colorNeutro20: #d0cfd1;
+
+  /* Neutro 40 */
+  --colorNeutro40: #b9b8b9;
+
+  /* Neutro 60 */
+  --colorNeutro60: #a2a0a2;
+
+  /* Neutro 70 */
+  --colorNeutro70: #5c585d;
+
+  /* Neutro 80 */
+  --colorNeutro80: #2d292e;
+
+  /* Neutro 90 */
+  --colorNeutro90: #161117;
+
+  /*! Tipografias app Threek: */
+
+  /* Tipografias TITULOS: */
+  --titleH1Font: "Oswald", sans-serif, 30pt;
+
+  --titleH2Font: "Oswald", sans-serif, 24pt;
+
+  --titleH3Font: "Oswald", sans-serif, 18pt;
+
+  /* Tipografias BODY: */
+  --body1Font: "Roboto", sans-serif, 18pt;
+
+  --body2Font: "Roboto", sans-serif, 16pt;
+
+  --body2BoldFont: "Roboto", sans-serif, bold, 16pt;
+
+  /* Tipografia CAPTION: */
+  --caption1Font: "Roboto Slab", serif, 14pt;
+
+  /* Tipografia ¿?: */
+  --fontRoboto: "Roboto Slab", serif;
+}
+
+/*! IMPORTANTE: uso de las anteriores propiedades a lo largo del restante CSS */
+/** Ejemplo:  */
+/* {
+  font-family: var(--mainFont);
+  color: var(--fontColor);
+  background: var(--bgColor);
+} */
+
+/*! ICONOS */
+/** Icono user: */
+.iconoUser {
+  color: var(--colorNeutro00) !important;
+}
+
+/*! BOTONES */
+/** Botones acento: */
+.btn-danger {
+  background-color: var(--colorAcento80) !important;
+}
+/* .btn-danger:hover {
+  background-color: var(--colorAcento80) !important;
+} */
+
+/* Si queremos que cambie de color cuando se pulse dicho boton  */
+/* .btn-danger:hover {
+  background-color: var(--colorAcento90) !important;
+} */
+
+/*! COMPONENTES: */
+
+/*! Componente Header.js */
+/** Elementos Navbar: */
+.Navbar {
+  background-color: var(--colorPrimario90) !important;
+}
+
+.NavbarLinkContainer {
+  color: var(--colorNeutro00) !important;
+}
+
+.NavbarToggle {
+  color: var(--colorNeutro00) !important;
+}
+
+.NavbarLink {
+  color: var(--colorNeutro00) !important;
+}
+
+/*! Componente Footer.js */
+/** Elementos Footer: */
+.Footer {
+  background-color: var(--colorPrimario90) !important;
+}
+
+/*! VALORES POR DEFECTO DE REACT */
+/* main {
     min-height: 80vh;
   }
   
@@ -18,10 +175,7 @@ main {
   .visitedLink{
     color: white;
   }
-  .parInv{
-    font-size: 13px;
-  }
   
   .rating span {
     margin: 0.1rem;
-  }
+  } */
