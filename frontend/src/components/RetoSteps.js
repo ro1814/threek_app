@@ -2,12 +2,12 @@ import React from 'react'
 import { Nav} from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 
-const RetoSteps = ({ step1, step2, step3, step4 }) => {
+const RetoSteps = ({ step1, step2, step3, step4, step5 }) => {
     return (
         <Nav className='justify-content-center mb-4'>
             <Nav.Item>
                 {step1 ? (
-                    <LinkContainer to='/crearretodeporte'>
+                    <LinkContainer to='/crearnuevoreto'>
                         <Nav.Link>Deporte</Nav.Link>
                     </LinkContainer>
                 ) : <Nav.Link disabled> Deporte
@@ -34,6 +34,15 @@ const RetoSteps = ({ step1, step2, step3, step4 }) => {
 
             <Nav.Item>
                 {step4 ? (
+                    <LinkContainer to='/crearretoimagenes'>
+                        <Nav.Link>Imágenes</Nav.Link>
+                    </LinkContainer>
+                ) : <Nav.Link disabled> Imágenes
+                    </Nav.Link>}
+            </Nav.Item>
+
+            <Nav.Item>
+                {step5 ? (
                     <LinkContainer to='/crearretoconfirmacion'>
                         <Nav.Link>¡Listo!</Nav.Link>
                     </LinkContainer>

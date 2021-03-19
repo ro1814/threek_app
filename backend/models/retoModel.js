@@ -10,6 +10,7 @@ const retoSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    
     selecDeporte: { 
       ciclismo: {type: String},
       running: {type: String},
@@ -17,26 +18,30 @@ const retoSchema = mongoose.Schema(
       senderismo: {type: String},
       escalada: {type: String}
     },
+
     selecCausa: {
       investigacion: { type: String},
       calVida: { type: String },
       monitorizacion: { type: String }
     },
-    titulo: {
-      type: String,
-      required: true,
-    },
-    desc: {
-      type: String,
-      required: true,
-    },
-    fechaInicio: {
-      type: String,
-      required: true,
-    },
-    objetivoRec: {
-      type: Number,
-      required: true,
+    datosReto: {
+
+      titulo: {
+        type: String,
+        required: true,
+      },
+      desc: {
+        type: String,
+        required: true,
+      },
+      fechaInicio: {
+        type: String,
+        required: true,
+      },
+      objetivoRec: {
+        type: Number,
+        required: true,
+      }
     },
     recaudado: {
       type: Number,

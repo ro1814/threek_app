@@ -50,11 +50,13 @@ const PaymentScreen = ({ history }) => {
               onChange={(e) => setCantidadPersonalizada(e.target.value)}
             />
           </Row>
-          <Form.Label as="legend"><p>Escriba datos de tarjeta de débito o crédito</p></Form.Label>
+          <Form.Label as="legend">
+            <p>Escriba datos de tarjeta de débito o crédito</p>
+          </Form.Label>
           <FormControl
-              label="Cantidad que desees donar €"
-              name="cantidadPersonalizada"
-            />
+            label="Cantidad que desees donar €"
+            name="cantidadPersonalizada"
+          />
 
           <Form.Label as="legend"> Seleccione método de pago</Form.Label>
 

@@ -76,7 +76,7 @@ export const retoUpdateReducer = (state = { reto: {} }, action) => {
 };
 
 export const retoSaveReducer = (
-  state = { selecDeporte: {}, selecCausa: {} },
+  state = { selecDeporte: {}, selecCausa: {}, datosReto: {} },
   action
 ) => {
   switch (action.type) {
@@ -91,6 +91,12 @@ export const retoSaveReducer = (
       return {
         ...state,
         selecCausa: action.payload,
+      };
+
+      case RETO_SAVE_CREAR_RETO:
+      return {
+        ...state,
+        datosReto: action.payload,
       };
 
     default:

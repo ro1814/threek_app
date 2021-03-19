@@ -154,4 +154,13 @@ export const saveCausaReto = (data) => (dispatch) => {
 
   localStorage.setItem("selecCausa", JSON.stringify(data));
 };
+
+export const saveDatosReto = (data) => (dispatch) => {
+  dispatch({
+    type: RETO_SAVE_CREAR_RETO,
+    payload: data,
+  });
+
+  localStorage.setItem("datosReto", JSON.stringify(data));
+};
  
