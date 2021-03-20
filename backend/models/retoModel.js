@@ -1,31 +1,31 @@
-import mongoose from "mongoose"
+import mongoose from "mongoose";
 
 const retoSchema = mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'User'
+      ref: "User",
     },
     creador: {
       type: String,
       required: true,
     },
-    
-    selecDeporte: { 
-      ciclismo: {type: String},
-      running: {type: String},
-      natacion: {type: String},
-      senderismo: {type: String},
-      escalada: {type: String}
+
+    selecDeporte: {
+      ciclismo: { type: String },
+      running: { type: String },
+      natacion: { type: String },
+      senderismo: { type: String },
+      escalada: { type: String },
     },
 
     selecCausa: {
-      investigacion: { type: String},
+      investigacion: { type: String },
       calVida: { type: String },
-      monitorizacion: { type: String }
+      monitorizacion: { type: String },
     },
-    datosReto: {
 
+    datosReto: {
       titulo: {
         type: String,
         required: true,
@@ -41,21 +41,24 @@ const retoSchema = mongoose.Schema(
       objetivoRec: {
         type: Number,
         required: true,
-      }
+      },
     },
+
+    socialDatos: {
+      imagen: {
+        type: String,
+       
+      },
+      videoURL: {
+        type: String,
+      },
+      socialMedia: {
+        type: String,
+      },
+    },
+    
     recaudado: {
       type: Number,
-    },
-    imagen: {
-      type: String,
-      required: true,
-    },
-    videoURL: {
-      type: String,
-    },
-    socialMedia: {
-      type: String,
-
     },
   },
   {
@@ -63,6 +66,6 @@ const retoSchema = mongoose.Schema(
   }
 );
 
-const Reto = mongoose.model('Reto', retoSchema);
+const Reto = mongoose.model("Reto", retoSchema);
 
-export default Reto
+export default Reto;

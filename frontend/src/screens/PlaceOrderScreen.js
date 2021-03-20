@@ -90,7 +90,7 @@ const PlaceOrderScreen = (history) => {
                   className="btn-block"
                   onClick={handleShow}
                 >
-                  Hacer el esponsor
+                  Pagar
                 </Button>
 
                 <Modal show={show} onHide={handleClose}>

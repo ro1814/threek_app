@@ -1,3 +1,4 @@
+import path from 'path'
 import express from 'express'
 import dotenv from 'dotenv'
 import connectDB from './config/db.js'
@@ -6,6 +7,8 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 
 import retoRoutes from './routes/retoRoutes.js'
 import userRoutes from './routes/userRoutes.js'
+// import sponsorRoutes from './routes/sponsorRoutes.js' Hacer para poder meter la logica de recaudado
+import uploadRoutes from './routes/uploadRoutes.js'
 import bodyParser from 'body-parser'
 
 
@@ -28,6 +31,12 @@ app.get('/', (req, res) => {
 
 app.use('/api/retos', retoRoutes)
 app.use('/api/users', userRoutes)
+// app.use('/api/sponsor', sponsorRoutes)
+app.use('/api/upload', uploadRoutes)
+
+
+const __dirname = path.resolve() 
+app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
 
 //Middlewares
 app.use(notFound)
