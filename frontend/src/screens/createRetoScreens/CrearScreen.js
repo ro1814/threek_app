@@ -94,7 +94,7 @@ const CrearScreen = ({ history }) => {
             />
           </FormGroup>
 
-          <Button block type="submit" variant="primary">
+          <Button block type="submit" variant="primary" className="Primary-button">
             Continue
           </Button>
         </Form.Group>

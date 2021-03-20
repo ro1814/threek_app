@@ -35,8 +35,9 @@ const CausaScreen = ({ history }) => {
 
       <Form onSubmit={submitHandler}>
         <Form.Group controlId="causa">
-          <FormLabel>
+          <FormLabel><h2>
             ¿A qué área de la enfermedad ELA quiere destinar las donaciones?
+            </h2>
           </FormLabel>
 
           <FormContainer>

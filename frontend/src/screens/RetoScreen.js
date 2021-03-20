@@ -86,7 +86,7 @@ const RetoScreen = ({ history, match }) => {
                 <h2>Título del reto: "{reto.titulo}"</h2>
                 <h5>Recaudado: {reto.objetivoRec}€</h5>
                 {/* BARRA DE PROGRESO */}
-                <ProgressBar variant="success" now={40} />
+                <ProgressBar now={40} className="Recaudado" />
                 <br />
                 {/* Container de retador  */}
                 <Card className="p-3">
@@ -100,7 +100,7 @@ const RetoScreen = ({ history, match }) => {
                 <br />
                 <Button
                   type="button"
-                  className="btn btn-danger btn-block"
+                  className="btn btn-danger btn-block Primary-button"
                   variant="danger"
                   onClick={addToCheckOutHandler}
                 >
@@ -224,7 +224,7 @@ const RetoScreen = ({ history, match }) => {
                 </p>
                 <Button
                   type="button"
-                  className="btn btn-danger btn-block"
+                  className="btn btn-danger btn-block Primary-button"
                   variant="danger"
                   onClick={addToCheckOutHandler}
                 >

@@ -6,22 +6,16 @@
 
   /* Primario 10 */
   --colorPrimario10: #e4eecd;
-
   /* Primario 20 */
   --colorPrimario20: #cadaa7;
-
   /* Primario 40 */
   --colorPrimario40: #98b187;
-
   /* Primario 50 */
   --colorPrimario50: #658867;
-
   /* Primario 60 */
   --colorPrimario60: #335f46;
-
   /* Primario 80 */
   --colorPrimario80: #224e39;
-
   /* Primario 90 */
   --colorPrimario90: #003626;
 
@@ -29,22 +23,16 @@
 
   /* Acento 10 */
   --colorAcento10: #ffdedc;
-
   /* Acento 20 */
   --colorAcento20: #ffc8c4;
-
   /* Acento 40 */
   --colorAcento40: #ffa59f;
-
   /* Acento 50 */
   --colorAcento50: #fe827a;
-
   /* Acento 60 */
   --colorAcento60: #fe5f55;
-
   /* Acento 80 */
   --colorAcento80: #fe4a49;
-
   /* Acento 90 */
   --colorAcento90: #e54443;
 
@@ -52,25 +40,18 @@
 
   /* Neutro 00 */
   --colorNeutro00: #ffffff;
-
   /* Neutro 05 */
   --colorNeutro05: #f9f9f9;
-
   /* Neutro 10 */
   --colorNeutro10: #e8e7e8;
-
   /* Neutro 20 */
   --colorNeutro20: #d0cfd1;
-
   /* Neutro 40 */
   --colorNeutro40: #b9b8b9;
-
   /* Neutro 60 */
   --colorNeutro60: #a2a0a2;
-
   /* Neutro 70 */
   --colorNeutro70: #5c585d;
-
   /* Neutro 80 */
   --colorNeutro80: #2d292e;
 
@@ -80,18 +61,10 @@
   /*! Tipografias app Threek: */
 
   /* Tipografias TITULOS: */
-  --titleH1Font: "Oswald", sans-serif, 30pt;
-
-  --titleH2Font: "Oswald", sans-serif, 24pt;
-
-  --titleH3Font: "Oswald", sans-serif, 18pt;
+  --titleFont: "Oswald", sans-serif;
 
   /* Tipografias BODY: */
-  --body1Font: "Roboto", sans-serif, 18pt;
-
-  --body2Font: "Roboto", sans-serif, 16pt;
-
-  --body2BoldFont: "Roboto", sans-serif, bold, 16pt;
+  --bodyFont: "Roboto", sans-serif;
 
   /* Tipografia CAPTION: */
   --caption1Font: "Roboto Slab", serif, 14pt;
@@ -114,10 +87,56 @@
   color: var(--colorNeutro00) !important;
 }
 
+/*TEXTOS*/
+h1{
+  font-family: var(--titleFont) !important;
+  font-weight: bold !important;
+  font-size: 24pt !important;
+  text-align: center;
+}
+h2{
+  font-family: var(--titleFont) !important;
+  font-weight: bold !important;
+  font-size: 20pt !important;
+  text-align: center;
+}
+h3{
+  font-family: var(--titleFont) !important;
+  font-weight: bold !important;
+  font-size: 18pt !important;
+  text-align: center;
+}
+label{
+  font-family: var(--bodyFont) !important;
+  font-size: 16pt !important;
+  text-align:left !important;
+}
+
+/*COMPONENTES*/
+Form{
+  width:343px !important;
+  text-align: center;
+}
+.Recaudado{
+  border-radius: 16px !important;
+}
+.progress-bar{
+  background-color: var(--colorPrimario50) !important;
+  border-radius: 16px !important;
+}
+
 /*! BOTONES */
 /** Botones acento: */
-.btn-danger {
-  background-color: var(--colorAcento80) !important;
+.Primary-button{
+  background: #FE4A49 !important;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 8px !important;
+  border:none !important;
+  height:56px !important;
+  width: 343px;
+  font-family: var(--bodyFont);
+  font-size: 16pt !important;
+  font-weight: 700 !important;
 }
 /* .btn-danger:hover {
   background-color: var(--colorAcento80) !important;
@@ -129,24 +148,34 @@
 } */
 
 /*! COMPONENTES: */
-
-/*! Componente Header.js */
-/** Elementos Navbar: */
-.Navbar {
-  background-color: var(--colorPrimario90) !important;
+/*PANTALLAS*/
+.FondoForms{
+  background: var(--colorPrimario80) !important;
+  height:calc(100vh - 57px);
+  width:100vw !important;
+  position:relative;
+  left:-16px;
+  top:-16px;
+  color:var(--colorNeutro00);
 }
 
+/*! Componente Header.js */
+/** ELEMENTOS NAVBAR: */
+.Navbar {
+  background-color: var(--colorPrimario90) !important;
+  display: flex;
+  align-items: center;
+}
 .NavbarLinkContainer {
   color: var(--colorNeutro00) !important;
 }
-
 .NavbarToggle {
   color: var(--colorNeutro00) !important;
 }
-
 .NavbarLink {
   color: var(--colorNeutro00) !important;
 }
+
 
 /*! Componente Footer.js */
 /** Elementos Footer: */

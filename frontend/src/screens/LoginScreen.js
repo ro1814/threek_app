@@ -31,7 +31,7 @@ const LoginScreen = ( { location, history } ) => {
 
   return (
     <FormContainer>
-      <h1>Iniciar sesión</h1>
+      <h2>Iniciar sesión</h2>
       { error && <Message variant='danger'>{error}</Message> }
       { loading && <Loader/>}
       <Form onSubmit={submitHandler}>
@@ -54,7 +54,7 @@ const LoginScreen = ( { location, history } ) => {
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
-        <Button type='submit' variant='primary'>Iniciar sesión</Button>
+        <Button type='submit' variant='primary' className="Primary-button">Iniciar sesión</Button>
       </Form>
 
       <Row className='py-3'>

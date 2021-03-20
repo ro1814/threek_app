@@ -31,7 +31,7 @@ const TipoScreen = ({ history }) => {
 
       <Form onSubmit={submitHandler}>
         <Form.Group controlId="deporte">
-          <Form.Label>¿Con qué deporte está relacionado tu reto?</Form.Label>
+          <Form.Label><h2>¿Con qué deporte está relacionado tu reto?</h2></Form.Label>
 
           <Form.Check
             type="radio"
@@ -84,7 +84,7 @@ const TipoScreen = ({ history }) => {
           ></Form.Check>
         </Form.Group>
 
-        <Button block type="submit" variant="primary">
+        <Button block type="submit" variant="primary" className="Primary-button">
           Continue
         </Button>
       </Form>

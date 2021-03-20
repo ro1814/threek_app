@@ -22,7 +22,7 @@ const HomeScreen = () => {
   return (
     <>
       <CrearReto />
-      <h1>Descubre retos</h1>
+      <h2>Descubre retos</h2>
       {loading ? (
         <Loader />
       ) : error ? (

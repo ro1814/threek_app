@@ -31,7 +31,7 @@ const PaymentScreen = ({ history }) => {
   return (
     <FormContainer>
       <CheckoutSteps step1 step3 />
-      <h3>Información de pago</h3>
+      <h2>Información de pago</h2>
       <Form onSubmit={submitHandler}>
         <Form.Group>
           <Form.Label>Elige una cantidad</Form.Label>
