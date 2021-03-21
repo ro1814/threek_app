@@ -5,57 +5,57 @@
 .HomeScreenDescubreRetosH2Text {
   /* Descubre todos los retos */
 
-  position: relative;
-  width: 286px;
-  height: 36px;
-  left: 80px;
-  right: 46px;
-  margin-top: 46px;
+  position: relative !important;
+  width: 286px !important;
+  height: 36px !important;
+  left: 80px !important;
+  right: 46px !important;
+  margin-top: 46px !important;
   /* top: 500px; */
 
   /* Title H2-Oswald-Bold-24pt */
 
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
+  font-family: Oswald !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
   /* identical to box height */
 
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
 
   /* Neutros/80 */
 
-  color: #2d292e;
+  color: #2d292e !important;
 }
 
 .HomeScreenDescubreRetosVerMasText {
   /* Ver más */
 
-  position: relative;
-  width: 286px;
-  height: 36px;
-  left: 300px;
-  right: 46px;
-  margin-top: 5px;
-  margin-bottom: 2px;
+  position: relative !important;
+  width: 286px !important;
+  height: 36px !important;
+  left: 300px !important;
+  right: 46px !important;
+  margin-top: 5px !important;
+  margin-bottom: 2px !important;
 
   /* Body-Roboto-Regular-16pt */
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
   /* or 150% */
 
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
 
-  color: #000000;
+  color: #000000 !important;
 }
 
 .HomeScreenDescubreRetosFigure {

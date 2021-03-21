@@ -12,7 +12,7 @@ import {
   InputGroup,
 } from "react-bootstrap";
 import { logout } from "../../actions/userActions";
-import "./Header.css";
+import logothreek from "../../assets/logo_threek.png";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -26,23 +26,34 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar className="Navbar" expand="lg">
+      <Navbar className="Navbar" expand="lg" variant="dark">
         <Container>
           {userInfo ? (
-              <NavDropdown title={userInfo.nombre} id='username'>
-                <LinkContainer to='/profile' className="danger">
-                  <NavDropdown.Item>Perfil</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to='/'>
-                <NavDropdown.Item onClick={logoutHandler}>Cerrar sesión</NavDropdown.Item>
-                </LinkContainer>
-              </NavDropdown>
-          ) : <LinkContainer to='/login'>
-          <Nav.Link><i className="fas fa-user"></i></Nav.Link>
-          </LinkContainer>}
+            <NavDropdown title={userInfo.nombre} id="username">
+              <LinkContainer to="/profile" className="danger">
+                <NavDropdown.Item>Perfil</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/">
+                <NavDropdown.Item onClick={logoutHandler}>
+                  Cerrar sesión
+                </NavDropdown.Item>
+              </LinkContainer>
+            </NavDropdown>
+          ) : (
+            <LinkContainer to="/login">
+              <Nav.Link>
+                <i className="fas fa-user NavbarLink"></i>
+              </Nav.Link>
+            </LinkContainer>
+          )}
 
-          <LinkContainer className="NavbarLinkContainer" to="/">
-            <Navbar.Brand>ThreekApp</Navbar.Brand>
+          <LinkContainer
+            style={{ marginLeft: "50px", marginTop: "-6px" }}
+            to="/"
+          >
+            <Navbar.Brand>
+              <img src={logothreek} alt="logothreek" height="20px" />
+            </Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Brand href="#home"></Navbar.Brand>
@@ -75,7 +86,7 @@ const Header = () => {
                 Causas
               </Nav.Link>
             </Nav>
-            <Form inline>
+            <Form inline style={{ marginBottom: "-10px", marginTop: "5px" }}>
               <InputGroup className="mb-3">
                 <FormControl
                   type="text"
