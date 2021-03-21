@@ -16,6 +16,7 @@ import TipoScreen from './screens/createRetoScreens/TipoScreen'
 import CausaScreen from './screens/createRetoScreens/CausaScreen'
 import CrearScreen from './screens/createRetoScreens/CrearScreen'
 import ImagenReto from './screens/createRetoScreens/ImagenReto'
+import RetoCreado from './screens/RetoCreado'
 
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
             <Route path='/crearretocausa' component={CausaScreen}/>
             <Route path='/crearreto' component={CrearScreen}/>
             <Route path='/crearretoimagenes' component={ImagenReto}/>
+            <Route path='/retocreado' component={RetoCreado}/>
           </Container>
           
       </main>

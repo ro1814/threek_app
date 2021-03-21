@@ -44,7 +44,7 @@ const ImagenReto = ({ history }) => {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(saveImagenReto({ videoURL, socialMedia }));
-    history.push('/')
+    history.push('/retocreado')
   };
 
   const [show, setShow] = useState(false);
@@ -132,7 +132,7 @@ const ImagenReto = ({ history }) => {
           Links social media, iconos.
         </Modal.Body>
         <Modal.Footer>
-          <Button type='submit 'variant="primary" onClick={submitHandler}>Ir a la página de Inicio</Button>
+          <Button type='submit 'variant="primary" onClick={submitHandler}>Ver página de reto</Button>
         </Modal.Footer>
       </Modal>
 

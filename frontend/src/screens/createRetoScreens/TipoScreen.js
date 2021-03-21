@@ -66,7 +66,7 @@ const TipoScreen = ({ history }) => {
           <Form.Check
             type="radio"
             inline
-            label="Senderismo"
+            label="Trekking"
             id="senderismo"
             name="senderismo"
             value="senderismo"

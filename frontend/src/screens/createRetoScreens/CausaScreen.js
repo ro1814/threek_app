@@ -50,8 +50,7 @@ const CausaScreen = ({ history }) => {
               <Col xs={8}>
                 <FormLabel>Investigación</FormLabel>
                 <p className="parInv">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam nam officiis vel atque perspiciatis?
+                  Desarrollamos programas de investigación, organizamos foros científicos y jornadas de divulgación.
                 </p>
               </Col>
               <Col xs={1}>
@@ -77,10 +76,9 @@ const CausaScreen = ({ history }) => {
                 ></Image>
               </Col>
               <Col xs={8}>
-                <FormLabel>Calidad de Vida</FormLabel>
+                <FormLabel>Calidad de Vida ELA</FormLabel>
                 <p className="parInv">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam nam officiis vel atque perspiciatis?
+                  Promovemos un nuevo modelo de asistencia en ELA para integrar las necesidades sociales y de salud de los pacientes.
                 </p>
               </Col>
               <Col xs={1}>
@@ -106,10 +104,9 @@ const CausaScreen = ({ history }) => {
                 ></Image>
               </Col>
               <Col xs={8}>
-                <FormLabel>Monitorización</FormLabel>
+                <FormLabel>Visibilidad</FormLabel>
                 <p className="parInv">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam nam officiis vel atque perspiciatis?
+                  Cada 21 de junio edificios de cientos de municipios de España se iluminan de verde en apoto a los enfermos de ELA.
                 </p>
               </Col>
               <Col xs={1}>
