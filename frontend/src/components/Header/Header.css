@@ -1,0 +1,23 @@
+/*! HEADER */
+
+/*! Componente Header.js */
+/** Elementos Navbar: */
+.Navbar {
+  background-color: #003626 !important;
+  right: -0.6px;
+}
+
+.NavbarLinkContainer {
+  background-color: #003626 !important;
+  color: #ffffff !important;
+}
+
+.NavbarToggle {
+  background-color: #003626 !important;
+  color: #ffffff !important;
+}
+
+.NavbarLink {
+  background-color: #003626 !important;
+  color: #ffffff !important;
+}

@@ -1,0 +1,86 @@
+/*! HOME 1: Tienes 3 semanas para superarte  */
+
+/** Tienes 3 semanas para superarte  */
+
+.HomeScreenCrearRetoFigure {
+  position: relative;
+  left: -32.5px;
+  top: -16px;
+  max-width: 100%;
+}
+
+.HomeScreenCrearRetoImgText {
+  position: absolute;
+  width: 279px;
+  height: 180px;
+  left: 61px;
+  top: 385px;
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  /* or 125% */
+
+  letter-spacing: -0.02em;
+
+  /* Neutros/00 */
+
+  color: #ffffff;
+}
+
+.HomeScreenCrearRetoImgBtn {
+  /* Button */
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 32px;
+
+  position: absolute;
+  width: 301px;
+  height: 56px;
+  left: 35px;
+  top: 595px;
+
+  /* Acento/80 */
+
+  background: #FE4A49 !important;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border:0 !important;
+}
+
+.HomeScreenCrearRetoImgBtnText {
+  /* Click Me */
+
+  position: static;
+  left: 71.5px;
+  right: 71.5px;
+  top: 16px;
+  bottom: 16px;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* White */
+
+  color: #ffffff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0px;
+}

@@ -39,13 +39,29 @@ const RegisterScreen = ({ location, history }) => {
   }, [history, userInfo, redirect]);
 
   const submitHandler = (e) => {
-    e.preventDefault()
-    if(password !== confirmPassword) {
-        setMessage('Las contraseñas no coinciden')
+    e.preventDefault();
+    if (password !== confirmPassword) {
+      setMessage("Las contraseñas no coinciden");
     } else {
-    dispatch(register(nombre, email, password, avatar, primApellido, segApellido, genero, fecNac, dni, direccion, city, postalCode, country ))
-  }
-}
+      dispatch(
+        register(
+          nombre,
+          email,
+          password,
+          avatar,
+          primApellido,
+          segApellido,
+          genero,
+          fecNac,
+          dni,
+          direccion,
+          city,
+          postalCode,
+          country
+        )
+      );
+    }
+  };
 
   return (
     <FormContainer>
@@ -54,8 +70,7 @@ const RegisterScreen = ({ location, history }) => {
       {error && <Message variant="danger">{error}</Message>}
       {loading && <Loader />}
       <Form onSubmit={submitHandler}>
-
-      <Form.Group controlId="avatar">
+        <Form.Group controlId="avatar">
           <Form.Label>Foto de Perfil</Form.Label>
           <Form.Control
             type="avatar"
@@ -195,7 +210,7 @@ const RegisterScreen = ({ location, history }) => {
           ></Form.Control>
         </Form.Group>
 
-        <Button type="submit" variant="primary">
+        <Button type="submit" variant="primary" className="Primary-button">
           Registrarse
         </Button>
       </Form>

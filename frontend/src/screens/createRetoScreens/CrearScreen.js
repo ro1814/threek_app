@@ -75,6 +75,9 @@ const CrearScreen = ({ history }) => {
             />
           </FormGroup>
           <FormGroup>
+            <Form.Label>¿Cuando empieza tu reto?</Form.Label>
+
+
             <Form.Row>
 
               <Form.Label>¿Cuando empieza tu reto?</Form.Label>
@@ -105,13 +108,14 @@ const CrearScreen = ({ history }) => {
             </Modal>
             <br/>
             
+
             <FormControl
               type="date"
               name="fechaInicio"
               id="fechaInicio"
               onChange={(e) => setFechaInicio(e.target.value)}
             ></FormControl>
-            
+
           </FormGroup>
           <Form.Label>Quedan: 21 días para que se acabe tu reto. </Form.Label>
           <Form.Label>Objetivo de recaudación:</Form.Label>
@@ -151,7 +155,16 @@ const CrearScreen = ({ history }) => {
               onChange={(e) => setObjetivoRec(e.target.value)}
             />
           </FormGroup>
-          <Button block type="submit" variant="primary">
+
+          <Button
+            block
+            type="submit"
+            variant="primary"
+            className="Primary-button"
+          >
+
+          
+
             Continue
           </Button>
         </Form.Group>
