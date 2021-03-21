@@ -163,4 +163,12 @@ export const saveDatosReto = (data) => (dispatch) => {
 
   localStorage.setItem("datosReto", JSON.stringify(data));
 };
- 
+
+export const saveImagenReto = (data) => (dispatch) => {
+  dispatch({
+    type: RETO_SAVE_IMAGENES,
+    payload: data,
+  });
+
+  localStorage.setItem("datosSocial", JSON.stringify(data));
+};

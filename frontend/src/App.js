@@ -15,6 +15,8 @@ import PlaceOrderScreen from './screens/PlaceOrderScreen'
 import TipoScreen from './screens/createRetoScreens/TipoScreen'
 import CausaScreen from './screens/createRetoScreens/CausaScreen'
 import CrearScreen from './screens/createRetoScreens/CrearScreen'
+import ImagenReto from './screens/createRetoScreens/ImagenReto'
+import RetoCreado from './screens/RetoCreado'
 
 
 const App = () => {
@@ -22,6 +24,7 @@ const App = () => {
     <Router>
     <Header/>
       <main className="py-3">
+        
           <Container>
             <Route path='/' component={HomeScreen} exact/>
             <Route path='/reto/:id' component={RetoScreen}/>
@@ -35,6 +38,8 @@ const App = () => {
             <Route path='/crearnuevoreto' component={TipoScreen}/>
             <Route path='/crearretocausa' component={CausaScreen}/>
             <Route path='/crearreto' component={CrearScreen}/>
+            <Route path='/crearretoimagenes' component={ImagenReto}/>
+            <Route path='/retocreado' component={RetoCreado}/>
           </Container>
           
       </main>
