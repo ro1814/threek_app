@@ -15,10 +15,10 @@ import {
 import { listRetosDetails } from "../actions/retoActions";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
-import Retador from '../components/CardRetador'
+import Retador from "../components/CardRetador";
 //Imagenes
-import fotoReto1 from '../assets/fotos-reto/foto1.png'
-import retador1 from '../assets/retadores/retador1.png'
+import fotoReto1 from "../assets/fotos-reto/foto1.png";
+import retador1 from "../assets/retadores/retador1.png";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -74,22 +74,27 @@ const RetoScreen = ({ history, match }) => {
         <Message variant="danger">{error}</Message>
       ) : (
         <Row>
-          <Col md={6} style={{
-            padding:'0',
-            marginTop:'-16px'
-          }}>
+          <Col
+            md={6}
+            style={{
+              padding: "0",
+              marginTop: "-16px",
+            }}
+          >
             <Image src={reto.imagen} alt={reto.nombre} fluid />
           </Col>
 
           <Col md={3} >
             <ListGroup variant="flush">
-              <ListGroup.Item style={{paddingLeft:'0', paddingRight:'0'}}>
+              <ListGroup.Item style={{ paddingLeft: "0", paddingRight: "0" }}>
                 {/* MISMO ROW */}
-                <span className='fechaCaption'>Inicio: {reto.fechaInicio}, Fin: 22-01-2021</span>
-                <span><b>Faltan 3 días</b></span>
-              
-                
-                  
+                <span className="fechaCaption">
+                  Inicio {reto.fechaInicio} - Fin 25 julio
+                </span>
+                <span>
+                  <b>Faltan 3 días</b>
+                </span>
+
                 {/* MISMO ROW */}
                 <h2>Título del reto: "{reto.titulo}"</h2>
                 <h5>Recaudado: {reto.objetivoRec}€</h5>
@@ -127,7 +132,7 @@ const RetoScreen = ({ history, match }) => {
                   <Row>
                     <Col xs={3} md={3}>
                       <Image
-                       src={fotoReto1}
+                        src={fotoReto1}
                         fluid
                         onClick={() => setModalShow(true)}
                       />
@@ -221,7 +226,7 @@ const RetoScreen = ({ history, match }) => {
                   fugiat adipisicing adipisicing non ullamco non eu laborum
                   deserunt incididunt aliqua.
                   <br />
-                  <Link to="/" style={{ color: '#000' }}>
+                  <Link to="/" style={{ color: "#000" }}>
                     <u>Ver más</u>
                   </Link>
                 </p>
