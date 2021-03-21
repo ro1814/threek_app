@@ -1,17 +1,15 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Row, Col, Container, Button } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
-import Reto from "../components/Reto";
+import { Row, Col, Button } from "react-bootstrap";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { listRetos } from "../actions/retoActions";
-import CrearReto from "../components/CrearReto";
-import FuncionaThreek from "../components/FuncionaThreek";
-import RankingRetadores from "../components/RankingRetadores";
-import "../index.css";
+import HomeScreenCrearReto from "../components/HomeScreenCrearReto/HomeScreenCrearReto";
+import HomeScreenFuncionaThreek from "../components/HomeScreenFuncionaThreek/HomeScreenFuncionaThreek";
+import HomeScreenRankingRetadores from "../components/HomeScreenRankingRetadores/HomeScreenRankingRetadores";
+import HomeScreenDescubreRetos from "../components/HomeScreenDescubreRetos/HomeScreenDescubreRetos";
 
-const HomeScreen = () => {
+const HomeScreen = () => { 
   const dispatch = useDispatch();
 
   const retoList = useSelector((state) => state.retoList);
@@ -23,27 +21,38 @@ const HomeScreen = () => {
 
   return (
     <>
-      {/* //!HOME 1: Tienes 3 semanas para superarte */}
-      <CrearReto />
-      {/* //!HOME 2: ¿Cómo funciona threek? */}
-      <FuncionaThreek />
-      {/* //!HOME 3: Ranking de retadores */}
-      <RankingRetadores />
-      {/* //!HOME 4: Descubre todos los retos */}
+      {/* //! HOME 1: Tienes 3 semanas para superarte */}
+      <HomeScreenCrearReto />
+      {/* //! HOME 2: ¿Cómo funciona threek? */}
+      <HomeScreenFuncionaThreek />
+      {/* //! HOME 3: Ranking de retadores */}
+      <HomeScreenRankingRetadores />
+      {/* //! HOME 4: Descubre todos los retos */}
       {loading ? (
         <Loader />
       ) : error ? (
         <Message variant="danger">{error}</Message>
       ) : (
-          <Row>
-            <h2 className="descubreRetosH2Text">Descubre todos los retos</h2>
-            <p className="descubreRetosVerMasText">Ver más</p>
-            {retos.map((reto) => (
-              <Col key={reto._id} sm={12} md={6} lg={4} xl={3}>
-                <Reto reto={reto} />
-              </Col>
-            ))}
-          </Row>
+        <Row>
+          <h2 className="HomeScreenDescubreRetosH2Text">Descubre todos los retos</h2>
+          <p className="HomeScreenDescubreRetosVerMasText">Ver más</p>
+          {retos.map((reto) => (
+            <Col key={reto._id} sm={12} md={6} lg={4} xl={3}>
+              <HomeScreenDescubreRetos reto={reto} />
+            </Col>
+          ))}
+          {/* <Link to="/#Retos"> */}
+                <Button
+                  type="submit"
+                  variant="light"
+                  className="HomeScreenDescubreRetosRetoBtn2"
+                >
+                  <figcaption className="HomeScreenDescubreRetosRetoBtn2Text">
+                  Ver todos
+                  </figcaption>
+                </Button>
+              {/* </Link> */}
+        </Row>
       )}
     </>
   );

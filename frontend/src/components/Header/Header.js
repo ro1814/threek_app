@@ -11,7 +11,8 @@ import {
   NavDropdown,
   InputGroup,
 } from "react-bootstrap";
-import { logout } from "../actions/userActions";
+import { logout } from "../../actions/userActions";
+import "./Header.css";
 
 const Header = () => {
   const dispatch = useDispatch();

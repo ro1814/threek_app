@@ -1,0 +1,269 @@
+/*! HOME 3: Ranking de retadores  */
+
+/** Ranking de retadores  */
+
+.HomeScreenRankingRetadoresH2Text {
+  /* Ranking de retadores */
+
+  position: relative;
+  width: 286px;
+  height: 36px;
+  left: 66px;
+  right: 46px;
+  margin-top: 46px;
+  /* top: 500px; */
+
+  /* Title H2-Oswald-Bold-24pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutros/80 */
+
+  color: #2d292e;
+}
+
+.HomeScreenRankingRetadoresVerMasText {
+  /* Ver más */
+
+  position: relative;
+  width: 59px;
+  height: 13px;
+  left: 270px;
+  right: 46px;
+  margin-top: 20px;
+
+  /* Body-Roboto-Regular-16pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.HomeScreenRankingRetadoresFigureRetador1 {
+  /* TARJETA PERSONA */
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 163px;
+  height: 295px;
+  left: -14px;
+}
+
+.HomeScreenRankingRetadoresFigureRetador1Img {
+  /* Rectangle 30 */
+
+  position: relative;
+  width: 163px;
+  height: 226px;
+  left: calc(50% - 163px / 2);
+
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+
+.HomeScreenRankingRetadoresFigureRetador1NameText {
+  /* Nuria L. */
+
+  position: static;
+  width: 57px;
+  height: 27px;
+  left: 8px;
+  top: 0px;
+
+  /* Title H3-Oswald-Bold-18pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutros/80 */
+
+  color: #2d292e;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 2px 0px;
+}
+
+.HomeScreenRankingRetadoresFigureRetador1RecaudacionRetosText {
+  /* Recaudación 1350 € 7 retos */
+
+  position: static;
+  width: 131px;
+  height: 32px;
+  left: 8px;
+  top: 29px;
+
+  /* Caption-Roboto-Regular-14pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* or 114% */
+
+  display: flex;
+  align-items: center;
+
+  /* Neutros/70 */
+
+  color: #5c585d;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 2px 0px;
+}
+
+.HomeScreenRankingRetadoresFigureRetador2 {
+  /* TARJETA PERSONA */
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 163px;
+  height: 295px;
+  left: 166px;
+  top: -310px;
+  margin-bottom: -300px;
+}
+
+.HomeScreenRankingRetadoresFigureRetador2Img {
+  /* Rectangle 30 */
+
+  position: relative;
+  width: 163px;
+  height: 226px;
+  left: calc(50% - 163px / 2);
+
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+.HomeScreenRankingRetadoresFigureRetador2NameText {
+  /* Nuria L. */
+
+  position: static;
+  width: 49px;
+  height: 27px;
+  left: 8px;
+  top: 0px;
+
+  /* Title H3-Oswald-Bold-18pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutros/80 */
+
+  color: #2d292e;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 2px 0px;
+}
+
+.HomeScreenRankingRetadoresFigureRetador2RecaudacionRetosText {
+  /* Recaudación 1350 € 7 retos */
+
+  position: static;
+  width: 131px;
+  height: 32px;
+  left: 8px;
+  top: 29px;
+
+  /* Caption-Roboto-Regular-14pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* or 114% */
+
+  display: flex;
+  align-items: center;
+
+  /* Neutros/70 */
+
+  color: #5c585d;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 2px 0px;
+}

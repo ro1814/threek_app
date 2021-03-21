@@ -1,0 +1,165 @@
+/*! HOME 2: ¿Cómo funciona threek?  */
+
+/** ¿Cómo funciona threek? */
+
+.HomeScreenFuncionaThreekH2Text {
+  /* ¿Cómo funciona threek? */
+
+  position: relative;
+  width: 286px;
+  height: 36px;
+  left: 50px;
+  right: 46px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  /* top: 500px; */
+
+  /* Title H2-Oswald-Bold-24pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutros/80 */
+
+  color: #2d292e;
+}
+
+.HomeScreenFuncionaThreekCarousel {
+  position: relative !important;
+  width: 343px !important;
+  height: 320px !important;
+  right: 14px !important;
+  top: 0 !important;
+}
+
+.HomeScreenFuncionaThreekCarouselItem {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  overflow: hidden;
+}
+
+.HomeScreenFuncionaThreekCard {
+  /* Content Block */
+
+  position: relative !important;
+  width: 343px !important;
+  height: 320px !important;
+  right: 0 !important;
+  top: 0 !important;
+
+  /* Primarios/90 */
+
+  background: #003626 !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.HomeScreenFuncionaThreekCardH2Text {
+  position: absolute;
+  width: 161px;
+  height: 72px;
+  left: 91px;
+  top: 16px;
+
+  /* Title H2-Oswald-Bold-24pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutros/00 */
+
+  color: #ffffff;
+}
+
+.HomeScreenFuncionaThreekCardBodyText {
+  /* En Threek tienes 21 días para ponerte al límite mientras ayudas a cambiar la vida de otros. Natación, running, treking, escalada o ciclismo ¡tú eliges como quieres superarte! */
+
+  position: absolute;
+  width: 265px;
+  height: 144px;
+  left: 39px;
+  top: 108px;
+
+  /* Body-Roboto-Regular-16pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+}
+
+.HomeScreenFuncionaThreekCard2FooterText {
+  /* Conoce las causas */
+
+  position: absolute;
+  width: 265px;
+  height: 144px;
+  left: 104px;
+  top: 176px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+
+  /* Neutros/00 */
+
+  color: #ffffff;
+}
+
+.HomeScreenFuncionaThreekCardBodyImg1 {
+  /* Ellipse 1 */
+
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 180px;
+  top: 288px;
+}
+
+.HomeScreenFuncionaThreekCardBodyImg2 {
+  /* Ellipse 2 */
+
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 164px;
+  top: 288px;
+}
+
+.HomeScreenFuncionaThreekCardBodyImg3 {
+  /* Ellipse 3 */
+
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 148px;
+  top: 288px;
+}
