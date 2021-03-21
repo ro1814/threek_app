@@ -15,6 +15,10 @@ import {
 import { listRetosDetails } from "../actions/retoActions";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
+import Retador from '../components/CardRetador'
+//Imagenes
+import fotoReto1 from '../assets/fotos-reto/foto1.png'
+import retador1 from '../assets/retadores/retador1.png'
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -28,7 +32,7 @@ function MyVerticallyCenteredModal(props) {
         <Modal.Title id="contained-modal-title-vcenter">Día 1</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Image src="holder.js/571x580" alt="holder" fluid />
+        <Image src={fotoReto1} alt="holder" fluid />
         <p>
           Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
           dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
@@ -61,27 +65,31 @@ const RetoScreen = ({ history, match }) => {
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
-      <Link className="btn btn-light my-3" to="/">
+      {/* <Link className="btn btn-light my-3" to="/">
         Descubre retos
-      </Link>
+      </Link> */}
       {loading ? (
         <Loader />
       ) : error ? (
         <Message variant="danger">{error}</Message>
       ) : (
         <Row>
-          <Col md={6}>
+          <Col md={6} style={{
+            padding:'0',
+            marginTop:'-16px'
+          }}>
             <Image src={reto.imagen} alt={reto.nombre} fluid />
           </Col>
 
-          <Col md={3}>
+          <Col md={3} >
             <ListGroup variant="flush">
-              <ListGroup.Item>
+              <ListGroup.Item style={{paddingLeft:'0', paddingRight:'0'}}>
                 {/* MISMO ROW */}
-                <p>Inicio: {reto.fechaInicio}, Fecha Fin: 26-01-2021</p>
-                <p>
-                  <b>Faltan 3 días 4 horas</b>
-                </p>
+                <span className='fechaCaption'>Inicio: {reto.fechaInicio}, Fin: 22-01-2021</span>
+                <span><b>Faltan 3 días</b></span>
+              
+                
+                  
                 {/* MISMO ROW */}
                 <h2>Título del reto: "{reto.titulo}"</h2>
                 <h5>Recaudado: {reto.objetivoRec}€</h5>
@@ -90,12 +98,7 @@ const RetoScreen = ({ history, match }) => {
                 <br />
                 {/* Container de retador  */}
                 <Card className="p-3">
-                  <blockquote className="blockquote mb-0 card-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Integer posuere erat a ante.
-                    </p>
-                  </blockquote>
+                  <Retador imag={retador1}></Retador>
                 </Card>
                 <br />
                 <Button
@@ -112,7 +115,7 @@ const RetoScreen = ({ history, match }) => {
                   <b>Información</b>
                 </h4>
                 {/* IMAGEN VIDEO URL */}
-                <Image src="holder.js/571x580" fluid />
+                <Image src={fotoReto1} fluid />
                 <p>{reto.desc}</p>
               </ListGroup.Item>
               <ListGroup.Item>
@@ -124,82 +127,82 @@ const RetoScreen = ({ history, match }) => {
                   <Row>
                     <Col xs={3} md={3}>
                       <Image
-                        src="holder.js/571x580"
+                       src={fotoReto1}
                         fluid
                         onClick={() => setModalShow(true)}
                       />
                     </Col>
                     <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
+                      <Image src={fotoReto1} fluid />
                     </Col>
                     <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
-                    </Col>
-                    <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
-                    </Col>
-                    <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
+                      <Image src={fotoReto1} fluid />
                     </Col>
                   </Row>
                   <Row>
                     <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
+                      <Image src={fotoReto1} fluid />
                     </Col>
                     <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
+                      <Image src={fotoReto1} fluid />
                     </Col>
                     <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
-                    </Col>
-                    <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
-                    </Col>
-                    <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
+                      <Image src={fotoReto1} fluid />
                     </Col>
                   </Row>
                   <Row>
                     <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
+                      <Image src={fotoReto1} fluid />
                     </Col>
                     <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
+                      <Image src={fotoReto1} fluid />
                     </Col>
                     <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
-                    </Col>
-                    <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
-                    </Col>
-                    <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
+                      <Image src={fotoReto1} fluid />
                     </Col>
                   </Row>
                   <Row>
                     <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
+                      <Image src={fotoReto1} fluid />
                     </Col>
                     <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
+                      <Image src={fotoReto1} fluid />
                     </Col>
                     <Col xs={3} md={3}>
-                      <Image src="holder.js/171x180" fluid />
+                      <Image src={fotoReto1} fluid />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col xs={3} md={3}>
+                      <Image src={fotoReto1} fluid />
+                    </Col>
+                    <Col xs={3} md={3}>
+                      <Image src={fotoReto1} fluid />
+                    </Col>
+                    <Col xs={3} md={3}>
+                      <Image src={fotoReto1} fluid />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col xs={3} md={3}>
+                      <Image src={fotoReto1} fluid />
+                    </Col>
+                    <Col xs={3} md={3}>
+                      <Image src={fotoReto1} fluid />
+                    </Col>
+                    <Col xs={3} md={3}>
+                      <Image src={fotoReto1} fluid />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col xs={3} md={3}>
+                      <Image src={fotoReto1} fluid />
+                    </Col>
+                    <Col xs={3} md={3}>
+                      <Image src={fotoReto1} fluid />
+                    </Col>
+                    <Col xs={3} md={3}>
+                      <Image src={fotoReto1} fluid />
                     </Col>
                   </Row>
                 </Container>

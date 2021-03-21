@@ -4,6 +4,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { Form, Button } from "react-bootstrap";
 import RetoSteps from "../../components/RetoSteps";
 import { saveDeporteReto } from "../../actions/retoActions";
+// Imágenes
+import tipoCiclismo from "../../assets/tipo-reto/ciclismo.png";
+import tipoRunning from "../../assets/tipo-reto/running.png";
+import tipoEscalada from "../../assets/tipo-reto/escalada.png";
+import tipoNatacion from "../../assets/tipo-reto/natacion.png";
+import tipoTrecking from "../../assets/tipo-reto/trecking.png";
+import barraProgreso from '../../assets/barra_crear_reto/Progreso-reto1.png'
+
 
 const TipoScreen = ({ history }) => {
   const retoSave = useSelector((state) => state.retoSave);
@@ -15,6 +23,7 @@ const TipoScreen = ({ history }) => {
   const [senderismo, setSenderismo] = useState(selecDeporte.senderismo);
   const [escalada, setEscalada] = useState(selecDeporte.escalada)
 
+
   const dispatch = useDispatch();
 
   const submitHandler = (e) => {
@@ -23,16 +32,36 @@ const TipoScreen = ({ history }) => {
       saveDeporteReto({ciclismo, running, senderismo, escalada, natacion})
     );
     history.push("/crearretocausa");
+
+ 
   };
 
   return (
     <FormContainer>
-      <RetoSteps step1 />
+
+      {/* <RetoSteps step1 /> */}
+      <img
+       src={barraProgreso}
+       style={{
+         marginLeft:'14vw',
+         marginTop:'24px',
+         marginBottom:'24px'
+       }}
+       ></img>
 
       <Form onSubmit={submitHandler}>
         <Form.Group controlId="deporte">
           <Form.Label><h2>¿Con qué deporte está relacionado tu reto?</h2></Form.Label>
 
+          <img
+              src={tipoCiclismo}
+              style={{
+                position:'absolute',
+                top:'160px',
+                left:'42px',
+                height:'80px'
+              }}
+            ></img>
           <Form.Check
             type="radio"
             inline
@@ -40,9 +69,20 @@ const TipoScreen = ({ history }) => {
             id="ciclismo"
             name="ciclismo"
             value="ciclismo"
+            style={{marginTop:'100px'}}
             onChange={(e) => setCiclismo(e.target.value)}
-          ></Form.Check>
+          >
+          </Form.Check>
 
+          <img
+              src={tipoRunning}
+              style={{
+                position:'absolute',
+                top:'160px',
+                left:'146px',
+                height:'80px'
+              }}
+            ></img>
           <Form.Check
             type="radio"
             inline
@@ -50,9 +90,20 @@ const TipoScreen = ({ history }) => {
             id="running"
             name="running"
             value="running"
+            style={{marginTop:'100px'}}
             onChange={(e) => setRunning(e.target.value)}
-          ></Form.Check>
+          >
+          </Form.Check>
 
+          <img
+              src={tipoNatacion}
+              style={{
+                position:'absolute',
+                top:'160px',
+                left:'248px',
+                height:'80px'
+              }}
+            ></img>
           <Form.Check
             type="radio"
             inline
@@ -60,9 +111,20 @@ const TipoScreen = ({ history }) => {
             id="natacion"
             name="natacion"
             value="natacion"
+            style={{marginTop:'100px'}}
             onChange={(e) => setNatacion(e.target.value)}
-          ></Form.Check>
+          >
+          </Form.Check>
 
+          <img
+              src={tipoTrecking}
+              style={{
+                position:'absolute',
+                top:'300px',
+                left:'82px',
+                height:'80px'
+              }}
+            ></img>
           <Form.Check
             type="radio"
             inline
@@ -70,9 +132,20 @@ const TipoScreen = ({ history }) => {
             id="senderismo"
             name="senderismo"
             value="senderismo"
+            style={{marginTop:'110px'}}
             onChange={(e) => setSenderismo(e.target.value)}
-          ></Form.Check>
+          >
+          </Form.Check>
 
+          <img
+              src={tipoEscalada}
+              style={{
+                position:'absolute',
+                top:'300px',
+                left:'216px',
+                height:'80px'
+              }}
+            ></img>
           <Form.Check
             type="radio"
             inline
@@ -80,8 +153,11 @@ const TipoScreen = ({ history }) => {
             id="escalada"
             name="escalada"
             value="escalada"
+            style={{marginTop:'110px'}}
             onChange={(e) => setEscalada(e.target.value)}
-          ></Form.Check>
+          >
+           
+          </Form.Check>
         </Form.Group>
 
         <Button block type="submit" variant="primary" className="Primary-button">

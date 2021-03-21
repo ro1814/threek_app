@@ -37,7 +37,7 @@ const SponsorScreen = ({ match, history }) => {
     <CheckoutSteps step1/>
     <Row>
       <Col md={8}>
-        <h1>Sponsoriza el reto</h1>
+        <h2>Sponsoriza el reto</h2>
         {sponsorItems.length === 0 ? (
           <Message>
             {" "}
@@ -67,7 +67,7 @@ const SponsorScreen = ({ match, history }) => {
       <Col md={4}>
           <Card>
               <ListGroup variant='flush'>
-                    <Button type="button" className='btn-block' onClick={checkOutHandler}>Continuar</Button>
+                    <Button type="button" className='btn-block Primary-button' onClick={checkOutHandler}>Continuar</Button>
               </ListGroup>
               {/* <ListGroup variant='flush'>
                     <Button type="button" className='btn-block' onClick={checkOutHandlerVisitor}>Continuar como Visitante</Button>
