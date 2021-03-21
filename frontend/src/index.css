@@ -132,7 +132,7 @@ Form{
 .form-check-inline{
   margin-left: 0.75rem !important;
 }
-.form-check input{
+.deporteForm input{
   position:absolute !important;
   bottom:40px;
   left:10px;
@@ -141,6 +141,18 @@ Form{
 }
 .underline{
   text-decoration: underline !important;
+}
+.infoPagoSelect{
+  background: var(--colorNeutro00) !important;
+  color:var(--colorNeutro90);
+  box-shadow: 0px 4px 4px rgba(0, 54, 38, 0.4);
+  height:48px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:-10px;
+  margin-right:-10px;
+  border-radius: 8px;
 }
 /*.form-check-input{
   display:none;

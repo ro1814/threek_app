@@ -23,7 +23,6 @@ const HomeScreenCrearReto = () => {
                 <Button
                   type="submit"
                   className="HomeScreenCrearRetoImgBtn"
-                  variant="danger"
                 >
                   <figcaption className="HomeScreenCrearRetoImgBtnText">
                     Empieza tu reto ahora

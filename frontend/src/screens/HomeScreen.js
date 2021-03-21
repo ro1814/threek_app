@@ -45,7 +45,7 @@ const HomeScreen = () => {
                 <Button
                   type="submit"
                   variant="light"
-                  className="HomeScreenDescubreRetosRetoBtn2"
+                  className="HomeScreenDescubreRetosRetoBtn2 Primary-button"
                 >
                   <figcaption className="HomeScreenDescubreRetosRetoBtn2Text">
                   Ver todos

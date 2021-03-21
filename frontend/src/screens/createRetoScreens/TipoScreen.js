@@ -75,6 +75,7 @@ const TipoScreen = ({ history }) => {
             name="ciclismo"
             value="ciclismo"
             style={{ marginTop: "100px" }}
+            className="deporteForm"
             onChange={(e) => setCiclismo(e.target.value)}
           >
           </Form.Check>
@@ -97,6 +98,7 @@ const TipoScreen = ({ history }) => {
             name="running"
             value="running"
             style={{ marginTop: "100px" }}
+            className="deporteForm"
             onChange={(e) => setRunning(e.target.value)}
           >
           </Form.Check>
@@ -119,6 +121,7 @@ const TipoScreen = ({ history }) => {
             name="natacion"
             value="natacion"
             style={{ marginTop: "100px" }}
+            className="deporteForm"
             onChange={(e) => setNatacion(e.target.value)}
           >
           </Form.Check>
@@ -141,6 +144,7 @@ const TipoScreen = ({ history }) => {
             name="senderismo"
             value="senderismo"
             style={{ marginTop: "110px" }}
+            className="deporteForm"
             onChange={(e) => setSenderismo(e.target.value)}
           >
           </Form.Check>
@@ -163,6 +167,7 @@ const TipoScreen = ({ history }) => {
             name="escalada"
             value="escalada"
             style={{ marginTop: "110px" }}
+            className="deporteForm"
             onChange={(e) => setEscalada(e.target.value)}
           >
            

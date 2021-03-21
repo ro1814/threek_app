@@ -15,6 +15,7 @@ const HomeScreenDescubreRetos = ({ reto }) => {
     <>
       {/* //!HOME: Descubre todos los retos */}
       <figure className="position-relative HomeScreenDescubreRetosFigure">
+        <div className="overlay-div"></div>
         <img
           src={reto.imagen}
           alt="retoImagen"
@@ -45,7 +46,6 @@ const HomeScreenDescubreRetos = ({ reto }) => {
           <Button
             type="submit"
             className="HomeScreenDescubreRetosRetoBtn1"
-            variant="danger"
           >
             <figcaption className="HomeScreenDescubreRetosRetoBtn1Text">
               Patrocinar Reto
