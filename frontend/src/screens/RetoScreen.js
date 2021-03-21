@@ -218,7 +218,7 @@ const RetoScreen = ({ history, match }) => {
                   fugiat adipisicing adipisicing non ullamco non eu laborum
                   deserunt incididunt aliqua.
                   <br />
-                  <Link to="/" style={{ color: '#000' }}>
+                  <Link to="/" style={{ color: "#000" }}>
                     <u>Ver más</u>
                   </Link>
                 </p>

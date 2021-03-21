@@ -27,7 +27,7 @@ const Header = () => {
     <header>
       <Navbar className="Navbar" expand="lg">
         <Container>
-          {/* {userInfo ? (
+          {userInfo ? (
               <NavDropdown title={userInfo.nombre} id='username'>
                 <LinkContainer to='/profile' className="danger">
                   <NavDropdown.Item>Perfil</NavDropdown.Item>
@@ -38,7 +38,7 @@ const Header = () => {
               </NavDropdown>
           ) : <LinkContainer to='/login'>
           <Nav.Link><i className="fas fa-user"></i></Nav.Link>
-          </LinkContainer>} */}
+          </LinkContainer>}
 
           <LinkContainer className="NavbarLinkContainer" to="/">
             <Navbar.Brand>ThreekApp</Navbar.Brand>

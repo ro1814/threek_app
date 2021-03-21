@@ -1,43 +1,60 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Card } from 'react-bootstrap'
+import React from "react";
+import { Link } from "react-router-dom";
+import { Card, Container, Button } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 // import { useSelector } from "react-redux";
+// import descubreRetosImg from "../assets/images/descubreRetosImg.png";
+import descubreRetosRetoActivoImg from "../assets/images/descubreRetosRetoActivoImg.png";
+import "../index.css";
 
 const Reto = ({ reto }) => {
+  // const userLogin = useSelector( state => state.userLogin)
+  // const { userInfo } = userLogin
 
-    // const userLogin = useSelector( state => state.userLogin)
-    // const { userInfo } = userLogin
+  return (
+    <>
+      {/* //!HOME: Descubre todos los retos */}
+      <figure className="position-relative descubreRetosFigure">
+        <img
+          src={reto.imagen}
+          alt="retoImagen"
+          className="card-img embed-responsive-item descubreRetosImg"
+        />
+        <figcaption className="descubreRetosRetoActivoText">
+          Reto Activo
+        </figcaption>
+        <img
+          src={descubreRetosRetoActivoImg}
+          alt="descubreRetosRetoActivoImg"
+          className="img-fluid descubreRetosRetoActivoImg"
+        />
+        <figcaption className="descubreRetosRetadorNameText">
+          Manel A.{/* Creado por: {userInfo.nombre} */}
+        </figcaption>
+        <figcaption className="descubreRetosRetoTituloText">
+          {reto.titulo}
+        </figcaption>
+        <figcaption className="descubreRetosRetoObjetivoRecText">
+          Objetivo {reto.objetivoRec} €
+        </figcaption>
+        <figcaption className="descubreRetosRetoFechaInicioText">
+          Inicio {reto.fechaInicio}
+        </figcaption>
+        {/* //!Seguramente haya que cambiar el siguiente to={} a la pagina de /sponsor/:id */}
+        <LinkContainer to={`/reto/${reto._id}`}>
+          <Button
+            type="submit"
+            className="descubreRetosRetoBtn"
+            variant="danger"
+          >
+            <figcaption className="descubreRetosRetoBtnText">
+            Patrocinar Reto
+            </figcaption>
+          </Button>
+        </LinkContainer>
+      </figure>
+    </>
+  );
+};
 
-    return (
-        <Card className='my-3 p-3 rounded'>
-            <Link to={`/reto/${reto._id}`}>
-                <Card.Img src={reto.imagen} variant='top' />
-            </Link>
-
-        <Card.Body>
-            <Link to={`/reto/${reto._id}`}>
-                <Card.Title as="div"><strong>Titulo del reto: {reto.titulo}</strong>
-                </Card.Title>
-            </Link>
-
-            <Card.Text as='div'>
-                <div className="my-3">
-                    {/* Creado por: {userInfo.nombre} */}
-                </div>
-            </Card.Text>
-
-            <Card.Text as='div'>
-                <div className="my-3">
-                    Objetivo a recaudar: €{reto.objetivoRec} 
-                </div>
-            </Card.Text>
-
-            <Card.Text as='h5'>Descripción del reto: {reto.desc}
-
-            </Card.Text>
-        </Card.Body>
-       </Card>
-    )
-}
-
-export default Reto
+export default Reto;

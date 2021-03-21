@@ -108,6 +108,806 @@
   background: var(--bgColor);
 } */
 
+/*! HOME */
+
+/** Tienes 3 semanas para superarte  */
+
+.homeFirstFigure {
+  position: relative;
+  left: -32.5px;
+  top: -16px;
+  max-width: 100%;
+}
+
+.homeFirstImgText {
+  position: absolute;
+  width: 279px;
+  height: 180px;
+  left: 61px;
+  top: 385px;
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  /* or 125% */
+
+  letter-spacing: -0.02em;
+
+  /* Neutros/00 */
+
+  color: #ffffff;
+}
+
+.homeFirstImgBtn {
+  /* Button */
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 32px;
+
+  position: absolute;
+  width: 301px;
+  height: 56px;
+  left: 35px;
+  top: 595px;
+
+  /* Acento/80 */
+
+  background: #fe4a49;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.homeFirstImgBtnText {
+  /* Click Me */
+
+  position: static;
+  left: 71.5px;
+  right: 71.5px;
+  top: 16px;
+  bottom: 16px;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* White */
+
+  color: #ffffff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
+
+/** ¿Cómo funciona threek? */
+
+.funcionaThreekH2Text {
+  /* ¿Cómo funciona threek? */
+
+  position: relative;
+  width: 286px;
+  height: 36px;
+  left: 50px;
+  right: 46px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  /* top: 500px; */
+
+  /* Title H2-Oswald-Bold-24pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutros/80 */
+
+  color: #2d292e;
+}
+
+.funcionaThreekCarousel {
+  position: relative !important;
+  width: 343px !important;
+  height: 320px !important;
+  right: 14px !important;
+  top: 0 !important;
+}
+
+.funcionaThreekCarouselItem {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  overflow: hidden;
+}
+
+.funcionaThreekCard {
+  /* Content Block */
+
+  position: relative !important;
+  width: 343px !important;
+  height: 320px !important;
+  right: 0 !important;
+  top: 0 !important;
+
+  /* Primarios/90 */
+
+  background: #003626 !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.funcionaThreekCardH2Text {
+  position: absolute;
+  width: 161px;
+  height: 72px;
+  left: 91px;
+  top: 16px;
+
+  /* Title H2-Oswald-Bold-24pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutros/00 */
+
+  color: #ffffff;
+}
+
+.funcionaThreekCardBodyText {
+  /* En Threek tienes 21 días para ponerte al límite mientras ayudas a cambiar la vida de otros. Natación, running, treking, escalada o ciclismo ¡tú eliges como quieres superarte! */
+
+  position: absolute;
+  width: 265px;
+  height: 144px;
+  left: 39px;
+  top: 108px;
+
+  /* Body-Roboto-Regular-16pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+}
+
+.funcionaThreekCard2FooterText {
+  /* Conoce las causas */
+
+  position: absolute;
+  width: 265px;
+  height: 144px;
+  left: 104px;
+  top: 176px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+
+  /* Neutros/00 */
+
+  color: #ffffff;
+}
+
+.funcionaThreekCardBodyImg1 {
+  /* Ellipse 1 */
+
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 180px;
+  top: 288px;
+}
+
+.funcionaThreekCardBodyImg2 {
+  /* Ellipse 2 */
+
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 164px;
+  top: 288px;
+}
+
+.funcionaThreekCardBodyImg3 {
+  /* Ellipse 3 */
+
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 148px;
+  top: 288px;
+}
+
+/** Ranking de retadores  */
+
+.rankingRetadoresH2Text {
+  /* Ranking de retadores */
+
+  position: relative;
+  width: 286px;
+  height: 36px;
+  left: 66px;
+  right: 46px;
+  margin-top: 46px;
+  /* top: 500px; */
+
+  /* Title H2-Oswald-Bold-24pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutros/80 */
+
+  color: #2d292e;
+}
+
+.rankingRetadoresVerMasText {
+  /* Ver más */
+
+  position: relative;
+  width: 59px;
+  height: 13px;
+  left: 270px;
+  right: 46px;
+  margin-top: 20px;
+
+  /* Body-Roboto-Regular-16pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.rankingRetadoresFigureRetador1 {
+  /* TARJETA PERSONA */
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 163px;
+  height: 295px;
+  left: -14px;
+}
+
+.rankingRetadoresFigureRetador1Img {
+  /* Rectangle 30 */
+
+  position: relative;
+  width: 163px;
+  height: 226px;
+  left: calc(50% - 163px / 2);
+
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+
+.rankingRetadoresFigureRetador1NameText {
+  /* Nuria L. */
+
+  position: static;
+  width: 57px;
+  height: 27px;
+  left: 8px;
+  top: 0px;
+
+  /* Title H3-Oswald-Bold-18pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutros/80 */
+
+  color: #2d292e;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 2px 0px;
+}
+
+.rankingRetadoresFigureRetador1RecaudacionRetosText {
+  /* Recaudación 1350 € 7 retos */
+
+  position: static;
+  width: 131px;
+  height: 32px;
+  left: 8px;
+  top: 29px;
+
+  /* Caption-Roboto-Regular-14pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* or 114% */
+
+  display: flex;
+  align-items: center;
+
+  /* Neutros/70 */
+
+  color: #5c585d;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 2px 0px;
+}
+
+.rankingRetadoresFigureRetador2 {
+  /* TARJETA PERSONA */
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 163px;
+  height: 295px;
+  left: 166px;
+  top: -310px;
+  margin-bottom: -300px;
+}
+
+.rankingRetadoresFigureRetador2Img {
+  /* Rectangle 30 */
+
+  position: relative;
+  width: 163px;
+  height: 226px;
+  left: calc(50% - 163px / 2);
+
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+.rankingRetadoresFigureRetador2NameText {
+  /* Nuria L. */
+
+  position: static;
+  width: 49px;
+  height: 27px;
+  left: 8px;
+  top: 0px;
+
+  /* Title H3-Oswald-Bold-18pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutros/80 */
+
+  color: #2d292e;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 2px 0px;
+}
+
+.rankingRetadoresFigureRetador2RecaudacionRetosText {
+  /* Recaudación 1350 € 7 retos */
+
+  position: static;
+  width: 131px;
+  height: 32px;
+  left: 8px;
+  top: 29px;
+
+  /* Caption-Roboto-Regular-14pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* or 114% */
+
+  display: flex;
+  align-items: center;
+
+  /* Neutros/70 */
+
+  color: #5c585d;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 2px 0px;
+}
+
+/** Descubre todos los retos */
+
+.descubreRetosH2Text {
+  /* Descubre todos los retos */
+
+  position: relative;
+  width: 286px;
+  height: 36px;
+  left: 80px;
+  right: 46px;
+  margin-top: 46px;
+  /* top: 500px; */
+
+  /* Title H2-Oswald-Bold-24pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutros/80 */
+
+  color: #2d292e;
+}
+
+.descubreRetosVerMasText {
+  /* Ver más */
+
+  position: relative;
+  width: 286px;
+  height: 36px;
+  left: 300px;
+  right: 46px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+
+  /* Body-Roboto-Regular-16pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.descubreRetosFigure {
+  /* Rectangle 295 */
+
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.descubreRetosImg {
+  /* Rectangle 295 */
+
+  /*TODO crear imagen con verde opaco */
+  /* background: #335f46; */
+  /* opacity: 0.7; */
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  /* border-radius: 8px; */
+}
+
+.descubreRetosRetoActivoText {
+  /* Reto Activo */
+
+  position: absolute;
+  left: 72.05%;
+  right: unset;
+  top: 3.57%;
+  bottom: 87.05%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* or 117% */
+
+  display: flex;
+  align-items: center;
+
+  /* Neutros/00 */
+
+  color: #ffffff;
+}
+
+.descubreRetosRetoActivoImg {
+  /* Ellipse 17 */
+
+  position: absolute;
+  left: 93%;
+  right: 4.66%;
+  top: 6.7%;
+  bottom: 89.73%;
+}
+
+.descubreRetosRetadorNameText {
+  /* Manel A. */
+
+  position: absolute;
+  left: 4.66%;
+  right: unset;
+  top: 47.77%;
+  bottom: 40.18%;
+
+  /* Title H3-Oswald-Bold-18pt */
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* Neutros/00 */
+
+  color: #ffffff;
+}
+
+.descubreRetosRetoTituloText {
+  /* Reto Natación */
+
+  position: absolute;
+  left: 4.66%;
+  right: unset;
+  /* top: 58.93%; */
+  top: 61.93%;
+  bottom: 30.36%;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+
+  /* Neutros/00 */
+
+  color: #ffffff;
+}
+
+.descubreRetosRetoObjetivoRecText {
+  /* Objetivo 1200 € */
+
+  position: absolute;
+  left: 4.66%;
+  right: unset;
+  top: 75.89%;
+  bottom: 16.96%;
+
+  /* Caption-Roboto-Regular-14pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  display: flex;
+  align-items: flex-end;
+
+  /* Neutros/00 */
+
+  color: #ffffff;
+}
+
+.descubreRetosRetoFechaInicioText {
+  /* Inicia 21/04/2021 */
+
+  position: absolute;
+  left: 4.66%;
+  right: unset;
+  top: 85.71%;
+  bottom: 7.14%;
+
+  /* Caption-Roboto-Regular-14pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  display: flex;
+  align-items: flex-end;
+
+  /* Neutros/00 */
+
+  color: #ffffff;
+}
+
+.descubreRetosRetoBtn {
+  /* Button */
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 32px;
+
+  position: absolute;
+  left: 48.4%;
+  right: 0.29%;
+  top: 75%;
+  bottom: 7.14%;
+
+  /* Acento/80 */
+
+  background: #fe4a49;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.descubreRetosRetoBtnText {
+  /* Click Me */
+
+  position: absolute;
+  left: 18.18%;
+  right: 18.18%;
+  top: -20%;
+  bottom: 20%;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* White */
+
+  color: #ffffff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
+
 /*! ICONOS */
 /** Icono user: */
 .iconoUser {
@@ -134,6 +934,7 @@
 /** Elementos Navbar: */
 .Navbar {
   background-color: var(--colorPrimario90) !important;
+  right: -0.6px;
 }
 
 .NavbarLinkContainer {

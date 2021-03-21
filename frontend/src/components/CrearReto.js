@@ -1,21 +1,40 @@
-import React from 'react'
-import { Card, Row, Col, ListGroup, Button} from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
+import React from "react";
+import { Card, Row, Col, ListGroup, Button, Container } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
+import homeFirstImg from "../assets/images/homeFirstImg.png";
 
 const CrearReto = () => {
-    return<>
-    <Row>
-        <Col md={3}>
-        <Card>
-        <ListGroup variant="flush">
-        
-        <LinkContainer to='/crearnuevoreto'><Button type='submit' variant='primary'>Crear reto</Button></LinkContainer>
-        
-        </ListGroup>
-        </Card>
+  return (
+    <>
+      <Row>
+        <Col>
+            <Container>
+              <figure className="homeFirstFigure">
+                <img src={homeFirstImg} alt="homeFirstImg" />
+                <figcaption className="homeFirstImgText">
+                  Tienes
+                  <br />
+                  3 semanas
+                  <br />
+                  para superarte
+                </figcaption>
+                <LinkContainer to="/crearnuevoreto">
+                  <Button
+                    type="submit"
+                    className="homeFirstImgBtn"
+                    variant="danger"
+                  >
+                    <figcaption className="homeFirstImgBtnText">
+                      Empieza tu reto ahora
+                    </figcaption>
+                  </Button>
+                </LinkContainer>
+              </figure>
+            </Container>
         </Col>
-    </Row>
+      </Row>
     </>
-}
+  );
+};
 
-export default CrearReto
+export default CrearReto;
