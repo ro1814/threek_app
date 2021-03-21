@@ -11,6 +11,7 @@ import tipoEscalada from "../../assets/tipo-reto/escalada.png";
 import tipoNatacion from "../../assets/tipo-reto/natacion.png";
 import tipoTrecking from "../../assets/tipo-reto/trecking.png";
 import barraProgreso from "../../assets/barra_crear_reto/Progreso-reto1.png";
+import "./TipoScreen.css";
 
 const TipoScreen = ({ history }) => {
   const retoSave = useSelector((state) => state.retoSave);
@@ -48,7 +49,9 @@ const TipoScreen = ({ history }) => {
       <Form onSubmit={submitHandler}>
         <Form.Group controlId="deporte">
           <Form.Label>
-            <h2>¿Con qué deporte está relacionado tu reto?</h2>
+            <h2 className="TipoScreenDeporteRelacionadoH2Text">
+              ¿Con qué deporte está relacionado tu reto?
+            </h2>
           </Form.Label>
 
           <img
@@ -163,7 +166,7 @@ const TipoScreen = ({ history }) => {
           variant="primary"
           className="Primary-button"
         >
-          Continue
+          <figcaption className="TipoScreenBtn">Siguiente</figcaption>
         </Button>
       </Form>
     </FormContainer>

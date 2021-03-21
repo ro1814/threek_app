@@ -9,6 +9,7 @@ import investigacionFoto from "../../assets/causa/investigacion.png";
 import calidadFoto from "../../assets/causa/calidad-vida.png";
 import visibilidadFoto from "../../assets/causa/visibilidad.png";
 import barraProgreso from "../../assets/barra_crear_reto/Progreso-reto2.png";
+import "./CausaScreen.css";
 
 const CausaScreen = ({ history }) => {
   const retoSave = useSelector((state) => state.retoSave);
@@ -44,7 +45,7 @@ const CausaScreen = ({ history }) => {
       <Form onSubmit={submitHandler}>
         <Form.Group controlId="causa">
           <FormLabel>
-            <h2>
+            <h2 className="CausaScreenAreaDonacionesH2Text">
               ¿A qué área de la enfermedad ELA quiere destinar las donaciones?
             </h2>
             <br></br>
@@ -139,7 +140,9 @@ const CausaScreen = ({ history }) => {
             bottom: "20px",
           }}
         >
-          Continue
+          <figcaption className="CausaScreenBtnText">
+            Siguiente
+          </figcaption>
         </Button>
       </Form>
     </FormContainer>

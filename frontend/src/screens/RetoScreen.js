@@ -19,6 +19,7 @@ import Retador from "../components/CardRetador";
 //Imagenes
 import fotoReto1 from "../assets/fotos-reto/foto1.png";
 import retador1 from "../assets/retadores/retador1.png";
+import "./RetoScreen.css";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -89,7 +90,7 @@ const RetoScreen = ({ history, match }) => {
               <ListGroup.Item style={{ paddingLeft: "0", paddingRight: "0" }}>
                 {/* MISMO ROW */}
                 <span className="fechaCaption">
-                  Inicio: {reto.fechaInicio}, Fin: 22-01-2021
+                  Inicio {reto.fechaInicio} - Fin 25 julio
                 </span>
                 <span>
                   <b>Faltan 3 días</b>
