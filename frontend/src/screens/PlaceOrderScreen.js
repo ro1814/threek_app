@@ -50,13 +50,12 @@ const PlaceOrderScreen = (history) => {
       ></img>
           <ListGroup variant="flush">
             <ListGroup.Item>
-              <h2>Método de pago</h2>
+              <h2 style={{marginBottom:'24px'}}>Resumen</h2>
               <strong>Método: </strong>
               {sponsor.paymentMethod}
             </ListGroup.Item>
 
             <ListGroup.Item>
-              <h2 style={{marginTop:'16px'}}>Reto a esponsorizar:</h2>
               {sponsor.sponsorItems.length === 0 ? (
                 <Message>No tienes retos a esponsorizar</Message>
               ) : (
@@ -88,7 +87,7 @@ const PlaceOrderScreen = (history) => {
           <Card style={{background:'transparent !important'}}>
             <ListGroup variant="flush" style={{background:'transparent !important'}}> 
               <ListGroup.Item>
-                <h2>Resumen de esponsor</h2>
+                <h3>Donación</h3>
               </ListGroup.Item>
               <ListGroup.Item style={{background:'transparent !important'}}>
                 <Row>
