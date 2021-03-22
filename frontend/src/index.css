@@ -97,7 +97,7 @@ h3{
   font-size: 14pt !important;
   text-align: left !important;
 }
-label, p, Form.label, .form-check{
+label, p, Form.label, .form-check, span{
   font-family: var(--bodyFont) !important;
   font-size: 14pt !important;
   text-align:left !important;
