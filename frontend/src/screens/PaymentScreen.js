@@ -7,6 +7,7 @@ import {
   saveCantidadPersonalizada,
 } from "../actions/sponsorActions";
 import CheckoutSteps from "../components/CheckoutSteps";
+import barraProgreso from "../assets/barra_donar_reto/Progreso-donar2.png";
 
 const PaymentScreen = ({ history }) => {
   const sponsor = useSelector((state) => state.sponsor);
@@ -30,7 +31,16 @@ const PaymentScreen = ({ history }) => {
 
   return (
     <FormContainer>
-      <CheckoutSteps step1 step3 />
+      {/* <CheckoutSteps step1 step3 /> */}
+      <img
+        src={barraProgreso}
+        alt="barraProgreso"
+        style={{
+          marginLeft: "24vw",
+          marginTop: "24px",
+          marginBottom: "24px",
+        }}
+      ></img>
       <h2>Importe</h2>
       <Form onSubmit={submitHandler}>
         <Form.Group>
@@ -120,6 +130,10 @@ const PaymentScreen = ({ history }) => {
               boxShadow: '0px 4px 4px rgba(0, 54, 38, 0.4)'
             }}
           />
+          
+          <Form.Label as="legend">
+            <p>Número de tarjeta</p>
+          </Form.Label>
         </Form.Group>
         <Button type="submit" variant="primary" className="Primary-button">
           Continuar

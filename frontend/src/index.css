@@ -110,7 +110,6 @@ label, p, Form.label, .form-check{
 }
 .fechaCaption{
   font-size:0.9rem !important;
-  
 }
 
 
@@ -171,6 +170,20 @@ Form{
   font-size: 16pt !important;
   font-weight: 700 !important;
 }
+.Secondary-button{
+  background: var(--colorNeutro10) !important;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 8px !important;
+  border:none !important;
+  height:56px !important;
+  width: 343px !important;
+  font-family: var(--bodyFont);
+  font-size: 16pt !important;
+  font-weight: 700 !important;
+}
+.Secondary-button a{
+  color:#FE4A49;
+}
 /* .btn-danger:hover {
   background-color: var(--colorAcento80) !important;
 } */
@@ -190,6 +203,20 @@ Form{
   left:-16px;
   top:-16px;
   color:var(--colorNeutro00);
+}
+.FondoForms1{
+  background: var(--colorPrimario80) !important;
+  height:calc(100vh - 57px);
+  width:100vw !important;
+  position:relative;
+  top:-16px;
+  color:var(--colorNeutro00);
+}
+.card{
+  background:transparent !important;
+}
+.list-group-flush>.list-group-item{
+  background:transparent;
 }
 
 /*! Componente Header.js */
@@ -240,3 +267,4 @@ Form{
   
   .rating span {
     margin: 0.1rem;
+*/

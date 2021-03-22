@@ -132,7 +132,7 @@ const TipoScreen = ({ history }) => {
             style={{
               position: "absolute",
               top: "300px",
-              left: "82px",
+              left: "102px",
               height: "80px",
             }}
           ></img>
@@ -155,7 +155,7 @@ const TipoScreen = ({ history }) => {
             style={{
               position: "absolute",
               top: "300px",
-              left: "216px",
+              left: "196px",
               height: "80px",
             }}
           ></img>
