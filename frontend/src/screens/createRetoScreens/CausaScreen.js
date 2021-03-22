@@ -141,9 +141,7 @@ const CausaScreen = ({ history }) => {
             bottom: "20px",
           }}
         >
-          <figcaption className="CausaScreenBtnText">
-            Siguiente
-          </figcaption>
+          <figcaption className="CausaScreenBtnText">Siguiente</figcaption>
         </Button>
       </Form>
     </FormContainer>

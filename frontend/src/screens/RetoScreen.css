@@ -1,0 +1,1162 @@
+/** RetoScreenDetalles */
+
+.RetoScreenRetoFechasText {
+  /* Incio 5 julio - Fin 25 julio */
+
+  position: absolute !important ;
+  width: 186px !important;
+  height: 16px !important;
+  left: 0 !important;
+  top: -20px !important;
+
+  /* Caption-Roboto-Regular-14pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  /* identical to box height, or 114% */
+
+  text-align: center !important;
+
+  /* Neutros/70 */
+
+  color: #5c585d !important;
+}
+
+.RetoScreenRetoActivoText {
+  /* Reto Activo */
+
+  position: absolute !important ;
+  width: 186px !important;
+  height: 16px !important;
+  left: 156px !important;
+  top: -25px !important;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px;
+  /* or 150% */
+
+  text-align: right !important;
+
+  /* Primarios/60 */
+
+  color: #335f46 !important;
+}
+
+.RetoScreenRetoDiasRestantesText {
+  /* Faltan 10 días */
+
+  position: absolute !important ;
+  width: 186px !important;
+  height: 16px !important;
+  left: 156px !important;
+  top: -25px !important;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px;
+  /* or 150% */
+
+  text-align: right !important;
+
+  /* Primarios/60 */
+
+  color: #2d292e !important;
+}
+
+.RetoScreenRetoTituloText {
+  /* Reto Theek Natación */
+
+  position: absolute !important ;
+  width: 286px !important;
+  height: 16px !important;
+  left: 0 !important;
+  top: 15px !important;
+
+  /* Title H2-Oswald-Bold-24pt */
+
+  font-family: Oswald !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+
+  /* Neutros/80 */
+
+  color: #2d292e !important;
+}
+
+.RetoScreenRetoRecaudacionText {
+  /* Recaudado 1.540€ de 2.200€ */
+
+  position: absolute !important ;
+  width: 286px !important;
+  height: 16px !important;
+  left: 0 !important;
+  top: 70px !important;
+
+  /* Body-Roboto-Medium-18pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 133% */
+
+  display: flex !important;
+  align-items: center !important;
+
+  /* Neutros/70 */
+
+  color: #5c585d !important;
+}
+
+.RetoScreenRetoProgressBar {
+  position: absolute !important ;
+  width: 344px !important;
+  height: 16px !important;
+  left: 0 !important;
+  top: 100px !important;
+}
+
+/** RetoScreenCardRetador */
+
+.RetoScreenRetoCardRetador {
+  /* Rectangle 302 */
+
+  position: absolute !important;
+  width: 344px !important;
+  height: 163px !important;
+  left: 0 !important;
+  top: 150px !important;
+
+  /* Primarios/20 (Luzón) */
+
+  border: 1px solid #cadaa7 !important;
+  box-sizing: border-box !important;
+  border-radius: 8px !important;
+}
+
+.RetoScreenRetoRetadorImg {
+  /* retador1 */
+
+  position: absolute;
+  width: 107px;
+  height: 147px;
+  left: calc(50% - 107px / 2 - 111px);
+  top: 7px;
+}
+
+.RetoScreenRetoRetadorNombreText {
+  /* Creado por Nuria L. */
+
+  position: absolute !important;
+  width: 167px !important;
+  height: 22px !important;
+  left: 130px !important;
+  top: 7px !important;
+
+  /* Body-Roboto-Regular-18pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  /* or 133% */
+
+  /* Neutros/80 */
+
+  color: #2d292e !important;
+}
+
+.RetoScreenRetoRetadorRecaudadoText {
+  /* Total recaudado 2.540€ */
+
+  position: absolute !important;
+  width: 167px !important;
+  height: 16px !important;
+  left: 130px !important;
+  top: 43px !important;
+
+  /* Caption-Roboto-Regular-14pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  /* identical to box height, or 114% */
+
+  /* Neutros/70 */
+
+  color: #5c585d !important;
+}
+
+.RetoScreenRetoRetadorRetosCreadosText {
+  /* 2 retos */
+
+  position: absolute !important;
+  width: 167px !important;
+  height: 16px !important;
+  left: 130px !important;
+  top: 63px !important;
+
+  /* Caption-Roboto-Regular-14pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  /* identical to box height, or 114% */
+
+  /* Neutros/70 */
+
+  color: #5c585d !important;
+}
+
+.RetoScreenRetoRetadorCausaRetoText {
+  /* En favor de */
+
+  position: absolute !important;
+  width: 80px !important;
+  height: 24px !important;
+  left: 130px !important;
+  top: 118px !important;
+
+  /* Body-Roboto-Regular-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 150% */
+
+  /* Neutros/80 */
+
+  color: #2d292e !important;
+}
+
+.RetoScreenRetoRetadorCausaRetoBtn {
+  /* Rectangle 303 */
+
+  position: absolute !important;
+  width: 116px !important;
+  height: 33px !important;
+  right: 11px !important;
+  top: 114px !important;
+
+  /* Primarios/20 (Luzón) */
+
+  background: #cadaa7 !important;
+  border-radius: 8px !important;
+}
+
+.RetoScreenRetoRetadorCausaRetoBtnText {
+  /* Investigación */
+
+  position: absolute !important;
+  width: 97px !important;
+  height: 24px !important;
+  right: 8px !important;
+  top: 4px !important;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 150% */
+
+  display: flex !important;
+  align-items: center !important;
+
+  /* Neutros/70 */
+
+  color: #5c585d;
+}
+
+/** RetoScreenRetoBtnSponsor1 */
+
+.RetoScreenRetoBtnSponsor1 {
+  /* Button */
+
+  /* Auto Layout */
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding: 16px 32px !important;
+
+  position: absolute !important;
+  width: 344px !important;
+  height: 56px !important;
+  left: 0 !important;
+  top: 350px !important;
+
+  /* Acento/80 */
+
+  background: #fe4a49 !important;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 8px !important;
+}
+
+.RetoScreenRetoBtnSponsor1Text {
+  /* Click Me */
+
+  position: absolute !important;
+  width: 344px !important;
+  height: 56px !important;
+  left: 0 !important;
+  top: 5px !important;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 150% */
+
+  text-align: center !important;
+  display: inline-block !important;
+
+  /* White */
+
+  color: #ffffff !important;
+
+  /* Inside Auto Layout */
+
+  flex: none !important;
+  order: 0 !important;
+  flex-grow: 0 !important;
+  margin: 12px 0px 12px !important;
+}
+
+/** RetoScreenRetoInfo  */
+
+.RetoScreenRetoInfoTitleText {
+  /* Información */
+
+  position: absolute !important;
+  width: 120px !important;
+  height: 24px !important;
+  left: 0 !important;
+  top: 448px !important;
+
+  /* Body-Roboto-Medium-22pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 22px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 109% */
+
+  display: flex !important;
+  align-items: center !important;
+
+  /* Neutros/80 */
+
+  color: #2d292e !important;
+}
+
+.RetoScreenRetoInfoPrincipalImg {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 343px !important;
+  height: 246px !important;
+  left: 0 !important;
+  top: 478px !important;
+}
+
+.RetoScreenRetoInfoRetoDesc {
+  position: absolute !important;
+  width: 341px !important;
+  height: 216px !important;
+  left: 0 !important;
+  top: 738px !important;
+
+  /* Body-Roboto-Regular-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* or 150% */
+
+  /* Neutros/70 */
+
+  color: #5c585d !important;
+}
+
+.RetoScreenIconosRedesSocialesFacebookVerde {
+  /* Icon/ Facebook */
+
+  position: absolute !important;
+  left: 0 !important;
+  top: 818px !important;
+}
+
+.RetoScreenFacebookRetador {
+  /* @nuriclimb */
+
+  position: absolute !important;
+  width: 83px !important;
+  height: 24px !important;
+  left: 30px !important;
+  top: 820px !important;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 150% */
+
+  text-align: right !important;
+
+  /* Neutros/80 */
+
+  color: #2d292e !important;
+}
+
+.RetoScreenIconosRedesSocialesInstagramVerde {
+  /* Icon/ Instagram */
+
+  position: absolute !important;
+  left: 200px !important;
+  top: 818px !important;
+}
+
+.RetoScreenInstagramRetador {
+  /* @nuriclimb */
+
+  position: absolute !important;
+  width: 83px !important;
+  height: 24px !important;
+  left: 230px !important;
+  top: 820px !important;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 150% */
+
+  text-align: right !important;
+
+  /* Neutros/80 */
+
+  color: #2d292e !important;
+}
+
+/** RetoScreenRetoDia  */
+
+.RetoScreenRetoDiaTitleText {
+  /* El reto día a día */
+
+  position: absolute !important;
+  width: 151px !important;
+  height: 24px !important;
+  left: 0 !important;
+  top: 875px !important;
+
+  /* Body-Roboto-Medium-22pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 22px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 109% */
+
+  display: flex !important;
+  align-items: center !important;
+
+  /* Neutros/80 */
+
+  color: #2d292e !important;
+}
+
+/*! Row 1 */
+
+.RetoScreenRetoDiaImg1 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: -20px !important;
+  top: 905px !important;
+}
+
+.RetoScreenRetoDiaImg2 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 905px !important;
+}
+
+.RetoScreenRetoDiaImg3 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 20px;
+  right: 0 !important;
+  top: 905px !important;
+}
+
+/*! Row 2 */
+
+.RetoScreenRetoDiaImg4 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: -20px !important;
+  top: 995px !important;
+}
+
+.RetoScreenRetoDiaImg5 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 995px !important;
+}
+
+.RetoScreenRetoDiaImg6 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 20px;
+  right: 0 !important;
+  top: 995px !important;
+}
+
+/*! Row 3 */
+
+.RetoScreenRetoDiaImg7 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: -20px !important;
+  top: 1085px !important;
+}
+
+.RetoScreenRetoDiaImg8 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 1085px !important;
+}
+
+.RetoScreenRetoDiaImg9 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 20px;
+  right: 0 !important;
+  top: 1085px !important;
+}
+
+/*! Row 4 */
+
+.RetoScreenRetoDiaImg10 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: -20px !important;
+  top: 1175px !important;
+}
+
+.RetoScreenRetoDiaImg11 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 1175px !important;
+}
+
+.RetoScreenRetoDiaImg12 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 20px;
+  right: 0 !important;
+  top: 1175px !important;
+}
+
+/*! Row 5 */
+
+.RetoScreenRetoDiaImg13 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: -20px !important;
+  top: 1265px !important;
+}
+
+.RetoScreenRetoDiaImg14 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 1265px !important;
+}
+
+.RetoScreenRetoDiaImg15 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 20px;
+  right: 0 !important;
+  top: 1265px !important;
+}
+
+/*! Row 6 */
+
+.RetoScreenRetoDiaImg16 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: -20px !important;
+  top: 1355px !important;
+}
+
+.RetoScreenRetoDiaImg17 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 1355px !important;
+}
+
+.RetoScreenRetoDiaImg18 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 20px;
+  right: 0 !important;
+  top: 1355px !important;
+}
+
+/*! Row 7 */
+
+.RetoScreenRetoDiaImg19 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: -20px !important;
+  top: 1455px !important;
+}
+
+.RetoScreenRetoDiaImg20 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 1455px !important;
+}
+
+.RetoScreenRetoDiaImg21 {
+  /* Pexels Photo by Riccardo Bresciani */
+
+  position: absolute !important;
+  width: 200px !important;
+  height: 74px !important;
+  left: 20px;
+  right: 0 !important;
+  top: 1455px !important;
+}
+
+/** RetoScreenRetoCausa */
+
+.RetoScreenRetoCausaTitleText {
+  /* Causa */
+
+  position: absolute !important;
+  width: 62px !important;
+  height: 24px !important;
+  left: 0 !important;
+  top: 1567px !important;
+
+  /* Body-Roboto-Medium-22pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 22px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 109% */
+
+  display: flex !important;
+  align-items: center !important;
+
+  /* Neutros/80 */
+
+  color: #2d292e !important;
+}
+
+.RetoScreenRetoCausaInfoText {
+  position: absolute !important;
+  width: 341px !important;
+  height: 216px !important;
+  left: 0 !important;
+  top: 1607px !important;
+
+  /* Body-Roboto-Regular-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* or 150% */
+
+  /* Neutros/70 */
+
+  color: #5c585d !important;
+}
+
+.RetoScreenRetoCausaVerMasText {
+  /* Ver más */
+
+  position: absolute !important;
+  width: 64px !important;
+  height: 24px !important;
+  left: 140px !important;
+  top: 1810px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 150% */
+
+  text-decoration-line: underline !important;
+
+  /* Semánticos/Información/80 */
+
+  color: #004c92 !important;
+}
+
+/** RetoScreenRetoSponsors */
+
+.RetoScreenRetoSponsorsTitleText {
+  /* Sponsors */
+
+  position: absolute !important;
+  width: 94px !important;
+  height: 24px !important;
+  left: 0 !important;
+  top: 1860px !important;
+
+  /* Body-Roboto-Medium-22pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 22px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 109% */
+
+  display: flex !important;
+  align-items: center !important;
+
+  /* Neutros/80 */
+
+  color: #2d292e !important;
+}
+
+/*! Sponsor 1  */
+
+.RetoScreenRetoSponsorBarraHorizontal1 {
+  position: absolute !important;
+  width: 343px !important;
+  height: 1px !important;
+  left: 0 !important;
+  top: 1890px !important;
+}
+
+.RetoScreenRetoSponsorName1 {
+  /* Susana Sanchez */
+
+  position: absolute !important;
+  width: 125px !important;
+  height: 20px !important;
+  left: 0 !important;
+  top: 1900px !important;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* or 150% */
+
+  /* Primarios/60 */
+
+  color: #335f46 !important;
+}
+
+.RetoScreenRetoSponsorDonacionText1 {
+  /* Donó */
+
+  position: absolute !important;
+  width: 38px !important;
+  height: 20px !important;
+  left: 266px !important;
+  top: 1900px !important;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* or 150% */
+
+  /* Neutros/70 */
+
+  color: #5c585d !important;
+}
+
+.RetoScreenRetoSponsorDonacionCifra1 {
+  /* 20 € */
+
+  position: absolute !important;
+  width: 34px !important;
+  height: 20px !important;
+  left: 315px !important;
+  top: 1900px !important;
+
+  /* Body-Roboto-Bold-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* or 150% */
+
+  /* Acento/80 */
+
+  color: #fe4a49 !important;
+}
+
+.RetoScreenRetoSponsorText1 {
+  position: absolute !important;
+  width: 341px !important;
+  height: 48px !important;
+  left: 2px !important;
+  top: 1935px !important;
+
+  /* Body-Roboto-Regular-16pt */
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  /* or 150% */
+
+  /* Neutros/70 */
+
+  color: #5c585d !important;
+}
+
+/*! Sponsor 2 */
+
+.RetoScreenRetoSponsorBarraHorizontal2 {
+  position: absolute !important;
+  width: 343px !important;
+  height: 1px !important;
+  left: 0 !important;
+  top: 1990px !important;
+}
+
+.RetoScreenRetoSponsorName2 {
+  position: absolute !important;
+  width: 125px !important;
+  height: 20px !important;
+  left: 0 !important;
+  top: 2000px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  color: #335f46 !important;
+}
+
+.RetoScreenRetoSponsorDonacionText2 {
+  position: absolute !important;
+  width: 38px !important;
+  height: 20px !important;
+  left: 266px !important;
+  top: 2000px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  color: #5c585d !important;
+}
+
+.RetoScreenRetoSponsorDonacionCifra2 {
+  position: absolute !important;
+  width: 34px !important;
+  height: 20px !important;
+  left: 315px !important;
+  top: 2000px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  color: #fe4a49 !important;
+}
+
+.RetoScreenRetoSponsorText2 {
+  position: absolute !important;
+  width: 341px !important;
+  height: 48px !important;
+  left: 2px !important;
+  top: 2035px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  color: #5c585d !important;
+}
+
+/*! Sponsor 3 */
+
+.RetoScreenRetoSponsorBarraHorizontal3 {
+  position: absolute !important;
+  width: 343px !important;
+  height: 1px !important;
+  left: 0 !important;
+  top: 2090px !important;
+}
+
+.RetoScreenRetoSponsorName3 {
+  position: absolute !important;
+  width: 125px !important;
+  height: 20px !important;
+  left: 0 !important;
+  top: 2100px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  color: #335f46 !important;
+}
+
+.RetoScreenRetoSponsorDonacionText3 {
+  position: absolute !important;
+  width: 38px !important;
+  height: 20px !important;
+  left: 266px !important;
+  top: 2100px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  color: #5c585d !important;
+}
+
+.RetoScreenRetoSponsorDonacionCifra3 {
+  position: absolute !important;
+  width: 34px !important;
+  height: 20px !important;
+  left: 315px !important;
+  top: 2100px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  color: #fe4a49 !important;
+}
+
+.RetoScreenRetoSponsorText3 {
+  position: absolute !important;
+  width: 341px !important;
+  height: 48px !important;
+  left: 2px !important;
+  top: 2135px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  color: #5c585d !important;
+}
+
+.RetoScreenRetoSponsorBarraHorizontal4 {
+  position: absolute !important;
+  width: 343px !important;
+  height: 1px !important;
+  left: 0 !important;
+  top: 2130px !important;
+}
+
+.RetoScreenRetoSponsorVerMasText {
+  position: absolute !important;
+  width: 64px !important;
+  height: 24px !important;
+  left: 140px !important;
+  top: 2145px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  text-decoration-line: underline !important;
+
+  color: #004c92 !important;
+}
+
+/** RetoScreenBtnSponsor2  */
+
+.RetoScreenRetoBtnSponsor2 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding: 16px 32px !important;
+
+  position: absolute !important;
+  width: 344px !important;
+  height: 56px !important;
+  left: 0 !important;
+  top: 2205px !important;
+  margin-bottom: -20px !important;
+
+  background: #fe4a49 !important;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 8px !important;
+}
+
+.RetoScreenRetoBtnSponsor2Text {
+  position: absolute !important;
+  width: 344px !important;
+  height: 56px !important;
+  left: 0 !important;
+  top: 5px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  text-align: center !important;
+  display: inline-block !important;
+
+  color: #ffffff !important;
+
+  flex: none !important;
+  order: 0 !important;
+  flex-grow: 0 !important;
+  margin: 12px 0px 12px !important;
+}

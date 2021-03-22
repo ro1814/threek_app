@@ -117,6 +117,39 @@ const CrearScreen = ({ history }) => {
             <br/>
             
 
+            <Form.Row>
+              <Form.Label>¿Cuando empieza tu reto?</Form.Label>
+
+              <Col>
+                <Button
+                  variant="primary"
+                  size="sm"
+                  onClick={() => setSmShow(true)}
+                >
+                  <img src={Vector} alt="" />
+                </Button>
+              </Col>
+            </Form.Row>
+
+            <Modal
+              centered
+              autoFocus
+              size="sm"
+              show={smShow}
+              onHide={() => setSmShow(false)}
+              aria-labelledby="example-modal-sizes-title-sm"
+            >
+              <Modal.Header closeButton>
+                <Modal.Title id="example-modal-sizes-title-sm"></Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                En threek los retos son de 3 semanas, 21 días. Tú pones la fecha
+                de inicio, y la de fin se calcula automaticamente. Te
+                recomendamos que crees retos entre 1 y 15 días antes del inicio.
+              </Modal.Body>
+            </Modal>
+            <br />
+
             <FormControl
               type="date"
               name="fechaInicio"
