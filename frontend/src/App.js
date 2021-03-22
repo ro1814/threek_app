@@ -18,7 +18,8 @@ import CrearScreen from './screens/createRetoScreens/CrearScreen'
 import ImagenReto from './screens/createRetoScreens/ImagenReto'
 import RetoCreado from './screens/RetoCreado'
 import CausasScreen from './screens/CausasScreen'
-
+import InvestigacionScreen from './screens/InvestigacionScreen'
+import CalDeVidaScreen from './screens/CalDeVidaScreen'
 
 const App = () => {
   return (
@@ -42,6 +43,8 @@ const App = () => {
             <Route path='/crearretoimagenes' component={ImagenReto}/>
             <Route path='/retocreado' component={RetoCreado}/>
             <Route path='/causas' component={CausasScreen}/>
+            <Route path='/causa/investigacion' component={InvestigacionScreen}/>
+            <Route path='/causa/calidaddevidaela' component={CalDeVidaScreen}/>
           </Container>
           
       </main>
