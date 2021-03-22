@@ -53,6 +53,7 @@ const Header = () => {
           >
             <Navbar.Brand>
               <img src={logothreek} alt="logothreek" height="20px" />
+              
             </Navbar.Brand>
           </LinkContainer>
 
@@ -60,7 +61,7 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="NavbarToggle ml-auto">
-              {userInfo ? (
+              {/* {userInfo ? (
                 <NavDropdown title={userInfo.nombre} id="username">
                   <LinkContainer to="/profile" className="danger">
                     <NavDropdown.Item>Perfil</NavDropdown.Item>
@@ -75,14 +76,14 @@ const Header = () => {
                 <LinkContainer className="NavbarLinkContainer" to="/login">
                   <Nav.Link>Iniciar sesión</Nav.Link>
                 </LinkContainer>
-              )}
+              )} */}
               <Nav.Link className="NavbarLink" href="#Retos">
                 Retos
               </Nav.Link>
-              <Nav.Link className="NavbarLink" href="#RankingRetadores">
+              <Nav.Link className="NavbarLink" href="/rankingretadores">
                 Ranking retadores
               </Nav.Link>
-              <Nav.Link className="NavbarLink" href="#aCausas">
+              <Nav.Link className="NavbarLink" href="/causas">
                 Causas
               </Nav.Link>
             </Nav>

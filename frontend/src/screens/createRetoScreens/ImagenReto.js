@@ -44,7 +44,7 @@ const ImagenReto = ({ history }) => {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(saveImagenReto({ videoURL, socialMedia }));
-    history.push('/retocreado')
+    history.push('/reto/6051f46d192de50d7778e961')
   };
 
   const [show, setShow] = useState(false);

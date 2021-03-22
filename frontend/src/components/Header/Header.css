@@ -21,3 +21,10 @@
   background-color: #003626 !important;
   color: #ffffff !important;
 }
+
+a:visited{
+  color: white;
+}
+.visitedLink{
+  color: white;
+}
