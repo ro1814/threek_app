@@ -24,22 +24,9 @@ import retador1 from "../assets/retadores/retador1.png";
 import IconosRedesSocialesFacebookVerde from "../assets/images/Icons/IconosRedesSocialesFacebookVerde.png";
 import IconosRedesSocialesInstagramVerde from "../assets/images/Icons/IconosRedesSocialesInstagramVerde.png";
 import BarraHorizontal from "../assets/BarraHorizontal.png";
-import RetoScreenDiaImgNo from "../assets/images/RetoScreenImages/RetoScreenDiaImgNo.png"
-import fotoDia1 from '../assets/fotos-reto/foto-dia1.png'
-import fotoDia2 from '../assets/fotos-reto/foto-dia2.png'
-import fotoDia3 from '../assets/fotos-reto/foto-dia3.png'
-import fotoDia4 from '../assets/fotos-reto/foto-dia4.png'
-import fotoDia5 from '../assets/fotos-reto/foto-dia5.png'
-import fotoDia6 from '../assets/fotos-reto/foto-dia6.png'
-import fotoDia7 from '../assets/fotos-reto/foto-dia7.png'
-import fotoDia8 from '../assets/fotos-reto/foto-dia8.png'
-import fotoDia9 from '../assets/fotos-reto/foto-dia9.png'
-import fotoDia10 from '../assets/fotos-reto/foto-dia10.png'
-import fotoDia11 from '../assets/fotos-reto/foto-dia11.png'
-import fotoDia12 from '../assets/fotos-reto/foto-dia12.png'
-import fotoDia13 from '../assets/fotos-reto/foto-dia13.png'
-import fotoModal from '../assets/fotos-reto/foto-dia1-modal.png'
-import video1 from '../assets/fotos-reto/video1.png'
+import retoNo1 from '../assets/fotos-reto/retoNo-1.png'
+import retoNo2 from '../assets/fotos-reto/retoNo-2.png'
+import videono1 from '../assets/fotos-reto/videoNo1.png'
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -56,7 +43,7 @@ function MyVerticallyCenteredModal(props) {
         Día 1
       </Modal.Title>
       <Image
-        src={fotoModal}
+        src={videono1}
         alt="fotoReto1"
         fluid
         className="RetoScreenModalPublicacionDiaImg"
@@ -176,7 +163,7 @@ const RetoScreen = ({ history, match }) => {
                 </h4>
 
                 <Image
-                  src={video1}
+                  src={videono1}
                   alt="fotoReto1"
                   fluid
                   className="RetoScreenRetoInfoPrincipalImg"
@@ -208,7 +195,7 @@ const RetoScreen = ({ history, match }) => {
                   <Row>
                     <Col>
                       <Image
-                        src={fotoDia1}
+                        src={retoNo1}
                         fluid
                         onClick={() => setModalShow(true)}
                         className="RetoScreenRetoDiaImg1"
@@ -216,14 +203,14 @@ const RetoScreen = ({ history, match }) => {
                     </Col>
                     <Col>
                       <Image
-                        src={fotoDia2}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg2"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoDia3}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg3"
                       />
@@ -233,21 +220,21 @@ const RetoScreen = ({ history, match }) => {
                   <Row>
                     <Col>
                       <Image
-                        src={fotoDia4}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg4"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoDia5}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg5"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoDia6}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg6"
                       />
@@ -257,21 +244,21 @@ const RetoScreen = ({ history, match }) => {
                   <Row>
                     <Col>
                       <Image
-                        src={fotoDia7}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg7"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoDia8}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg8"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoDia9}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg9"
                       />
@@ -281,21 +268,21 @@ const RetoScreen = ({ history, match }) => {
                   <Row>
                     <Col>
                       <Image
-                        src={fotoDia10}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg10"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoDia11}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg11"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoDia12}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg12"
                       />
@@ -305,21 +292,21 @@ const RetoScreen = ({ history, match }) => {
                   <Row>
                     <Col>
                       <Image
-                        src={fotoDia13}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg13"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={RetoScreenDiaImgNo}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg14"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={RetoScreenDiaImgNo}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg15"
                       />
@@ -329,21 +316,21 @@ const RetoScreen = ({ history, match }) => {
                   <Row>
                     <Col>
                       <Image
-                        src={RetoScreenDiaImgNo}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg16"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={RetoScreenDiaImgNo}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg17"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={RetoScreenDiaImgNo}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg18"
                       />
@@ -353,21 +340,21 @@ const RetoScreen = ({ history, match }) => {
                   <Row>
                     <Col>
                       <Image
-                        src={RetoScreenDiaImgNo}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg19"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={RetoScreenDiaImgNo}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg20"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={RetoScreenDiaImgNo}
+                        src={retoNo2}
                         fluid
                         className="RetoScreenRetoDiaImg21"
                       />
