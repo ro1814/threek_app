@@ -718,7 +718,7 @@
   width: 200px !important;
   height: 74px !important;
   left: -20px !important;
-  top: 1355px !important;
+  top: 1455px !important;
 }
 
 .RetoScreenRetoDiaImg20 {
@@ -729,7 +729,7 @@
   height: 74px !important;
   left: 0 !important;
   right: 0 !important;
-  top: 1355px !important;
+  top: 1455px !important;
 }
 
 .RetoScreenRetoDiaImg21 {
@@ -740,7 +740,7 @@
   height: 74px !important;
   left: 20px;
   right: 0 !important;
-  top: 1355px !important;
+  top: 1455px !important;
 }
 
 /** RetoScreenRetoCausa */
@@ -752,7 +752,7 @@
   width: 62px !important;
   height: 24px !important;
   left: 0 !important;
-  top: 1467px !important;
+  top: 1567px !important;
 
   /* Body-Roboto-Medium-22pt */
 
@@ -776,7 +776,7 @@
   width: 341px !important;
   height: 216px !important;
   left: 0 !important;
-  top: 1507px !important;
+  top: 1607px !important;
 
   /* Body-Roboto-Regular-16pt */
 
@@ -799,7 +799,7 @@
   width: 64px !important;
   height: 24px !important;
   left: 140px !important;
-  top: 1710px !important;
+  top: 1810px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -824,7 +824,7 @@
   width: 94px !important;
   height: 24px !important;
   left: 0 !important;
-  top: 1760px !important;
+  top: 1860px !important;
 
   /* Body-Roboto-Medium-22pt */
 
@@ -850,7 +850,7 @@
   width: 343px !important;
   height: 1px !important;
   left: 0 !important;
-  top: 1790px !important;
+  top: 1890px !important;
 }
 
 .RetoScreenRetoSponsorName1 {
@@ -860,7 +860,7 @@
   width: 125px !important;
   height: 20px !important;
   left: 0 !important;
-  top: 1800px !important;
+  top: 1900px !important;
 
   /* Body-Roboto-Bold-16pt */
 
@@ -883,7 +883,7 @@
   width: 38px !important;
   height: 20px !important;
   left: 266px !important;
-  top: 1800px !important;
+  top: 1900px !important;
 
   /* Body-Roboto-Bold-16pt */
 
@@ -906,7 +906,7 @@
   width: 34px !important;
   height: 20px !important;
   left: 315px !important;
-  top: 1800px !important;
+  top: 1900px !important;
 
   /* Body-Roboto-Bold-16pt */
 
@@ -927,7 +927,7 @@
   width: 341px !important;
   height: 48px !important;
   left: 2px !important;
-  top: 1835px !important;
+  top: 1935px !important;
 
   /* Body-Roboto-Regular-16pt */
 
@@ -950,7 +950,7 @@
   width: 343px !important;
   height: 1px !important;
   left: 0 !important;
-  top: 1890px !important;
+  top: 1990px !important;
 }
 
 .RetoScreenRetoSponsorName2 {
@@ -958,7 +958,7 @@
   width: 125px !important;
   height: 20px !important;
   left: 0 !important;
-  top: 1900px !important;
+  top: 2000px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -974,7 +974,7 @@
   width: 38px !important;
   height: 20px !important;
   left: 266px !important;
-  top: 1900px !important;
+  top: 2000px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -990,7 +990,7 @@
   width: 34px !important;
   height: 20px !important;
   left: 315px !important;
-  top: 1900px !important;
+  top: 2000px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -1006,7 +1006,7 @@
   width: 341px !important;
   height: 48px !important;
   left: 2px !important;
-  top: 1935px !important;
+  top: 2035px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -1024,7 +1024,7 @@
   width: 343px !important;
   height: 1px !important;
   left: 0 !important;
-  top: 1990px !important;
+  top: 2090px !important;
 }
 
 .RetoScreenRetoSponsorName3 {
@@ -1032,7 +1032,7 @@
   width: 125px !important;
   height: 20px !important;
   left: 0 !important;
-  top: 2000px !important;
+  top: 2100px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -1048,7 +1048,7 @@
   width: 38px !important;
   height: 20px !important;
   left: 266px !important;
-  top: 2000px !important;
+  top: 2100px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -1064,7 +1064,7 @@
   width: 34px !important;
   height: 20px !important;
   left: 315px !important;
-  top: 2000px !important;
+  top: 2100px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -1080,7 +1080,7 @@
   width: 341px !important;
   height: 48px !important;
   left: 2px !important;
-  top: 2035px !important;
+  top: 2135px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -1096,28 +1096,23 @@
   width: 343px !important;
   height: 1px !important;
   left: 0 !important;
-  top: 2030px !important;
+  top: 2130px !important;
 }
 
 .RetoScreenRetoSponsorVerMasText {
-  /* Ver más */
-
   position: absolute !important;
   width: 64px !important;
   height: 24px !important;
   left: 140px !important;
-  top: 2045px !important;
+  top: 2145px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-size: 16px !important;
   line-height: 24px !important;
-  /* identical to box height, or 150% */
 
   text-decoration-line: underline !important;
-
-  /* Semánticos/Información/80 */
 
   color: #004c92 !important;
 }
@@ -1125,10 +1120,6 @@
 /** RetoScreenBtnSponsor2  */
 
 .RetoScreenRetoBtnSponsor2 {
-  /* Button */
-
-  /* Auto Layout */
-
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -1138,10 +1129,8 @@
   width: 344px !important;
   height: 56px !important;
   left: 0 !important;
-  top: 2105px !important;
+  top: 2205px !important;
   margin-bottom: -20px !important;
-
-  /* Acento/80 */
 
   background: #fe4a49 !important;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) !important;
@@ -1149,31 +1138,22 @@
 }
 
 .RetoScreenRetoBtnSponsor2Text {
-  /* Click Me */
-
   position: absolute !important;
   width: 344px !important;
   height: 56px !important;
   left: 0 !important;
   top: 5px !important;
 
-  /* Body-Roboto-Bold-16pt */
-
   font-family: Roboto !important;
   font-style: normal !important;
   font-weight: bold !important;
   font-size: 16px !important;
   line-height: 24px !important;
-  /* identical to box height, or 150% */
 
   text-align: center !important;
   display: inline-block !important;
 
-  /* White */
-
   color: #ffffff !important;
-
-  /* Inside Auto Layout */
 
   flex: none !important;
   order: 0 !important;

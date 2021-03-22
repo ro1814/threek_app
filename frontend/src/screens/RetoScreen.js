@@ -17,12 +17,14 @@ import Loader from "../components/Loader";
 import Message from "../components/Message";
 /* import Retador from "../components/CardRetador"; */
 import "./RetoScreen.css";
+import "./RetoScreenModalPublicacionDia.css";
 //Imagenes
 import fotoReto1 from "../assets/fotos-reto/foto1.png";
 import retador1 from "../assets/retadores/retador1.png";
 import IconosRedesSocialesFacebookVerde from "../assets/images/Icons/IconosRedesSocialesFacebookVerde.png";
 import IconosRedesSocialesInstagramVerde from "../assets/images/Icons/IconosRedesSocialesInstagramVerde.png";
 import BarraHorizontal from "../assets/BarraHorizontal.png";
+import RetoScreenDiaImgNo from "../assets/images/RetoScreenImages/RetoScreenDiaImgNo.png"
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -32,17 +34,22 @@ function MyVerticallyCenteredModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">Día 1</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <Image src={fotoReto1} alt="holder" fluid />
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
-      </Modal.Body>
+      <Modal.Title
+        id="contained-modal-title-vcenter"
+        className="RetoScreenModalPublicacionDiaTitle"
+      >
+        Día 1
+      </Modal.Title>
+      <Image
+        src={fotoReto1}
+        alt="fotoReto1"
+        fluid
+        className="RetoScreenModalPublicacionDiaImg"
+      />
+      <p className="RetoScreenModalPublicacionDiaDesc">
+        Velit anim ad ea duis pariatur!!!! ipsum proident cillum. Adipisicing
+        proident labore tempor fugiat magna ipsum reprehenderi!
+      </p>
     </Modal>
   );
 }
@@ -289,14 +296,14 @@ const RetoScreen = ({ history, match }) => {
                     </Col>
                     <Col>
                       <Image
-                        src={fotoReto1}
+                        src={RetoScreenDiaImgNo}
                         fluid
                         className="RetoScreenRetoDiaImg14"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoReto1}
+                        src={RetoScreenDiaImgNo}
                         fluid
                         className="RetoScreenRetoDiaImg15"
                       />
@@ -306,21 +313,21 @@ const RetoScreen = ({ history, match }) => {
                   <Row>
                     <Col>
                       <Image
-                        src={fotoReto1}
+                        src={RetoScreenDiaImgNo}
                         fluid
                         className="RetoScreenRetoDiaImg16"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoReto1}
+                        src={RetoScreenDiaImgNo}
                         fluid
                         className="RetoScreenRetoDiaImg17"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoReto1}
+                        src={RetoScreenDiaImgNo}
                         fluid
                         className="RetoScreenRetoDiaImg18"
                       />
@@ -330,21 +337,21 @@ const RetoScreen = ({ history, match }) => {
                   <Row>
                     <Col>
                       <Image
-                        src={fotoReto1}
+                        src={RetoScreenDiaImgNo}
                         fluid
                         className="RetoScreenRetoDiaImg19"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoReto1}
+                        src={RetoScreenDiaImgNo}
                         fluid
                         className="RetoScreenRetoDiaImg20"
                       />
                     </Col>
                     <Col>
                       <Image
-                        src={fotoReto1}
+                        src={RetoScreenDiaImgNo}
                         fluid
                         className="RetoScreenRetoDiaImg21"
                       />
