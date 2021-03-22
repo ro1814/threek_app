@@ -201,10 +201,10 @@ Form {
   background-color: var(--colorAcento80) !important;
 }
 
-/* Si queremos que cambie de color cuando se pulse dicho boton  */
-.btn-danger:active {
+/*! Si queremos que cambie de color cuando se pulse dicho boton  */
+/* .btn-danger:active {
   background-color: var(--colorAcento90) !important;
-}
+} */
 
 /*! COMPONENTES: */
 /*PANTALLAS*/

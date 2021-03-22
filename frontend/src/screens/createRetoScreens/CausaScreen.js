@@ -82,6 +82,7 @@ const CausaScreen = ({ history }) => {
               <Col xs={2} style={{ paddingRight: "0", paddingTop: "4px" }}>
                 <Image src={calidadFoto} fluid></Image>
               </Col>
+
               <Col xs={8} style={{ paddingLeft: "8px", textAlign: "left" }}>
                 <FormLabel>
                   <h3>Calidad de Vida</h3>
@@ -140,9 +141,7 @@ const CausaScreen = ({ history }) => {
             bottom: "20px",
           }}
         >
-          <figcaption className="CausaScreenBtnText">
-            Siguiente
-          </figcaption>
+          <figcaption className="CausaScreenBtnText">Siguiente</figcaption>
         </Button>
       </Form>
     </FormContainer>
