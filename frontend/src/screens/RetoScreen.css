@@ -483,7 +483,7 @@
   /* El reto día a día */
 
   position: absolute !important;
-  width: 151px !important;
+  width: 250px !important;
   height: 24px !important;
   left: 0 !important;
   top: 875px !important;
@@ -798,7 +798,7 @@
   position: absolute !important;
   width: 64px !important;
   height: 24px !important;
-  left: 140px !important;
+  left: 0 !important;
   top: 1810px !important;
 
   font-family: Roboto !important;

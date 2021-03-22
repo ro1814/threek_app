@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 /* import Footer from './components/Footer'; */
 import HomeScreen from "./screens/HomeScreen";
 import RetoScreen from "./screens/RetoScreen";
+import RetoScreen2 from "./screens/RetoScreen2";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import ProfileScreen from "./screens/ProfileScreen";
