@@ -12,7 +12,7 @@ const InvestigacionScreen = () => {
 
   const retoList = useSelector((state) => state.retoList);
   const { loading, error, retos } = retoList;
-
+ 
   useEffect(() => {
     dispatch(listRetos());
   }, [dispatch]);

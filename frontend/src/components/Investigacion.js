@@ -2,7 +2,7 @@ import React from "react";
 import { Image} from "react-bootstrap";
 import investigacionMedFoto from "../assets/causa/investigacionMed.png";
 import totalRec from "../assets/causa/totalrec.png";
-import graficaInvestigacion from "../assets/causa/graficainvestigacion.png";
+import graficaInvestigacion from "../assets/causa/graficainvestigacion.png"; 
 
 const Investigacion = () => {
   return (
