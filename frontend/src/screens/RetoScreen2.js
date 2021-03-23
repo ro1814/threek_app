@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-/* import { Link } from "react-router-dom"; */
 import { useDispatch, useSelector } from "react-redux";
 import {
   Row,
@@ -10,21 +9,17 @@ import {
   ProgressBar,
   Card,
   Container,
-  Modal,
 } from "react-bootstrap";
 import { listRetosDetails } from "../actions/retoActions";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
-/* import Retador from "../components/CardRetador"; */
 import "./RetoScreen2.css";
 import "./RetoScreenModalPublicacionDia.css";
 //Imagenes
 import RetoScreen2RetoImg from "../assets/images/RetoScreen2Images/RetoScreen2RetoImg.png";
 import retador1 from "../assets/retadores/retador2.png";
 import IconoEditarVerde from "../assets/images/Icons/IconoEditarVerde.png";
-import IconosRedesSocialesFacebookVerde from "../assets/images/Icons/IconosRedesSocialesFacebookVerde.png";
 import IconosRedesSocialesInstagramVerde from "../assets/images/Icons/IconosRedesSocialesInstagramVerde.png";
-import BarraHorizontal from "../assets/BarraHorizontal.png";
 import retoNo1 from "../assets/fotos-reto/retoNo-1.png";
 import retoNo2 from "../assets/fotos-reto/retoNo-2.png";
 import videono1 from "../assets/fotos-reto/videoNo1.png";
@@ -163,186 +158,97 @@ const RetoScreen2 = ({ history, match }) => {
                   src={IconosRedesSocialesInstagramVerde}
                   alt="IconosRedesSocialesInstagramVerde"
                   fluid
-                  className="RetoScreenIconosRedesSocialesInstagramVerde"
+                  className="RetoScreenIconosRedesSocialesInstagramVerde1"
                 />
                 <p className="RetoScreenInstagramRetador">@sam89</p>
 
                 <h4 className="RetoScreenRetoDiaTitleText">
                   <b>El reto día a día</b>
                 </h4>
-                {/* <Container> */}
-                  {/* //! Row 1 */}
-                  {/* <Row>
+                <Container>
+                  <Row>
                     <Col>
                       <Image
                         src={retoNo1}
-                        fluid
                         onClick={() => setModalShow(true)}
                         className="RetoScreenRetoDiaImg1"
                       />
                     </Col>
                     <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg2"
-                      />
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg2" />
                     </Col>
                     <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg3"
-                      />
-                    </Col>
-                  </Row> */}
-                  {/* //! Row 2 */}
-                  {/* <Row>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg4"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg5"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg6"
-                      />
-                    </Col>
-                  </Row> */}
-                  {/* //! Row 3 */}
-                  {/* <Row>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg7"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg8"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg9"
-                      />
-                    </Col>
-                  </Row> */}
-                  {/* //! Row 4 */}
-                  {/* <Row>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg10"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg11"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg12"
-                      />
-                    </Col>
-                  </Row> */}
-                  {/* //! Row 5 */}
-                  {/* <Row>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg13"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg14"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg15"
-                      />
-                    </Col>
-                  </Row> */}
-                  {/* //! Row 6 */}
-                  {/* <Row>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg16"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg17"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg18"
-                      />
-                    </Col>
-                  </Row> */}
-                  {/* //! Row 7 */}
-                  {/* <Row>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg19"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg20"
-                      />
-                    </Col>
-                    <Col>
-                      <Image
-                        src={retoNo2}
-                        fluid
-                        className="RetoScreenRetoDiaImg21"
-                      />
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg3" />
                     </Col>
                   </Row>
-                </Container> */}
-                {/* //*RetoScreenRetoCausa */}
-                {/* <h4 className="RetoScreenRetoCausaText">
+                  <Row>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg4" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg5" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg6" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg7" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg8" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg9" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg10" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg11" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg12" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg13" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg14" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg15" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg16" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg17" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg18" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg19" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg20" />
+                    </Col>
+                    <Col>
+                      <Image src={retoNo2} className="RetoScreenRetoDiaImg21" />
+                    </Col>
+                  </Row>
+                </Container>
+                <h4 className="RetoScreenRetoCausaText">
                   <b>Causa</b>
                 </h4>
                 <p className="RetoScreenRetoCausaInfoText">
@@ -351,72 +257,16 @@ const RetoScreen2 = ({ history, match }) => {
                   cuyo uso se aprobó ya en 1996. El único camino para conseguir
                   cambiar esto es potenciar la investigación de calidad. Desde
                   la Fundación Luzón consideramos, como pilar fundamental de
-                  nuestro trabajo, el promover ...
+                  nuestro trabajo, el promover ...&ensp;
+                  <u className="RetoScreenRetoCausaVerMasText">Ver más</u>
                 </p>
-                <p className="RetoScreenRetoCausaVerMasText">
-                  <u>Ver más</u>
-                </p> */}
-                {/* //*RetoScreenRetoSponsors */}
-                {/* <h4 className="RetoScreenRetoSponsorsTitleText">
+                <h4 className="RetoScreenRetoSponsorsTitleText">
                   <b>Sponsors</b>
-                </h4> */}
-                {/* //! sponsor 1 */}
-                {/* <img
-                  src={BarraHorizontal}
-                  alt="BarraHorizontal"
-                  className="RetoScreenRetoSponsorBarraHorizontal1"
-                />
-                <p className="RetoScreenRetoSponsorName1">Susana Sánchez</p>
-                <p className="RetoScreenRetoSponsorDonacionText1">
-                  <b>Donó</b>
-                </p>
-                <p className="RetoScreenRetoSponsorDonacionCifra1">
-                  <b>20 €</b>
-                </p>
+                </h4>
                 <p className="RetoScreenRetoSponsorText1">
-                  Mucho ánimo! confío en ti amiga! Y gracias por hacer que esto
-                  vaya a una buena causa
-                </p> */}
-                {/* //! sponsor 2 */}
-                {/* <img
-                  src={BarraHorizontal}
-                  alt="BarraHorizontal"
-                  className="RetoScreenRetoSponsorBarraHorizontal2"
-                />
-                <p className="RetoScreenRetoSponsorName2">Pablo Marcos</p>
-                <p className="RetoScreenRetoSponsorDonacionText2">
-                  <b>Donó</b>
+                  Se el primero en sponsorizar este reto
                 </p>
-                <p className="RetoScreenRetoSponsorDonacionCifra2">
-                  <b>5 €</b>
-                </p>
-                <p className="RetoScreenRetoSponsorText2">
-                  No es mucho pero aquí va mi granito de arena para la causa.Y
-                  mucha fuerza, que tú puedes!
-                </p> */}
-                {/* //! sponsor 3 */}
-                {/* <img
-                  src={BarraHorizontal}
-                  alt="BarraHorizontal"
-                  className="RetoScreenRetoSponsorBarraHorizontal3"
-                />
-                <p className="RetoScreenRetoSponsorName3">Anónimo</p>
-                <p className="RetoScreenRetoSponsorDonacionText3">
-                  <b>Donó</b>
-                </p>
-                <p className="RetoScreenRetoSponsorDonacionCifra3">
-                  <b>5 €</b>
-                </p>
-                <img
-                  src={BarraHorizontal}
-                  alt="BarraHorizontal"
-                  className="RetoScreenRetoSponsorBarraHorizontal4"
-                />
-                <p className="RetoScreenRetoSponsorVerMasText">
-                  <u>Ver más</u>
-                </p> */}
-                {/* //* RetoScreenRetoBtnSponsor2 */}
-                {/* <Button
+                <Button
                   type="button"
                   className="btn btn-danger btn-block Primary-button RetoScreenRetoBtnSponsor2"
                   variant="danger"
@@ -425,7 +275,7 @@ const RetoScreen2 = ({ history, match }) => {
                   <p className="RetoScreenRetoBtnSponsorTexto">
                     Apoya este reto
                   </p>
-                </Button> */}
+                </Button>
               </ListGroup.Item>
             </ListGroup>
           </Col>

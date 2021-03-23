@@ -67,7 +67,6 @@ const HomeScreenFuncionaThreek = () => {
                       nuestro sistema de trazabilidad, controla el efecto que
                       tiene tu aportación.
                     </p>
-                    {/* //!Esto habra de convertirse en un LINK a #aCausas o /aCausas */}
                     <p className="HomeScreenFuncionaThreekCard2FooterText">
                       Conoce las causas
                     </p>

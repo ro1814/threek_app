@@ -1,6 +1,4 @@
-/** codigo entre este tipo de comentarios es para la INFO DINAMICA */
-
-/*! RetoScreenDetalles */
+/* RetoScreenDetalles */
 
 .RetoScreenRetoImg {
   position: relative !important;
@@ -11,7 +9,7 @@
   position: relative !important ;
   width: 200px !important;
   height: 16px !important;
-  /** left: -25px !important; */
+  /* left: -25px !important; */
   left: -45px !important;
   top: 1px !important;
 
@@ -49,7 +47,7 @@
   width: 300px !important;
   height: 16px !important;
   left: -20px !important;
-  /** top: -35px !important; */
+  /* top: -35px !important; */
   top: -30px !important;
 
   font-family: Oswald !important;
@@ -68,7 +66,7 @@
   width: 300px !important;
   height: 16px !important;
   left: -20px !important;
-  /** top: -5px !important; */
+  /* top: -5px !important; */
   top: 5px !important;
 
   font-family: Roboto !important;
@@ -87,18 +85,18 @@
   width: 345px !important;
   height: 16px !important;
   left: -20px !important;
-  /** top: -5px !important; */
+  /* top: -5px !important; */
   top: 10px !important;
 }
 
-/*! RetoScreenCardRetador */
+/* RetoScreenCardRetador */
 
 .RetoScreenRetoCardRetador {
   position: relative !important;
   width: 344px !important;
   height: 163px !important;
   left: -20px !important;
-  /** top: 25px !important; */
+  /* top: 25px !important; */
   top: 40px !important;
 
   border: 1px solid #cadaa7 !important;
@@ -183,7 +181,7 @@
   width: 116px !important;
   height: 33px !important;
   left: 203px !important;
-  /** top: -193px !important; */
+  /* top: -193px !important; */
   top: -193px !important;
 
   background: #cadaa7 !important;
@@ -209,7 +207,7 @@
   color: #5c585d !important;
 }
 
-/*! RetoScreenRetoBtnSponsor1 */
+/* RetoScreenRetoBtnSponsor1 */
 
 .RetoScreenRetoBtnSponsor1 {
   display: flex !important;
@@ -221,7 +219,7 @@
   width: 344px !important;
   height: 56px !important;
   left: -20px !important;
-  /** top: 60px !important; */
+  /* top: 60px !important; */
   top: 80px !important;
 
   background: #fe4a49 !important;
@@ -253,14 +251,14 @@
   margin: 12px 0px 12px !important;
 }
 
-/*! RetoScreenRetoInfo  */
+/* RetoScreenRetoInfo  */
 
 .RetoScreenRetoInfoText {
   position: relative !important;
   width: 120px !important;
   height: 24px !important;
   left: -20px !important;
-  /** top: 100px !important; */
+  /* top: 100px !important; */
   top: 120px !important;
 
   font-family: Roboto !important;
@@ -280,7 +278,7 @@
   width: 343px !important;
   height: 246px !important;
   left: -20px !important;
-  /** top: 100px !important; */
+  /* top: 100px !important; */
   top: 120px !important;
 }
 
@@ -289,7 +287,7 @@
   width: 341px !important;
   height: 216px !important;
   left: -20px !important;
-  /** top: 135px !important; */
+  /* top: 135px !important; */
   top: 130px !important;
 
   font-family: Roboto !important;
@@ -349,7 +347,7 @@
   color: #2d292e !important;
 }
 
-/*! RetoScreenRetoDia  */
+/* RetoScreenRetoDia  */
 
 .RetoScreenRetoDiaTitleText {
   position: relative !important;
@@ -370,7 +368,7 @@
   color: #2d292e !important;
 }
 
-/*! Row 1 */
+/* Row 1 */
 
 .RetoScreenRetoDiaImg1 {
   position: relative !important;
@@ -398,7 +396,7 @@
   top: -69px !important;
 }
 
-/*! Row 2 */
+/* Row 2 */
 
 .RetoScreenRetoDiaImg4 {
   position: relative !important;
@@ -424,7 +422,7 @@
   top: -137px !important;
 }
 
-/*! Row 3 */
+/* Row 3 */
 
 .RetoScreenRetoDiaImg7 {
   position: relative !important;
@@ -450,7 +448,7 @@
   top: -205px !important;
 }
 
-/*! Row 4 */
+/* Row 4 */
 
 .RetoScreenRetoDiaImg10 {
   position: relative !important;
@@ -476,7 +474,7 @@
   top: -272px !important;
 }
 
-/*! Row 5 */
+/* Row 5 */
 
 .RetoScreenRetoDiaImg13 {
   position: relative !important;
@@ -502,7 +500,7 @@
   top: -339px !important;
 }
 
-/*! Row 6 */
+/* Row 6 */
 
 .RetoScreenRetoDiaImg16 {
   position: relative !important;
@@ -528,7 +526,7 @@
   top: -406px !important;
 }
 
-/*! Row 7 */
+/* Row 7 */
 
 .RetoScreenRetoDiaImg19 {
   position: relative !important;
@@ -554,7 +552,7 @@
   top: -473px !important;
 }
 
-/*! RetoScreenRetoCausa */
+/* RetoScreenRetoCausa */
 
 .RetoScreenRetoCausaText {
   position: relative !important;
@@ -595,7 +593,7 @@
   color: #004c92 !important;
 }
 
-/*! RetoScreenRetoSponsors */
+/* RetoScreenRetoSponsors */
 
 .RetoScreenRetoSponsorsTitleText {
 
@@ -617,7 +615,7 @@
   color: #2d292e !important;
 }
 
-/*! Sponsor 1  */
+/* Sponsor 1  */
 
 .RetoScreenRetoSponsorBarraHorizontal1 {
   position: relative !important;
@@ -694,7 +692,7 @@
   color: #5c585d !important;
 }
 
-/*! Sponsor 2 */
+/* Sponsor 2 */
 
 .RetoScreenRetoSponsorBarraHorizontal2 {
   position: relative !important;
@@ -768,7 +766,7 @@
   color: #5c585d !important;
 }
 
-/*! Sponsor 3 */
+/* Sponsor 3 */
 
 .RetoScreenRetoSponsorBarraHorizontal3 {
   position: relative !important;
@@ -852,7 +850,7 @@
   color: #004c92 !important;
 }
 
-/*! RetoScreenBtnSponsor2  */
+/* RetoScreenBtnSponsor2  */
 
 .RetoScreenRetoBtnSponsor2 {
   display: flex !important;

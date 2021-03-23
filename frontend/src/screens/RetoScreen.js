@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-/* import { Link } from "react-router-dom"; */
 import { useDispatch, useSelector } from "react-redux";
 import {
   Row,
@@ -15,14 +14,11 @@ import {
 import { listRetosDetails } from "../actions/retoActions";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
-/* import Retador from "../components/CardRetador"; */
 import "./RetoScreen.css";
 import "./RetoScreenModalPublicacionDia.css";
 //Imagenes
-import RetoScreenRetoImg from "../assets/images/RetoScreenImages/RetoScreenRetoImg.png";
 import retador1 from "../assets/retadores/retador1.png";
 import RetoScreenRetoInfoPrincipalImg from "../assets/images/RetoScreenImages/RetoScreenRetoInfoPrincipalImg.png";
-
 import IconosRedesSocialesFacebookVerde from "../assets/images/Icons/IconosRedesSocialesFacebookVerde.png";
 import IconosRedesSocialesInstagramVerde from "../assets/images/Icons/IconosRedesSocialesInstagramVerde.png";
 import BarraHorizontal from "../assets/BarraHorizontal.png";
@@ -41,7 +37,6 @@ import fotoDia11 from "../assets/fotos-reto/foto-dia11.png";
 import fotoDia12 from "../assets/fotos-reto/foto-dia12.png";
 import fotoDia13 from "../assets/fotos-reto/foto-dia13.png";
 import fotoModal from "../assets/fotos-reto/foto-dia1-modal.png";
-import video1 from "../assets/fotos-reto/video1.png";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -106,16 +101,9 @@ const RetoScreen = ({ history, match }) => {
               height: "241px",
             }}
           >
-            {/* //! info dinamica */}
-            {/* <Image
+            <Image
               src={reto.imagen}
               alt={reto.nombre}
-              className="RetoScreenRetoImg"
-            /> */}
-            {/* //! info estatica */}
-            <Image
-              src={RetoScreenRetoImg}
-              alt={RetoScreenRetoImg}
               className="RetoScreenRetoImg"
             />
           </Col>
@@ -123,40 +111,20 @@ const RetoScreen = ({ history, match }) => {
           <Col md={3}>
             <ListGroup variant="flush">
               <ListGroup.Item>
-                {/* //! info dinamica */}
-                {/* <p className="RetoScreenRetoFechasText">
-                  Inicio {reto.fechaInicio} - Fin 25 julio
-                </p> */}
-                {/* //! info estatica */}
                 <p className="RetoScreenRetoFechasText">
-                  Incio 5 julio - Fin 25 julio
+                  Inicio {reto.fechaInicio} - Fin 15/04/2021
                 </p>
 
                 <p className="RetoScreenRetoActivoText">Reto Activo</p>
 
-                {/* //! info dinamica */}
-                {/* <h2 className="RetoScreenRetoTituloText">{reto.titulo}</h2> */}
-                {/* //! info estatica */}
-                <h2 className="RetoScreenRetoTituloText">
-                  Reto Threek Escalada
-                </h2>
+                <h2 className="RetoScreenRetoTituloText">{reto.titulo}</h2>
 
-                {/* //! info dinamica */}
-                {/* <h5 className="RetoScreenRetoRecaudacionText">
-                  Recaudado 110€ de&nbsp;<b>{reto.objetivoRec}€</b>
-                </h5> */}
-                {/* //! info estatica */}
                 <h5 className="RetoScreenRetoRecaudacionText">
-                  Recaudado 1.540€ de&nbsp;<b>2.200€ </b>
+                  Recaudado 110€ de&nbsp;<b>{reto.objetivoRec}€</b>
                 </h5>
-                {/* //! PROGRESS BAR para info dinamica */}
-                {/* <ProgressBar
-                  now={75}
-                  className="Recaudado RetoScreenRetoProgressBar"
-                /> */}
-                {/* //! PROGRESS BAR para info estatica */}
+
                 <ProgressBar
-                  now={65}
+                  now={60}
                   className="Recaudado RetoScreenRetoProgressBar"
                 />
 
@@ -208,17 +176,8 @@ const RetoScreen = ({ history, match }) => {
                   alt="RetoScreenRetoInfoPrincipalImg"
                   className="RetoScreenRetoInfoPrincImg"
                 />
-                {/* //! info dinamica */}
-                {/* <p className="RetoScreenRetoInfoRetoDesc">{reto.desc}</p> */}
-                {/* //! info estatica */}
-                <p className="RetoScreenRetoInfoRetoDescr">
-                  Hola a todos! ¡Mi nombre es Nuria, amiga de mis amigos y
-                  escaladora de toda la vida! Como apoyo a la ELA, me he
-                  propuesto conquistar la cima más alta de Sierra Nevada, el
-                  Mulhacén a 3479m. Durante las próximas 3 semanas, me entrenaré
-                  a diario, para poder alcanzar mi objetivo. ¡Sígueme en mi
-                  aventura!
-                </p>
+
+                <p className="RetoScreenRetoInfoRetoDesc">{reto.desc}</p>
 
                 <Image
                   src={IconosRedesSocialesFacebookVerde}
@@ -240,7 +199,6 @@ const RetoScreen = ({ history, match }) => {
                   <b>El reto día a día</b>
                 </h4>
                 <Container>
-                  {/* //! Row 1 */}
                   <Row>
                     <Col>
                       <Image
@@ -256,7 +214,6 @@ const RetoScreen = ({ history, match }) => {
                       <Image src={fotoDia3} className="RetoScreenRetoDiaImg3" />
                     </Col>
                   </Row>
-                  {/* //! Row 2 */}
                   <Row>
                     <Col>
                       <Image src={fotoDia4} className="RetoScreenRetoDiaImg4" />
@@ -268,7 +225,6 @@ const RetoScreen = ({ history, match }) => {
                       <Image src={fotoDia6} className="RetoScreenRetoDiaImg6" />
                     </Col>
                   </Row>
-                  {/* //! Row 3 */}
                   <Row>
                     <Col>
                       <Image src={fotoDia7} className="RetoScreenRetoDiaImg7" />
@@ -280,7 +236,6 @@ const RetoScreen = ({ history, match }) => {
                       <Image src={fotoDia9} className="RetoScreenRetoDiaImg9" />
                     </Col>
                   </Row>
-                  {/* //! Row 4 */}
                   <Row>
                     <Col>
                       <Image
@@ -301,7 +256,6 @@ const RetoScreen = ({ history, match }) => {
                       />
                     </Col>
                   </Row>
-                  {/* //! Row 5 */}
                   <Row>
                     <Col>
                       <Image
@@ -322,7 +276,6 @@ const RetoScreen = ({ history, match }) => {
                       />
                     </Col>
                   </Row>
-                  {/* //! Row 6 */}
                   <Row>
                     <Col>
                       <Image
@@ -343,7 +296,6 @@ const RetoScreen = ({ history, match }) => {
                       />
                     </Col>
                   </Row>
-                  {/* //! Row 7 */}
                   <Row>
                     <Col>
                       <Image
@@ -365,7 +317,7 @@ const RetoScreen = ({ history, match }) => {
                     </Col>
                   </Row>
                 </Container>
-                {/* //*RetoScreenRetoCausa */}
+
                 <h4 className="RetoScreenRetoCausaText">
                   <b>Causa</b>
                 </h4>
@@ -378,11 +330,9 @@ const RetoScreen = ({ history, match }) => {
                   nuestro trabajo, el promover ...&ensp;
                   <u className="RetoScreenRetoCausaVerMasText">Ver más</u>
                 </p>
-                {/* //*RetoScreenRetoSponsors */}
                 <h4 className="RetoScreenRetoSponsorsTitleText">
                   <b>Sponsors</b>
                 </h4>
-                {/* //! sponsor 1 */}
                 <img
                   src={BarraHorizontal}
                   alt="BarraHorizontal"
@@ -399,7 +349,6 @@ const RetoScreen = ({ history, match }) => {
                   Mucho ánimo! confío en ti amiga! Y gracias por hacer que esto
                   vaya a una buena causa
                 </p>
-                {/* //! sponsor 2 */}
                 <img
                   src={BarraHorizontal}
                   alt="BarraHorizontal"
@@ -416,7 +365,6 @@ const RetoScreen = ({ history, match }) => {
                   No es mucho pero aquí va mi granito de arena para la causa.Y
                   mucha fuerza, que tú puedes!
                 </p>
-                {/* //! sponsor 3 */}
                 <img
                   src={BarraHorizontal}
                   alt="BarraHorizontal"
@@ -437,7 +385,6 @@ const RetoScreen = ({ history, match }) => {
                 <p className="RetoScreenRetoSponsorVerMasText">
                   <u>Ver más</u>
                 </p>
-                {/* //* RetoScreenRetoBtnSponsor2 */}
                 <Button
                   type="button"
                   className="btn btn-danger btn-block Primary-button RetoScreenRetoBtnSponsor2"

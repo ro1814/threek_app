@@ -1,9 +1,9 @@
-/*! PROPIEDADES GLOBALES APP */
+/* PROPIEDADES GLOBALES APP */
+
 :root {
-  /*! Paleta de colores app Threek */
+  /* Paleta de colores app Threek */
 
-  /** Paleta de colores primarios: */
-
+  /* Paleta de colores primarios: */
   /* Primario 10 */
   --colorPrimario10: #e4eecd;
   /* Primario 20 */
@@ -19,8 +19,7 @@
   /* Primario 90 */
   --colorPrimario90: #003626;
 
-  /** Paleta de colores acento: */
-
+  /* Paleta de colores acento: */
   /* Acento 10 */
   --colorAcento10: #ffdedc;
   /* Acento 20 */
@@ -36,8 +35,7 @@
   /* Acento 90 */
   --colorAcento90: #e54443;
 
-  /** Paleta de colores neutros: */
-
+  /* Paleta de colores neutros: */
   /* Neutro 00 */
   --colorNeutro00: #ffffff;
   /* Neutro 05 */
@@ -58,169 +56,191 @@
   /* Neutro 90 */
   --colorNeutro90: #161117;
 
-  /*! Tipografias app Threek: */
+  /* Tipografias app Threek: */
   --titleFont: "Oswald", sans-serif;
+
   /* Tipografias BODY: */
   --bodyFont: "Roboto", sans-serif;
 }
 
-/*! IMPORTANTE: uso de las anteriores propiedades a lo largo del restante CSS */
-/** Ejemplo:  */
+/*IMPORTANTE: uso de las anteriores propiedades a lo largo del restante CSS */
+/* Ejemplo:  */
 /* {
   font-family: var(--mainFont);
   color: var(--fontColor);
   background: var(--bgColor);
 } */
 
-/*! ICONOS */
-/** Icono user: */
+/* ICONOS */
+/* Icono user: */
 .iconoUser {
   color: var(--colorNeutro00) !important;
 }
 
-/*TEXTOS*/
-h1{
+/* TEXTOS */
+h1 {
   font-family: var(--titleFont) !important;
   font-weight: bold !important;
   font-size: 24pt !important;
   text-align: center;
 }
-h2{
+
+h2 {
   font-family: var(--titleFont) !important;
   font-weight: bold !important;
   font-size: 20pt !important;
   text-align: center;
 }
-h3{
+
+h3 {
   font-family: var(--titleFont) !important;
   font-weight: bold !important;
   font-size: 14pt !important;
   text-align: left !important;
 }
-label, p, Form.label, .form-check{
+
+label,
+p,
+Form.label,
+.form-check {
   font-family: var(--bodyFont) !important;
   font-size: 14pt !important;
-  text-align:left !important;
+  text-align: left !important;
 }
-.captionCausa{
+
+.captionCausa {
   font-family: var(--bodyFont) !important;
   font-size: 12pt !important;
-  text-align:left !important;
-  margin-top:-0.75rem !important;
-}
-.fechaCaption{
-  font-size:0.9rem !important;
+  text-align: left !important;
+  margin-top: -0.75rem !important;
 }
 
+.fechaCaption {
+  font-size: 0.9rem !important;
+}
 
-/*COMPONENTES*/
-Form{
-  width:343px !important;
+/* COMPONENTES */
+Form {
+  width: 343px !important;
   text-align: center;
 }
-.Recaudado{
+
+.Recaudado {
   border-radius: 16px !important;
 }
-.progress-bar{
+
+.progress-bar {
   background-color: var(--colorPrimario50) !important;
   border-radius: 16px !important;
 }
-.hidden{
-  display:none !important;
+
+.hidden {
+  display: none !important;
 }
-.form-check-inline{
+
+.form-check-inline {
   margin-left: 0.75rem !important;
 }
-.deporteForm input{
-  position:absolute !important;
-  bottom:40px;
-  left:10px;
-  height:16px !important;
-  width:16px !important;
+
+.deporteForm input {
+  position: absolute !important;
+  bottom: 40px;
+  left: 10px;
+  height: 16px !important;
+  width: 16px !important;
 }
-.underline{
+
+.underline {
   text-decoration: underline !important;
 }
-.infoPagoSelect{
+
+.infoPagoSelect {
   background: var(--colorNeutro00) !important;
-  color:var(--colorNeutro90);
+  color: var(--colorNeutro90);
   box-shadow: 0px 4px 4px rgba(0, 54, 38, 0.4);
-  height:48px;
-  display:flex;
+  height: 48px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-left:-10px;
-  margin-right:-10px;
+  margin-left: -10px;
+  margin-right: -10px;
   border-radius: 8px;
 }
+
 /*.form-check-input{
   display:none;
 }*/
 
-/*! BOTONES */
-/** Botones acento: */
-.Primary-button{
-  background: #FE4A49 !important;
+/* BOTONES */
+/* Botones acento: */
+.Primary-button {
+  background: #fe4a49 !important;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) !important;
   border-radius: 8px !important;
-  border:none !important;
-  height:56px !important;
+  border: none !important;
+  height: 56px !important;
   width: 343px !important;
   font-family: var(--bodyFont);
   font-size: 16pt !important;
   font-weight: 700 !important;
 }
-.Secondary-button{
+
+.Secondary-button {
   background: var(--colorNeutro10) !important;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) !important;
   border-radius: 8px !important;
-  border:none !important;
-  height:56px !important;
+  border: none !important;
+  height: 56px !important;
   width: 343px !important;
   font-family: var(--bodyFont);
   font-size: 16pt !important;
   font-weight: 700 !important;
 }
-.Secondary-button a{
-  color:#FE4A49;
+
+.Secondary-button a {
+  color: #fe4a49;
 }
+
 /* .btn-danger:hover {
   background-color: var(--colorAcento80) !important;
 }
 
-/*! Si queremos que cambie de color cuando se pulse dicho boton  */
+/* Si queremos que cambie de color cuando se pulse dicho boton  */
 /* .btn-danger:active {
   background-color: var(--colorAcento90) !important;
 } */
 
-/*! COMPONENTES: */
+/* COMPONENTES: */
 /*PANTALLAS*/
-.FondoForms{
+.FondoForms {
   background: var(--colorPrimario80) !important;
-  height:calc(100vh - 57px);
-  width:100vw !important;
-  position:relative;
-  left:-16px;
-  top:-16px;
-  color:var(--colorNeutro00);
-}
-.FondoForms1{
-  background: var(--colorPrimario80) !important;
-  height:calc(100vh - 57px);
-  width:100vw !important;
-  position:relative;
-  top:-16px;
-  color:var(--colorNeutro00);
-}
-.card{
-  background:transparent !important;
-}
-.list-group-flush>.list-group-item{
-  background:transparent;
+  height: calc(100vh - 57px);
+  width: 100vw !important;
+  position: relative;
+  left: -16px;
+  top: -16px;
+  color: var(--colorNeutro00);
 }
 
-/*! Componente Header.js */
-/** ELEMENTOS NAVBAR: */
+.FondoForms1 {
+  background: var(--colorPrimario80) !important;
+  height: calc(100vh - 57px);
+  width: 100vw !important;
+  position: relative;
+  top: -16px;
+  color: var(--colorNeutro00);
+}
+
+.card {
+  background: transparent !important;
+}
+
+.list-group-flush > .list-group-item {
+  background: transparent;
+}
+
+/* Componente Header.js */
+/* ELEMENTOS NAVBAR: */
 .Navbar {
   background-color: var(--colorPrimario90) !important;
   display: flex;
@@ -236,9 +256,8 @@ Form{
   color: var(--colorNeutro00) !important;
 }
 
-
-/*! Componente Footer.js */
-/** Elementos Footer: */
+/* Componente Footer.js */
+/* Elementos Footer: */
 .Footer {
   background-color: var(--colorPrimario90) !important;
 }
