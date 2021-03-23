@@ -1,0 +1,76 @@
+.RankingScreenTitle {
+  position: relative !important;
+  width: 333px !important;
+  height: 36px !important;
+  left: -40px !important;
+  top: 10px !important;
+
+  font-family: Oswald !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+
+  text-align: center !important;
+
+  color: #224e39 !important;
+
+  flex: none !important;
+  order: 3 !important;
+  flex-grow: 0 !important;
+  margin: 0px 46px !important;
+}
+ 
+/* .RankingScreenSearchBar {
+  position: relative !important;
+  left: 0% !important;
+  top: 0% !important;
+
+  background: #e8e7e8 !important;
+
+  border: 1px solid #b9b8b9 !important;
+  box-sizing: border-box !important;
+  border-radius: 100px !important;
+} */
+
+.RankingScreenSearchBar {
+  position: relative !important;
+  top: 25px !important;
+
+  background-color: #e8e7e8 !important;
+
+  border: 1px solid #b9b8b9 !important;
+  opacity: 100% !important;
+  border-radius: 5px;
+}
+
+/* .RankingScreenSearchText {
+  position: relative !important;
+  width: 100px !important;
+  height: 24px !important;
+  left: 16px !important;
+  top: -32px !important;
+
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  display: flex !important;
+  align-items: center !important;
+
+  color: #b9b8b9 !important;
+} */
+
+.RankingScreenSearchIcon {
+  position: relative !important;
+  left: 305px !important;
+  top: -8px !important;
+}
+
+.RankingRetadoresBody {
+  position: relative !important;
+  left: 0 !important;
+  top: 15px !important;
+}

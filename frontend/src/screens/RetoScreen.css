@@ -5,12 +5,11 @@
   height: 241px !important;
 }
 
-.RetoScreenRetoFechasText {
+.RetoScreenRetoFechasTexto {
   position: relative !important ;
-  width: 200px !important;
+  width: 250px !important;
   height: 16px !important;
-  /* left: -25px !important; */
-  left: -45px !important;
+  left: -58px !important;
   top: 1px !important;
 
   font-family: Roboto !important;
@@ -282,13 +281,13 @@
   top: 120px !important;
 }
 
-.RetoScreenRetoInfoRetoDescr {
+.RetoScreenRetoInfoRetoDescrip {
   position: relative !important;
   width: 341px !important;
   height: 216px !important;
   left: -20px !important;
-  /* top: 135px !important; */
-  top: 110px !important;
+  top: 135px !important;
+  /* top: 110px !important; */
 
   font-family: Roboto !important;
   font-style: normal !important;

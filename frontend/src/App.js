@@ -48,7 +48,7 @@ const App = () => {
             <Route path='/causas' component={CausasScreen}/>
             <Route path='/causa/investigacion' component={InvestigacionScreen}/>
             <Route path='/causa/calidaddevidaela' component={CalDeVidaScreen}/>
-            <Route path="/ranking" component={RankingScreen} />
+            <Route path="/rankingretadores" component={RankingScreen} />
             <Route path="/retos/6051f46d192de50d7778e962" component={RetoScreen2} />
           </Container>
       </main>

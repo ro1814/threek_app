@@ -35,13 +35,12 @@
 
   color: white !important;
   position: relative;
-  top: 10px;
+  top: 8px;
 }
 
 .logueado a {
   position: relative;
   bottom: 18px;
   left: 4px;
-
-  
+  top: -14px;
 }

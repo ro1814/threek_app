@@ -111,7 +111,7 @@ const RetoScreen = ({ history, match }) => {
           <Col md={3} >
             <ListGroup variant="flush">
               <ListGroup.Item>
-                <p className="RetoScreenRetoFechasText">
+                <p className="RetoScreenRetoFechasTexto">
                   Inicio 22 Marzo - Fin 15 Abril
                 </p>
 
@@ -177,7 +177,7 @@ const RetoScreen = ({ history, match }) => {
                   className="RetoScreenRetoInfoPrincImg"
                 />
 
-                <p className="RetoScreenRetoInfoRetoDesc">{reto.desc}</p>
+                <p className="RetoScreenRetoInfoRetoDescrip">{reto.desc}</p>
 
                 <Image
                   src={IconosRedesSocialesFacebookVerde}
