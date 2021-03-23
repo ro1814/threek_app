@@ -11,7 +11,6 @@ const HomeScreenRankingRetadores = () => {
         <Row>
           <Col>
             <h2 className="HomeScreenRankingRetadoresH2Text">Ranking de retadores</h2>
-            {/* //!El siguiente ver mas igual habra de llevar a /rankingRetadores */}
             <p className="HomeScreenRankingRetadoresVerMasText">Ver más</p>
             <figure className="position-relative HomeScreenRankingRetadoresFigureRetador1">
               <img

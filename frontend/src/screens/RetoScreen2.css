@@ -9,8 +9,8 @@
   position: relative !important ;
   width: 200px !important;
   height: 16px !important;
-  /* left: -25px !important; */
-  left: -45px !important;
+  /** left: -25px !important; */
+  left: -30px !important;
   top: 1px !important;
 
   font-family: Roboto !important;
@@ -24,7 +24,7 @@
   color: #5c585d !important;
 }
 
-.RetoScreenRetoActivoText {
+.RetoScreenRetoDiasRestantesText {
   position: relative !important ;
   width: 200px !important;
   height: 16px !important;
@@ -39,7 +39,7 @@
 
   text-align: right !important;
 
-  color: #335f46 !important;
+  color: #2d292e !important;
 }
 
 .RetoScreenRetoTituloText {
@@ -114,7 +114,7 @@
 
 .RetoScreenRetoRetadorNombreText {
   position: relative !important;
-  width: 167px !important;
+  width: 187px !important;
   height: 22px !important;
   left: 115px !important;
   top: -150px !important;
@@ -253,7 +253,7 @@
 
 /* RetoScreenRetoInfo  */
 
-.RetoScreenRetoInfoText {
+.RetoScreenRetoInfoTitleText {
   position: relative !important;
   width: 120px !important;
   height: 24px !important;
@@ -273,22 +273,24 @@
   color: #2d292e !important;
 }
 
-.RetoScreenRetoInfoPrincImg {
+.RetoScreenIconoEditarVerde {
   position: relative !important;
-  width: 343px !important;
-  height: 246px !important;
-  left: -20px !important;
-  /* top: 100px !important; */
-  top: 120px !important;
+  left: 115px !important;
+  top: 83px !important;
 }
 
-.RetoScreenRetoInfoRetoDescr {
+.RetoScreenRetoInfoPrincipalImg {
+  position: relative !important;
+  left: -20px !important;
+  top: 95px !important;
+}
+
+.RetoScreenRetoInfoRetoDesc {
   position: relative !important;
   width: 341px !important;
   height: 216px !important;
   left: -20px !important;
-  /* top: 135px !important; */
-  top: 110px !important;
+  top: 130px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -299,18 +301,18 @@
   color: #5c585d !important;
 }
 
-.RetoScreenIconosRedesSocialesFacebookVerde {
+.RetoScreenIconosRedesSocialesInstagramVerde1 {
   position: relative !important;
   left: -20px !important;
   top: 80px !important;
 }
 
-.RetoScreenFacebookRetador {
+.RetoScreenInstagramRetador {
   position: relative !important;
   width: 83px !important;
   height: 24px !important;
-  left: 16px !important;
-  top: 57px !important;
+  left: -3px !important;
+  top: 55px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -323,28 +325,10 @@
   color: #2d292e !important;
 }
 
-.RetoScreenIconosRedesSocialesInstagramVerde1 {
+.RetoScreenIconosRedesSocialesInstagramVerde {
   position: relative !important;
-  left: 175px !important;
-  top: 15px !important;
-}
-
-.RetoScreenInstagramRetador1 {
-  position: relative !important;
-  width: 83px !important;
-  height: 24px !important;
-  left: 210px !important;
-  top: -10px !important;
-
-  font-family: Roboto !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-
-  text-align: right !important;
-
-  color: #2d292e !important;
+  left: -20px !important;
+  top: 96px !important;
 }
 
 /* RetoScreenRetoDia  */
@@ -354,7 +338,7 @@
   width: 250px !important;
   height: 24px !important;
   left: -20px !important;
-  top: 2px !important;
+  top: 70px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -375,7 +359,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -35px !important;
-  top: 5px !important;
+  top: 80px !important;
 }
 
 .RetoScreenRetoDiaImg2 {
@@ -384,7 +368,7 @@
   height: 74px !important;
   left: 0 !important;
   left: -72px !important;
-  top: 5px !important;
+  top: 80px !important;
 }
 
 .RetoScreenRetoDiaImg3 {
@@ -393,7 +377,7 @@
   height: 74px !important;
   left: 0 !important;
   left: 197px !important;
-  top: -69px !important;
+  top: 6px !important;
 }
 
 /* Row 2 */
@@ -403,7 +387,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -35px !important;
-  top: -63px !important;
+  top: 12px !important;
 }
 
 .RetoScreenRetoDiaImg5 {
@@ -411,7 +395,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -72px !important;
-  top: -63px !important;
+  top: 12px !important;
 }
 
 .RetoScreenRetoDiaImg6 {
@@ -419,7 +403,7 @@
   width: 110px !important;
   height: 74px !important;
   left: 197px !important;
-  top: -137px !important;
+  top: -62px !important;
 }
 
 /* Row 3 */
@@ -429,7 +413,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -35px !important;
-  top: -131px !important;
+  top: -56px !important;
 }
 
 .RetoScreenRetoDiaImg8 {
@@ -437,7 +421,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -72px !important;
-  top: -131px !important;
+  top: -56px !important;
 }
 
 .RetoScreenRetoDiaImg9 {
@@ -445,7 +429,7 @@
   width: 110px !important;
   height: 74px !important;
   left: 197px !important;
-  top: -205px !important;
+  top: -130px !important;
 }
 
 /* Row 4 */
@@ -455,7 +439,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -35px !important;
-  top: -198px !important;
+  top: -123px !important;
 }
 
 .RetoScreenRetoDiaImg11 {
@@ -463,7 +447,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -72px !important;
-  top: -198px !important;
+  top: -123px !important;
 }
 
 .RetoScreenRetoDiaImg12 {
@@ -471,7 +455,7 @@
   width: 110px !important;
   height: 74px !important;
   left: 197px !important;
-  top: -272px !important;
+  top: -197px !important;
 }
 
 /* Row 5 */
@@ -481,7 +465,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -35px !important;
-  top: -265px !important;
+  top: -190px !important;
 }
 
 .RetoScreenRetoDiaImg14 {
@@ -489,7 +473,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -72px !important;
-  top: -265px !important;
+  top: -190px !important;
 }
 
 .RetoScreenRetoDiaImg15 {
@@ -497,7 +481,7 @@
   width: 110px !important;
   height: 74px !important;
   left: 197px !important;
-  top: -339px !important;
+  top: -264px !important;
 }
 
 /* Row 6 */
@@ -507,7 +491,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -35px !important;
-  top: -332px !important;
+  top: -257px !important;
 }
 
 .RetoScreenRetoDiaImg17 {
@@ -515,7 +499,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -72px !important;
-  top: -332px !important;
+  top: -257px !important;
 }
 
 .RetoScreenRetoDiaImg18 {
@@ -523,7 +507,7 @@
   width: 110px !important;
   height: 74px !important;
   left: 197px !important;
-  top: -406px !important;
+  top: -331px !important;
 }
 
 /* Row 7 */
@@ -533,7 +517,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -35px !important;
-  top: -399px !important;
+  top: -324px !important;
 }
 
 .RetoScreenRetoDiaImg20 {
@@ -541,7 +525,7 @@
   width: 110px !important;
   height: 74px !important;
   left: -72px !important;
-  top: -399px !important;
+  top: -324px !important;
 }
 
 .RetoScreenRetoDiaImg21 {
@@ -549,7 +533,7 @@
   width: 110px !important;
   height: 74px !important;
   left: 197px !important;
-  top: -473px !important;
+  top: -398px !important;
 }
 
 /* RetoScreenRetoCausa */
@@ -559,7 +543,7 @@
   width: 250px !important;
   height: 24px !important;
   left: -20px !important;
-  top: -445px !important;
+  top: -370px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -577,7 +561,7 @@
   width: 341px !important;
   height: 216px !important;
   left: -20px !important;
-  top: -435px !important;
+  top: -365px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -596,12 +580,12 @@
 /* RetoScreenRetoSponsors */
 
 .RetoScreenRetoSponsorsTitleText {
-
   position: relative !important;
   width: 94px !important;
   height: 24px !important;
   left: -20px !important;
-  top: -450px !important;
+  /* top: -450px !important; */
+  top: -390px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -617,21 +601,12 @@
 
 /* Sponsor 1  */
 
-.RetoScreenRetoSponsorBarraHorizontal1 {
-  position: relative !important;
-  width: 343px !important;
-  height: 1px !important;
-  left: -20px !important;
-  top: -460px !important;
-}
-
 .RetoScreenRetoSponsorName1 {
-
   position: relative !important;
   width: 125px !important;
   height: 20px !important;
   left: -20px !important;
-  top: -460px !important;
+  top: -400px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -640,40 +615,6 @@
   line-height: 24px !important;
 
   color: #335f46 !important;
-}
-
-.RetoScreenRetoSponsorDonacionText1 {
-
-  position: relative !important;
-  width: 38px !important;
-  height: 20px !important;
-  left: 240px !important;
-  top: -495px !important;
-
-  font-family: Roboto !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-
-  color: #5c585d !important;
-}
-
-.RetoScreenRetoSponsorDonacionCifra1 {
-
-  position: relative !important;
-  width: 34px !important;
-  height: 20px !important;
-  left: 290px !important;
-  top: -531px !important;
-
-  font-family: Roboto !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-
-  color: #fe4a49 !important;
 }
 
 .RetoScreenRetoSponsorText1 {
@@ -681,7 +622,7 @@
   width: 341px !important;
   height: 48px !important;
   left: -18px !important;
-  top: -535px !important;
+  top: -380px !important;
 
   font-family: Roboto !important;
   font-style: normal !important;
@@ -690,164 +631,6 @@
   line-height: 24px !important;
 
   color: #5c585d !important;
-}
-
-/* Sponsor 2 */
-
-.RetoScreenRetoSponsorBarraHorizontal2 {
-  position: relative !important;
-  width: 343px !important;
-  height: 1px !important;
-  left: -20px !important;
-  top: -555px !important;
-}
-
-.RetoScreenRetoSponsorName2 {
-  position: relative !important;
-  width: 125px !important;
-  height: 20px !important;
-  left: -20px !important;
-  top: -555px !important;
-
-  font-family: Roboto !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-
-  color: #335f46 !important;
-}
-
-.RetoScreenRetoSponsorDonacionText2 {
-  position: relative !important;
-  width: 38px !important;
-  height: 20px !important;
-  left: 240px !important;
-  top: -591px !important;
-
-  font-family: Roboto !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-
-  color: #5c585d !important;
-}
-
-.RetoScreenRetoSponsorDonacionCifra2 {
-  position: relative !important;
-  width: 34px !important;
-  height: 20px !important;
-  left: 290px  !important;
-  top: -627px !important;
-
-  font-family: Roboto !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-
-  color: #fe4a49 !important;
-}
-
-.RetoScreenRetoSponsorText2 {
-  position: relative !important;
-  width: 341px !important;
-  height: 48px !important;
-  left: -18px !important;
-  top: -630px !important;
-
-  font-family: Roboto !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-
-  color: #5c585d !important;
-}
-
-/* Sponsor 3 */
-
-.RetoScreenRetoSponsorBarraHorizontal3 {
-  position: relative !important;
-  width: 343px !important;
-  height: 1px !important;
-  left: -20px !important;
-  top: -650px !important;
-}
-
-.RetoScreenRetoSponsorName3 {
-  position: relative !important;
-  width: 125px !important;
-  height: 20px !important;
-  left: -20px !important;
-  top: -651px !important;
-
-  font-family: Roboto !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-
-  color: #335f46 !important;
-}
-
-.RetoScreenRetoSponsorDonacionText3 {
-  position: relative !important;
-  width: 38px !important;
-  height: 20px !important;
-  left: 240px !important;
-  top: -686px !important;
-
-  font-family: Roboto !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-
-  color: #5c585d !important;
-}
-
-.RetoScreenRetoSponsorDonacionCifra3 {
-  position: relative !important;
-  width: 34px !important;
-  height: 20px !important;
-  left: 290px !important;
-  top: -722px !important;
-
-  font-family: Roboto !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-
-  color: #fe4a49 !important;
-}
-
-.RetoScreenRetoSponsorBarraHorizontal4 {
-  position: relative !important;
-  width: 343px !important;
-  height: 1px !important;
-  left: -20px !important;
-  top: -742px !important;
-}
-
-.RetoScreenRetoSponsorVerMasText {
-  position: relative !important;
-  width: 64px !important;
-  height: 24px !important;
-  left: 120px !important;
-  top: -735px !important;
-
-  font-family: Roboto !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-
-  text-decoration-line: underline !important;
-
-  color: #004c92 !important;
 }
 
 /* RetoScreenBtnSponsor2  */
@@ -862,7 +645,7 @@
   width: 344px !important;
   height: 56px !important;
   left: -20px !important;
-  top: -720px !important;
+  top: -395px !important;
   margin-bottom: -20px !important;
 
   background: #fe4a49 !important;

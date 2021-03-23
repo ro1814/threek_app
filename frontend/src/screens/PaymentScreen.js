@@ -130,36 +130,35 @@ const PaymentScreen = ({ history }) => {
               boxShadow: '0px 4px 4px rgba(0, 54, 38, 0.4)'
             }}
           />
-          
-          <Form.Label as="legend" style={{marginTop:'-10px'}}>
-            <span style={{marginLeft:'-1vw'}}>Fecha de caducidad*</span>
-            <span style={{marginLeft:'30vw'}}>CVV*</span>
+
+          <Form.Label as="legend" style={{ marginTop: "-10px" }}>
+            <span style={{ marginLeft: "-1vw" }}>Fecha de caducidad*</span>
+            <span style={{ marginLeft: "30vw" }}>CVV*</span>
           </Form.Label>
           <Row>
-          <Col>
-          <FormControl></FormControl>
-          </Col>
-          <Col>
-          <FormControl></FormControl>
-          </Col>
-          <Col>
-          </Col>
-          <Col>
-          <FormControl></FormControl>
-          </Col>
+            <Col>
+              <FormControl></FormControl>
+            </Col>
+            <Col>
+              <FormControl></FormControl>
+            </Col>
+            <Col></Col>
+            <Col>
+              <FormControl></FormControl>
+            </Col>
           </Row>
 
-          <div 
-          style={{
-            height:'200px',
-            backgroundColor:'#224e39',
-            width:'100vw',
-            position:'fixed',
-            left:'0',
-            bottom:'0',
-            zIndex:'-2'
-          }}></div>
-          
+          <div
+            style={{
+              height: "200px",
+              backgroundColor: "#224e39",
+              width: "100vw",
+              position: "fixed",
+              left: "0",
+              bottom: "0",
+              zIndex: "-2",
+            }}
+          ></div>
         </Form.Group>
         <Button type="submit" variant="primary" className="Primary-button">
           Continuar

@@ -137,7 +137,7 @@ const ImagenReto = ({ history }) => {
         </Modal.Body>
         <Modal.Footer>
         <Button className="Secondary-button" onClick={handleClose}>
-          <Link to="/">
+          <Link to="/retos/6051f46d192de50d7778e962">
             Compartir más tarde
           </Link>
          </Button>

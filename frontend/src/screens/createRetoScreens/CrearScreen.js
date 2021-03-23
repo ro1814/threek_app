@@ -115,21 +115,6 @@ const CrearScreen = ({ history }) => {
               </Modal.Body>
             </Modal>
             <br/>
-            
-
-            <Form.Row>
-              <Form.Label>¿Cuando empieza tu reto?</Form.Label>
-
-              <Col>
-                <Button
-                  variant="primary"
-                  size="sm"
-                  onClick={() => setSmShow(true)}
-                >
-                  <img src={Vector} alt="" />
-                </Button>
-              </Col>
-            </Form.Row>
 
             <Modal
               centered
@@ -155,6 +140,7 @@ const CrearScreen = ({ history }) => {
               name="fechaInicio"
               id="fechaInicio"
               onChange={(e) => setFechaInicio(e.target.value)}
+              style={{marginTop:'-24px'}}
             ></FormControl>
 
           </FormGroup>
