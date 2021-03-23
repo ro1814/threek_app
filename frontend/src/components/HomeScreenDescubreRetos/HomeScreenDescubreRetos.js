@@ -26,7 +26,8 @@ const HomeScreenDescubreRetos = ({ reto }) => {
           className="img-fluid HomeScreenDescubreRetosRetoActivoImg"
         />
         <figcaption className="HomeScreenDescubreRetosRetadorNameText">
-          Manel A.{/* {userInfo.nombre} */}
+
+        {reto.creador}
         </figcaption>
         <figcaption className="HomeScreenDescubreRetosRetoTituloText">
           {reto.titulo}

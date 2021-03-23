@@ -264,6 +264,9 @@ Form {
 .NavbarLink {
   color: var(--colorNeutro00) !important;
 }
+.NavDropdown {
+  color: white;
+}
 
 /* Componente Footer.js */
 /* Elementos Footer: */
@@ -294,5 +297,6 @@ Form {
   }
   
   .rating span {
-    margin: 0.1rem;
-*/
+
+margin: 0.1rem;}
+
