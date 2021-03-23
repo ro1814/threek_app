@@ -12,6 +12,8 @@ import { useSelector } from "react-redux";
 import Message from "../components/Message";
 import CheckoutSteps from "../components/CheckoutSteps";
 import { Link } from "react-router-dom";
+import barraProgreso from "../assets/barra_donar_reto/Progreso-donar3.png";
+import fotoCompartir from "../assets/barra_donar_reto/compartir-donacion.png";
 
 const PlaceOrderScreen = (history) => {
   const sponsor = useSelector((state) => state.sponsor);
@@ -33,18 +35,27 @@ const PlaceOrderScreen = (history) => {
 
   return (
     <>
-      <CheckoutSteps step1 step3 step4 />
-      <Row>
-        <Col md={8}>
+      {/* <CheckoutSteps step1 step3 step4 /> */}
+      
+      <Row className="FondoForms1">
+        <Col md={8} >
+        <img
+        src={barraProgreso}
+        alt="barraProgreso"
+        style={{
+          marginLeft: "24vw",
+          marginTop: "24px",
+          marginBottom: "24px",
+        }}
+      ></img>
           <ListGroup variant="flush">
             <ListGroup.Item>
-              <h2>Método de pago</h2>
+              <h2 style={{marginBottom:'24px'}}>Resumen</h2>
               <strong>Método: </strong>
               {sponsor.paymentMethod}
             </ListGroup.Item>
 
             <ListGroup.Item>
-              <h2>Reto a esponsorizar:</h2>
               {sponsor.sponsorItems.length === 0 ? (
                 <Message>No tienes retos a esponsorizar</Message>
               ) : (
@@ -60,10 +71,10 @@ const PlaceOrderScreen = (history) => {
                             rounded
                           ></Image>
                         </Col>
-                        <Col>
-                          <Link to={`/retos/${item.reto}`}>{item.titulo}</Link>
+                        <Col style={{marginTop:'16px'}}>
+                          <Link to={`/retos/${item.reto}`}><h3 style={{color:'white'}}>{item.titulo}</h3></Link>
+                          Objetivo a recaudar: €{item.objetivoRec}
                         </Col>
-                        <Col>Objetivo a recaudar: €{item.objetivoRec}</Col>
                       </Row>
                     </ListGroup.Item>
                   ))}
@@ -73,40 +84,51 @@ const PlaceOrderScreen = (history) => {
           </ListGroup>
         </Col>
         <Col md={4}>
-          <Card>
-            <ListGroup variant="flush">
+          <Card style={{background:'transparent !important'}}>
+            <ListGroup variant="flush" style={{background:'transparent !important'}}> 
               <ListGroup.Item>
-                <h2>Resúmen de esponsor</h2>
+                <h3>Donación</h3>
               </ListGroup.Item>
-              <ListGroup.Item>
+              <ListGroup.Item style={{background:'transparent !important'}}>
                 <Row>
                   <Col>Total:</Col>
                   <Col>€{sponsor.cantidadPersonalizada}</Col>
                 </Row>
               </ListGroup.Item>
-              <ListGroup.Item>
+              <ListGroup.Item style={{background:'transparent !important'}}>
                 <Button
                   type="button"
                   className="btn-block"
+                  style={{
+                    background:'#FE4A49',
+                    boxShadow: '0px 4px 7px rgba(0, 0, 0, 0.25)',
+                    borderRadius: '8px',
+                    border:'none',
+                    height:'44px',
+                    fontFamily: 'Oswald',
+                    fontSize: '16pt ',
+                    fontWeight: '700'}}
                   onClick={handleShow}
                 >
-                  Hacer el esponsor
+                  Siguiente
                 </Button>
 
                 <Modal show={show} onHide={handleClose}>
                   <Modal.Header closeButton>
-                    <Modal.Title>¡Confirmación!</Modal.Title>
+                    <Modal.Title></Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
-                    ¡Muchas gracias por donar €{sponsor.cantidadPersonalizada} a
-                    la fundación!
-                  </Modal.Body>
-                  <Modal.Body>
-                    ¡Comparte tu donación en las redes sociales!
+                    <h2 style={{color:'#003626', marginBottom:'24px'}}>¡Gracias por apoyar <br></br> este reto!</h2>
+                    <p>
+                    Con tu aportación de <strong>{sponsor.cantidadPersonalizada}€</strong> no solo consigues motivar al retador, sino que además estás ayudando a combatir la enfermedad de la ELA
+                    </p>
+                    <img
+                    src={fotoCompartir}
+                    ></img>
                   </Modal.Body>
                   <Modal.Footer>
-                    <Button variant="primary" onClick={handleClose}>
-                      <Link to="/" className="visitedLink">
+                    <Button className="Secondary-button" onClick={handleClose}>
+                      <Link to="/">
                         Ir a página de inicio
                       </Link>
                     </Button>

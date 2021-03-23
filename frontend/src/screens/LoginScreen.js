@@ -31,7 +31,7 @@ const LoginScreen = ( { location, history } ) => {
 
   return (
     <FormContainer>
-      <h2>Iniciar sesión</h2>
+      <h2 style={{margin:'24px'}}>Iniciar sesión</h2>
       { error && <Message variant='danger'>{error}</Message> }
       { loading && <Loader/>}
       <Form onSubmit={submitHandler}>

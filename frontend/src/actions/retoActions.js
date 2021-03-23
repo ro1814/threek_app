@@ -16,7 +16,7 @@ import {
   RETO_SAVE_CAUSA,
   RETO_SAVE_DEPORTE,
   RETO_SAVE_CREAR_RETO,
-  /* RETO_SAVE_IMAGENES, */
+  RETO_SAVE_IMAGENES,
 } from "../constants/retoConstants";
 
 export const listRetos = () => async (dispatch) => {
@@ -163,4 +163,12 @@ export const saveDatosReto = (data) => (dispatch) => {
 
   localStorage.setItem("datosReto", JSON.stringify(data));
 };
- 
+
+export const saveImagenReto = (data) => (dispatch) => {
+  dispatch({
+    type: RETO_SAVE_IMAGENES,
+    payload: data,
+  });
+
+  localStorage.setItem("datosSocial", JSON.stringify(data));
+};

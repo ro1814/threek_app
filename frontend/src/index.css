@@ -1,5 +1,4 @@
-/*! PROPIEDADES GLOBALES THREEK APP */
-
+/*! PROPIEDADES GLOBALES APP */
 :root {
   /*! Paleta de colores app Threek */
 
@@ -7,22 +6,16 @@
 
   /* Primario 10 */
   --colorPrimario10: #e4eecd;
-
   /* Primario 20 */
   --colorPrimario20: #cadaa7;
-
   /* Primario 40 */
   --colorPrimario40: #98b187;
-
   /* Primario 50 */
   --colorPrimario50: #658867;
-
   /* Primario 60 */
   --colorPrimario60: #335f46;
-
   /* Primario 80 */
   --colorPrimario80: #224e39;
-
   /* Primario 90 */
   --colorPrimario90: #003626;
 
@@ -30,22 +23,16 @@
 
   /* Acento 10 */
   --colorAcento10: #ffdedc;
-
   /* Acento 20 */
   --colorAcento20: #ffc8c4;
-
   /* Acento 40 */
   --colorAcento40: #ffa59f;
-
   /* Acento 50 */
   --colorAcento50: #fe827a;
-
   /* Acento 60 */
   --colorAcento60: #fe5f55;
-
   /* Acento 80 */
   --colorAcento80: #fe4a49;
-
   /* Acento 90 */
   --colorAcento90: #e54443;
 
@@ -53,25 +40,18 @@
 
   /* Neutro 00 */
   --colorNeutro00: #ffffff;
-
   /* Neutro 05 */
   --colorNeutro05: #f9f9f9;
-
   /* Neutro 10 */
   --colorNeutro10: #e8e7e8;
-
   /* Neutro 20 */
   --colorNeutro20: #d0cfd1;
-
   /* Neutro 40 */
   --colorNeutro40: #b9b8b9;
-
   /* Neutro 60 */
   --colorNeutro60: #a2a0a2;
-
   /* Neutro 70 */
   --colorNeutro70: #5c585d;
-
   /* Neutro 80 */
   --colorNeutro80: #2d292e;
 
@@ -79,26 +59,9 @@
   --colorNeutro90: #161117;
 
   /*! Tipografias app Threek: */
-
-  /* Tipografias TITULOS: */
-  --titleH1Font: "Oswald", sans-serif, 30pt;
-
-  --titleH2Font: "Oswald", sans-serif, 24pt;
-
-  --titleH3Font: "Oswald", sans-serif, 18pt;
-
+  --titleFont: "Oswald", sans-serif;
   /* Tipografias BODY: */
-  --body1Font: "Roboto", sans-serif, 18pt;
-
-  --body2Font: "Roboto", sans-serif, 16pt;
-
-  --body2BoldFont: "Roboto", sans-serif, bold, 16pt;
-
-  /* Tipografia CAPTION: */
-  --caption1Font: "Roboto Slab", serif, 14pt;
-
-  /* Tipografia ¿?: */
-  --fontRoboto: "Roboto Slab", serif;
+  --bodyFont: "Roboto", sans-serif;
 }
 
 /*! IMPORTANTE: uso de las anteriores propiedades a lo largo del restante CSS */
@@ -116,69 +79,79 @@
 }
 
 /*TEXTOS*/
-h1 {
+h1{
   font-family: var(--titleFont) !important;
   font-weight: bold !important;
   font-size: 24pt !important;
   text-align: center;
 }
-h2 {
+h2{
   font-family: var(--titleFont) !important;
   font-weight: bold !important;
   font-size: 20pt !important;
   text-align: center;
 }
-h3 {
+h3{
   font-family: var(--titleFont) !important;
   font-weight: bold !important;
   font-size: 14pt !important;
   text-align: left !important;
 }
-label,
-p,
-Form.label,
-.form-check {
+label, p, Form.label, .form-check{
   font-family: var(--bodyFont) !important;
   font-size: 14pt !important;
-  text-align: left !important;
+  text-align:left !important;
 }
-.captionCausa {
+.captionCausa{
   font-family: var(--bodyFont) !important;
   font-size: 12pt !important;
-  text-align: left !important;
-  margin-top: -0.75rem !important;
+  text-align:left !important;
+  margin-top:-0.75rem !important;
 }
-.fechaCaption {
-  font-size: 0.9rem !important;
+.fechaCaption{
+  font-size:0.9rem !important;
 }
 
+
 /*COMPONENTES*/
-Form {
-  width: 343px !important;
+Form{
+  width:343px !important;
   text-align: center;
 }
-.Recaudado {
+.Recaudado{
   border-radius: 16px !important;
 }
-.progress-bar {
+.progress-bar{
   background-color: var(--colorPrimario50) !important;
   border-radius: 16px !important;
 }
-.hidden {
-  display: none !important;
+.hidden{
+  display:none !important;
 }
-.form-check-inline {
+.form-check-inline{
   margin-left: 0.75rem !important;
 }
-.form-check input {
-  position: absolute !important;
-  bottom: 40px;
-  left: 10px;
-  height: 16px !important;
-  width: 16px !important;
+.deporteForm input{
+  position:absolute !important;
+  bottom:40px;
+  left:10px;
+  height:16px !important;
+  width:16px !important;
 }
-.underline {
+.underline{
   text-decoration: underline !important;
+}
+.infoPagoSelect{
+  background: var(--colorNeutro00) !important;
+  color:var(--colorNeutro90);
+  box-shadow: 0px 4px 4px rgba(0, 54, 38, 0.4);
+  height:48px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:-10px;
+  margin-right:-10px;
+  border-radius: 8px;
 }
 /*.form-check-input{
   display:none;
@@ -186,18 +159,32 @@ Form {
 
 /*! BOTONES */
 /** Botones acento: */
-.Primary-button {
-  background: #fe4a49 !important;
+.Primary-button{
+  background: #FE4A49 !important;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) !important;
   border-radius: 8px !important;
-  border: none !important;
-  height: 56px !important;
+  border:none !important;
+  height:56px !important;
   width: 343px !important;
   font-family: var(--bodyFont);
   font-size: 16pt !important;
   font-weight: 700 !important;
 }
-.btn-danger {
+.Secondary-button{
+  background: var(--colorNeutro10) !important;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 8px !important;
+  border:none !important;
+  height:56px !important;
+  width: 343px !important;
+  font-family: var(--bodyFont);
+  font-size: 16pt !important;
+  font-weight: 700 !important;
+}
+.Secondary-button a{
+  color:#FE4A49;
+}
+/* .btn-danger:hover {
   background-color: var(--colorAcento80) !important;
 }
 
@@ -208,14 +195,28 @@ Form {
 
 /*! COMPONENTES: */
 /*PANTALLAS*/
-.FondoForms {
+.FondoForms{
   background: var(--colorPrimario80) !important;
-  height: calc(100vh - 57px);
-  width: 100vw !important;
-  position: relative;
-  left: -16px;
-  top: -16px;
-  color: var(--colorNeutro00);
+  height:calc(100vh - 57px);
+  width:100vw !important;
+  position:relative;
+  left:-16px;
+  top:-16px;
+  color:var(--colorNeutro00);
+}
+.FondoForms1{
+  background: var(--colorPrimario80) !important;
+  height:calc(100vh - 57px);
+  width:100vw !important;
+  position:relative;
+  top:-16px;
+  color:var(--colorNeutro00);
+}
+.card{
+  background:transparent !important;
+}
+.list-group-flush>.list-group-item{
+  background:transparent;
 }
 
 /*! Componente Header.js */
@@ -235,13 +236,14 @@ Form {
   color: var(--colorNeutro00) !important;
 }
 
+
 /*! Componente Footer.js */
 /** Elementos Footer: */
 .Footer {
   background-color: var(--colorPrimario90) !important;
 }
 
-/*! PROPIEDADES CSS POR DEFECTO DE REACT */
+/*! VALORES POR DEFECTO DE REACT */
 /* main {
     min-height: 80vh;
   }
@@ -265,4 +267,4 @@ Form {
   
   .rating span {
     margin: 0.1rem;
-  } */
+*/

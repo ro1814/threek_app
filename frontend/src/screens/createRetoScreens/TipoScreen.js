@@ -23,6 +23,7 @@ const TipoScreen = ({ history }) => {
   const [senderismo, setSenderismo] = useState(selecDeporte.senderismo);
   const [escalada, setEscalada] = useState(selecDeporte.escalada);
 
+
   const dispatch = useDispatch();
 
   const submitHandler = (e) => {
@@ -31,6 +32,8 @@ const TipoScreen = ({ history }) => {
       saveDeporteReto({ ciclismo, running, senderismo, escalada, natacion })
     );
     history.push("/crearretocausa");
+
+ 
   };
 
   return (
@@ -74,7 +77,8 @@ const TipoScreen = ({ history }) => {
             style={{ marginTop: "100px" }}
             className="deporteForm"
             onChange={(e) => setCiclismo(e.target.value)}
-          ></Form.Check>
+          >
+          </Form.Check>
 
           <img
             src={tipoRunning}
@@ -96,7 +100,8 @@ const TipoScreen = ({ history }) => {
             style={{ marginTop: "100px" }}
             className="deporteForm"
             onChange={(e) => setRunning(e.target.value)}
-          ></Form.Check>
+          >
+          </Form.Check>
 
           <img
             src={tipoNatacion}
@@ -118,7 +123,8 @@ const TipoScreen = ({ history }) => {
             style={{ marginTop: "100px" }}
             className="deporteForm"
             onChange={(e) => setNatacion(e.target.value)}
-          ></Form.Check>
+          >
+          </Form.Check>
 
           <img
             src={tipoTrecking}
@@ -126,7 +132,7 @@ const TipoScreen = ({ history }) => {
             style={{
               position: "absolute",
               top: "300px",
-              left: "82px",
+              left: "102px",
               height: "80px",
             }}
           ></img>
@@ -140,7 +146,8 @@ const TipoScreen = ({ history }) => {
             style={{ marginTop: "110px" }}
             className="deporteForm"
             onChange={(e) => setSenderismo(e.target.value)}
-          ></Form.Check>
+          >
+          </Form.Check>
 
           <img
             src={tipoEscalada}
@@ -148,7 +155,7 @@ const TipoScreen = ({ history }) => {
             style={{
               position: "absolute",
               top: "300px",
-              left: "216px",
+              left: "196px",
               height: "80px",
             }}
           ></img>
@@ -162,7 +169,9 @@ const TipoScreen = ({ history }) => {
             style={{ marginTop: "110px" }}
             className="deporteForm"
             onChange={(e) => setEscalada(e.target.value)}
-          ></Form.Check>
+          >
+           
+          </Form.Check>
         </Form.Group>
 
         <Button

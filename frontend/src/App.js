@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 /* import Footer from './components/Footer'; */
 import HomeScreen from "./screens/HomeScreen";
 import RetoScreen from "./screens/RetoScreen";
+import RetoScreen2 from "./screens/RetoScreen2";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import ProfileScreen from "./screens/ProfileScreen";
@@ -17,6 +18,8 @@ import CausaScreen from "./screens/createRetoScreens/CausaScreen";
 import CrearScreen from "./screens/createRetoScreens/CrearScreen";
 import ImagenReto from "./screens/createRetoScreens/ImagenReto";
 import RetoCreado from "./screens/RetoCreado";
+import RankingScreen from "./screens/RankingScreen";
+
 
 const App = () => {
   return (
@@ -38,6 +41,8 @@ const App = () => {
           <Route path="/crearreto" component={CrearScreen} />
           <Route path="/crearretoimagenes" component={ImagenReto} />
           <Route path="/retocreado" component={RetoCreado} />
+          <Route path="/retos/6051f46d192de50d7778e962" component={RetoScreen2} />
+          <Route path="/ranking" component={RankingScreen} />
         </Container>
       </main>
 
