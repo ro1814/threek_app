@@ -1,7 +1,6 @@
-/*! HEADER */
+/* Componente Header.js */
 
-/*! Componente Header.js */
-/** Elementos Navbar: */
+/* Elementos Navbar: */
 .Navbar {
   background-color: #003626 !important;
   right: -0.6px;
@@ -22,9 +21,6 @@
   color: #ffffff !important;
 }
 
-a:visited{
-  color: white;
-}
-.visitedLink{
-  color: white;
-}
+.HeaderLinkContainer {
+  text-decoration: none !important;
+  color: #ffffff !important;

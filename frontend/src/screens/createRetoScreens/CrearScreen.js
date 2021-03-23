@@ -11,7 +11,8 @@ import {
   Modal,
   Col,
 } from "react-bootstrap";
-import RetoSteps from "../../components/RetoSteps";
+// import RetoSteps from "../../components/RetoSteps";
+import barraProgreso from "../../assets/barra_crear_reto/Progreso-reto3.png";
 import { saveDatosReto } from "../../actions/retoActions";
 
 const CrearScreen = ({ history }) => {
@@ -38,16 +39,25 @@ const CrearScreen = ({ history }) => {
 
   return (
     <FormContainer>
-      <RetoSteps step1 step2 step3 />
+      {/* <RetoSteps step1 step2 step3 /> */}
+      <img
+        src={barraProgreso}
+        alt="barraProgreso"
+        style={{
+          marginLeft: "14vw",
+          marginTop: "24px",
+          marginBottom: "24px",
+        }}
+      ></img>
 
       <Form onSubmit={submitHandler}>
-        <Form.Group>
-          <Form.Label>
-            ¡Genial, <strong>{userInfo.nombre}</strong>! Es el momento de
-            contarnos más sobre tu reto.
+        <Form.Group >
+          <Form.Label><h2>
+            ¡Genial <strong>{userInfo.nombre}</strong>! Es el momento de
+            contarnos más sobre tu reto</h2>
           </Form.Label>
           <Form.Label>
-            <strong>Ponle un título épico a tu reto*:</strong>
+            <p style={{marginLeft:'-24vw', marginTop:'24px', marginBottom:'-16px'}}>Ponle un título épico a tu reto*</p>
           </Form.Label>
           <FormGroup>
             <FormControl
@@ -60,7 +70,7 @@ const CrearScreen = ({ history }) => {
             />
           </FormGroup>
           <Form.Label>
-            <strong>Describe tu reto brevemente*</strong>
+          <p style={{marginLeft:'-25vw', marginTop:'16px', marginBottom:'-16px'}}>Describe tu reto brevemente*</p>
           </Form.Label>
           <FormGroup>
             <Form.Control
@@ -75,15 +85,13 @@ const CrearScreen = ({ history }) => {
             />
           </FormGroup>
           <FormGroup>
-            <Form.Label>¿Cuando empieza tu reto?</Form.Label>
-
-
             <Form.Row>
 
-              <Form.Label>¿Cuando empieza tu reto?</Form.Label>
-
+              <Form.Label>
+                <p style={{marginTop:'16px', marginBottom:'-24px', marginLeft:'4px'}}>¿Cuándo empieza tu reto?</p>
+                </Form.Label>
               <Col>
-                <Button variant="primary"size="sm" onClick={() => setSmShow(true)}>
+                <Button variant="primary"size="sm" style={{backgroundColor:'transparent', border:'none', position:'relative', top:'10px', right:'45px'}} onClick={() => setSmShow(true)}>
                 <img  src={Vector} alt ='' />
                 </Button>
               </Col>
@@ -107,20 +115,40 @@ const CrearScreen = ({ history }) => {
               </Modal.Body>
             </Modal>
             <br/>
-            
+
+            <Modal
+              centered
+              autoFocus
+              size="sm"
+              show={smShow}
+              onHide={() => setSmShow(false)}
+              aria-labelledby="example-modal-sizes-title-sm"
+            >
+              <Modal.Header closeButton>
+                <Modal.Title id="example-modal-sizes-title-sm"></Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                En threek los retos son de 3 semanas, 21 días. Tú pones la fecha
+                de inicio, y la de fin se calcula automaticamente. Te
+                recomendamos que crees retos entre 1 y 15 días antes del inicio.
+              </Modal.Body>
+            </Modal>
+            <br />
 
             <FormControl
               type="date"
               name="fechaInicio"
               id="fechaInicio"
               onChange={(e) => setFechaInicio(e.target.value)}
+              style={{marginTop:'-24px'}}
             ></FormControl>
 
           </FormGroup>
-          <Form.Label>Quedan: 21 días para que se acabe tu reto. </Form.Label>
-          <Form.Label>Objetivo de recaudación:</Form.Label>
           
-          <Button size="sm" onClick={() => setSmShow(true)}>
+          <Form.Label>
+            <p style={{marginTop:'16px', marginBottom:'-10px', marginLeft:'0vw'}}>¿Cuál es tu objetivo de recaudación?</p></Form.Label>
+          
+          <Button size="sm" style={{backgroundColor:'transparent', border:'none', position:'relative', top:'-8px', right:'-5px'}} onClick={() => setSmShow(true)}>
             <img  src={Vector} alt ='' />
           </Button>
           
@@ -161,11 +189,12 @@ const CrearScreen = ({ history }) => {
             type="submit"
             variant="primary"
             className="Primary-button"
+            style={{width:'343px !important'}}
           >
 
           
 
-            Continue
+            Siguiente
           </Button>
         </Form.Group>
       </Form>

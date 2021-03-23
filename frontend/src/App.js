@@ -1,10 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
-import { Container } from 'react-bootstrap'
-import Header from './components/Header/Header';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import Header from "./components/Header/Header";
 /* import Footer from './components/Footer'; */
 import HomeScreen from './screens/HomeScreen';
 import RetoScreen from './screens/RetoScreen'
+import RetoScreen2 from "./screens/RetoScreen2";
 import LoginScreen from './screens/LoginScreen'
 import RegisterScreen from './screens/RegisterScreen'
 import ProfileScreen from './screens/ProfileScreen'
@@ -20,12 +21,14 @@ import RetoCreado from './screens/RetoCreado'
 import CausasScreen from './screens/CausasScreen'
 import InvestigacionScreen from './screens/InvestigacionScreen'
 import CalDeVidaScreen from './screens/CalDeVidaScreen'
+import RankingScreen from "./screens/RankingScreen";
 
 const App = () => {
   return (
     <Router>
-    <Header/>
+      <Header />
       <main className="py-3">
+
         
           <Container>
             <Route path='/' component={HomeScreen} exact/>
@@ -45,13 +48,14 @@ const App = () => {
             <Route path='/causas' component={CausasScreen}/>
             <Route path='/causa/investigacion' component={InvestigacionScreen}/>
             <Route path='/causa/calidaddevidaela' component={CalDeVidaScreen}/>
+            <Route path="/ranking" component={RankingScreen} />
+            <Route path="/retos/6051f46d192de50d7778e962" component={RetoScreen2} />
           </Container>
-          
       </main>
-      
-    {/* <Footer/> */}
+
+      {/* <Footer/> */}
     </Router>
   );
-}
+};
 
 export default App;

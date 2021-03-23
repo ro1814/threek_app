@@ -5,6 +5,7 @@ import { Row, Col, ListGroup, Image, Button, Card } from "react-bootstrap";
 import Message from "../components/Message";
 import { addToSponsor } from "../actions/sponsorActions";
 import CheckoutSteps from "../components/CheckoutSteps";
+import barraProgreso from "../assets/barra_donar_reto/Progreso-donar1.png";
 
 const SponsorScreen = ({ match, history }) => {
   const retoId = match.params.id;
@@ -27,10 +28,19 @@ const SponsorScreen = ({ match, history }) => {
   };
   return (
     <>
-      <CheckoutSteps step1 />
-      <Row>
+      {/* <CheckoutSteps step1 /> */}
+      <Row className="FondoForms1">
         <Col md={8}>
-          <h2>Sponsoriza el reto</h2>
+        <img
+        src={barraProgreso}
+        alt="barraProgreso"
+        style={{
+          marginLeft: "24vw",
+          marginTop: "24px",
+          marginBottom: "24px",
+        }}
+      ></img>
+          <h2 style={{marginBottom:'24px'}}>Resumen del reto</h2>
           {sponsorItems.length === 0 ? (
             <Message>
               {" "}
@@ -39,7 +49,7 @@ const SponsorScreen = ({ match, history }) => {
           ) : (
             <ListGroup variant="flush">
               {sponsorItems.map((item) => (
-                <ListGroup.Item key={item.reto}>
+                <ListGroup.Item key={item.reto} style={{background:'transparent'}}>
                   <Row>
                     <Col md={2}>
                       <Image
@@ -51,7 +61,7 @@ const SponsorScreen = ({ match, history }) => {
                     </Col>
                     <Col md={3}>
                       <Link to={`/reto/${item.reto}`}>
-                        Titulo: {item.titulo}
+                        <h3 style={{color:'white', marginTop:'16px'}}>{item.titulo}</h3>
                       </Link>
                     </Col>
                     <Col md={2}>
@@ -66,10 +76,11 @@ const SponsorScreen = ({ match, history }) => {
 
         <Col md={4}>
           <Card>
-            <ListGroup variant="flush">
+            <ListGroup variant="flush" style={{background:'transparent'}}>
               <Button
                 type="button"
                 className="btn-block Primary-button"
+                style={{border:'none', boxShadow:'0px !important'}}
                 onClick={checkOutHandler}
               >
                 Continuar

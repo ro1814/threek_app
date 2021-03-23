@@ -73,7 +73,7 @@ const CausaScreen = ({ history }) => {
                   size="sm"
                   onChange={(e) => setInvestigacion(e.target.value)}
                   type="checkbox"
-                  style={{ position: "relative", top: "70px" }}
+                  style={{ position: "relative"}}
                 ></Form.Check>
               </Col>
             </Row>
@@ -100,7 +100,7 @@ const CausaScreen = ({ history }) => {
                   size="sm"
                   onChange={(e) => setCalVida(e.target.value)}
                   type="checkbox"
-                  style={{ position: "relative", top: "70px" }}
+                  style={{ position: "relative"}}
                 ></Form.Check>
               </Col>
             </Row>
@@ -126,7 +126,7 @@ const CausaScreen = ({ history }) => {
                   size="sm"
                   onChange={(e) => setMonitorizacion(e.target.value)}
                   type="checkbox"
-                  style={{ position: "relative", top: "70px" }}
+                  style={{ position: "relative"}}
                 ></Form.Check>
               </Col>
             </Row>
@@ -141,9 +141,7 @@ const CausaScreen = ({ history }) => {
             bottom: "20px",
           }}
         >
-          <figcaption className="CausaScreenBtnText">
-            Siguiente
-          </figcaption>
+          <figcaption className="CausaScreenBtnText">Siguiente</figcaption>
         </Button>
       </Form>
     </FormContainer>

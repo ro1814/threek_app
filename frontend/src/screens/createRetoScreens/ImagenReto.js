@@ -4,8 +4,11 @@ import Loader from "../../components/Loader";
 import FormContainer from "../../components/FormContainer";
 import { useDispatch, useSelector } from "react-redux";
 import { Form, Button, Container, Modal } from "react-bootstrap";
-import RetoSteps from "../../components/RetoSteps";
+// import RetoSteps from "../../components/RetoSteps";
+import { Link } from "react-router-dom";
+import barraProgreso from "../../assets/barra_crear_reto/Progreso-reto4.png";
 import { saveImagenReto } from "../../actions/retoActions";
+import fotoCompartir from '../../assets/barra_crear_reto/historia-reto.png'
 
 const ImagenReto = ({ history }) => {
   const retoSave = useSelector((state) => state.retoSave);
@@ -54,7 +57,16 @@ const ImagenReto = ({ history }) => {
 
   return (
     <FormContainer>
-      <RetoSteps step1 step2 step3 step4 />
+      {/* <RetoSteps step1 step2 step3 step4 /> */}
+      <img
+        src={barraProgreso}
+        alt="barraProgreso"
+        style={{
+          marginLeft: "14vw",
+          marginTop: "24px",
+          marginBottom: "24px",
+        }}
+      ></img>
 
       <Form onSubmit={submitHandler}>
         <Form.Group controlId="imagen">
@@ -103,7 +115,7 @@ const ImagenReto = ({ history }) => {
           </Container>
         </Form.Group>
 
-        <Button block type="button" variant="primary" onClick={handleShow}>
+        <Button block type="button" variant="primary" className="Primary-button" onClick={handleShow}>
         Siguiente
       </Button>
 
@@ -114,26 +126,22 @@ const ImagenReto = ({ history }) => {
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title> <strong>¡Enhorabuena! <br/> ¡Tu reto ha sido creado!</strong> </Modal.Title>
+          <Modal.Title> </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <strong>Resúmen de tu reto:</strong><br/>
-          Título de reto: <strong>"Correr por Madrid".</strong> <br/>
-          Con fecha de inicio: <strong> 25/03/2021.</strong> <br/>
-          Objetivo de recaudación: <strong>€1.200.</strong> 
-        </Modal.Body>
-        <Modal.Body>
-          Hay 13 personas más que han creado un reto a la vez que el tuyo, ¿serás capaz de llegar al objetivo antes que ellos?
-        </Modal.Body>
-        <Modal.Body>
-          Empieza a compartir tu reto con todos tus amigos y consigue esponsors antes que nadie.
-        </Modal.Body>
-        <Modal.Body>
-          Links social media, iconos.
+        <Modal.Body style={{textAlign:'center'}}>
+          <h2 style={{color:'#003626'}}>¡Enhorabuena! Has creado tu reto</h2>
+          <p style={{marginTop:'16px'}}>Otras 13 personas han creado un reto en las misma fechas. Comparte el reto ahora y empieza a conseguir sponsors</p> 
+          <img
+             src={fotoCompartir}
+          ></img>
         </Modal.Body>
         <Modal.Footer>
-          <Button type='submit 'variant="primary" onClick={submitHandler}>Ver página de reto</Button>
-        </Modal.Footer>
+        <Button className="Secondary-button" onClick={handleClose}>
+          <Link to="/retos/6051f46d192de50d7778e962">
+            Compartir más tarde
+          </Link>
+         </Button>
+         </Modal.Footer>
       </Modal>
 
       </Form>
