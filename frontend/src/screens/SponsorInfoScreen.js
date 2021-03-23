@@ -4,8 +4,6 @@ import { useDispatch, useSelector } from "react-redux"
 import FormContainer from "../components/FormContainer";
 import { saveVisitingSponsor } from '../actions/sponsorActions'
 import CheckoutSteps from '../components/CheckoutSteps'
-
-
 const SponsorInfoScreen = ({ history }) => {
     const sponsor = useSelector(state => state.sponsor)
     const { infoDonVisitante } = sponsor

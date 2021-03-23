@@ -10,7 +10,6 @@ import {
 } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import Message from "../components/Message";
-import CheckoutSteps from "../components/CheckoutSteps";
 import { Link } from "react-router-dom";
 import barraProgreso from "../assets/barra_donar_reto/Progreso-donar3.png";
 import fotoCompartir from "../assets/barra_donar_reto/compartir-donacion.png";
@@ -124,6 +123,7 @@ const PlaceOrderScreen = (history) => {
                     </p>
                     <img
                     src={fotoCompartir}
+                    alt='infocompartir'
                     ></img>
                   </Modal.Body>
                   <Modal.Footer>

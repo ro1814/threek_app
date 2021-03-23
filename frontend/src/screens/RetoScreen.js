@@ -37,7 +37,6 @@ import fotoDia11 from '../assets/fotos-reto/foto-dia11.png'
 import fotoDia12 from '../assets/fotos-reto/foto-dia12.png'
 import fotoDia13 from '../assets/fotos-reto/foto-dia13.png'
 import fotoModal from '../assets/fotos-reto/foto-dia1-modal.png'
-import video1 from '../assets/fotos-reto/video1.png'
 
 function MyVerticallyCenteredModal(props) {
   return (

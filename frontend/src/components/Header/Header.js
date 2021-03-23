@@ -27,9 +27,10 @@ const Header = () => {
   return (
     <header>
       <Navbar className="Navbar" expand="lg" variant="dark">
+      
         <Container>
           {userInfo ? (
-            <NavDropdown className="Profile-name" title={userInfo.nombre} id="username">
+            <NavDropdown className="fas fa-user NavbarLink" style={{}}>
               <LinkContainer to="/profile" className="danger">
                 <NavDropdown.Item>Perfil</NavDropdown.Item>
               </LinkContainer>

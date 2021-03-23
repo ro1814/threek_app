@@ -9,7 +9,6 @@ import {
   ProgressBar,
   Card,
   Container,
-  Modal,
 } from "react-bootstrap";
 import { listRetosDetails } from "../actions/retoActions";
 import Loader from "../components/Loader";
@@ -29,7 +28,7 @@ const RetoScreen2 = ({ history, match }) => {
   const dispatch = useDispatch();
 
   const retoDetails = useSelector((state) => state.retoDetails);
-  const { loading, error, reto } = retoDetails;
+  const { loading, error } = retoDetails;
 
   useEffect(() => {
     dispatch(listRetosDetails("6051f46d192de50d7778e962"));
@@ -39,7 +38,7 @@ const RetoScreen2 = ({ history, match }) => {
     history.push("/sponsor/6051f46d192de50d7778e962");
   };
 
-  const [modalShow, setModalShow] = React.useState(false);
+  const [setModalShow] = React.useState(false);
 
   return (
     <>

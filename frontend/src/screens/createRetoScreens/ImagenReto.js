@@ -133,6 +133,7 @@ const ImagenReto = ({ history }) => {
           <p style={{marginTop:'16px'}}>Otras 13 personas han creado un reto en las misma fechas. Comparte el reto ahora y empieza a conseguir sponsors</p> 
           <img
              src={fotoCompartir}
+             alt='fotocompartir'
           ></img>
         </Modal.Body>
         <Modal.Footer>

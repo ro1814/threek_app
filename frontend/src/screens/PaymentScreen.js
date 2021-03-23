@@ -6,7 +6,6 @@ import {
   savePaymentMethod,
   saveCantidadPersonalizada,
 } from "../actions/sponsorActions";
-import CheckoutSteps from "../components/CheckoutSteps";
 import barraProgreso from "../assets/barra_donar_reto/Progreso-donar2.png";
 
 const PaymentScreen = ({ history }) => {

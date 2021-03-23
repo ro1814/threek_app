@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Row, Col, ListGroup, Image, Button, Card } from "react-bootstrap";
 import Message from "../components/Message";
 import { addToSponsor } from "../actions/sponsorActions";
-import CheckoutSteps from "../components/CheckoutSteps";
 import barraProgreso from "../assets/barra_donar_reto/Progreso-donar1.png";
 
 const SponsorScreen = ({ match, history }) => {
