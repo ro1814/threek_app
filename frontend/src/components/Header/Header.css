@@ -19,8 +19,29 @@
 .NavbarLink {
   background-color: #003626 !important;
   color: #ffffff !important;
+  
 }
 
 .HeaderLinkContainer {
   text-decoration: none !important;
   color: #ffffff !important;
+}
+
+#navLinkBlock::after {
+    display: none; 
+    padding: none;
+}
+.logueado{
+
+  color: white !important;
+  position: relative;
+  top: 10px;
+}
+
+.logueado a {
+  position: relative;
+  bottom: 18px;
+  left: 4px;
+
+  
+}

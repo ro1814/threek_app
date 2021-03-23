@@ -13,6 +13,7 @@ import {
 } from "react-bootstrap";
 import { logout } from "../../actions/userActions";
 import logothreek from "../../assets/logo_threek.png";
+import './Header.css'
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -30,7 +31,7 @@ const Header = () => {
       
         <Container>
           {userInfo ? (
-            <NavDropdown className="fas fa-user NavbarLink" style={{}}>
+            <NavDropdown className="fas fa-user NavbarLink logueado" >
               <LinkContainer to="/profile" className="danger">
                 <NavDropdown.Item>Perfil</NavDropdown.Item>
               </LinkContainer>
