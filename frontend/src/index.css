@@ -102,7 +102,8 @@ h3 {
 label,
 p,
 Form.label,
-.form-check {
+.form-check,
+span {
   font-family: var(--bodyFont) !important;
   font-size: 14pt !important;
   text-align: left !important;
